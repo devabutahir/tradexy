@@ -64,6 +64,42 @@
             margin-left: 0;
         }
     }
+    @media screen and (max-width: 1199px) {
+        .banner-content{
+            padding: 60px 0 60px;
+            h1{
+                font-size: 46px;
+                font-weight: 600;
+            }
+        }
+        .hero__thumb{
+            margin-left: 0;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .banner-content{
+            padding: 20px 0 60px;
+            h1{
+                font-size: 46px;
+                font-weight: 600;
+            }
+        }
+        .hero__thumb{
+            margin-left: 0;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .banner-content{
+            padding: 20px 0 60px;
+            h1{
+                font-size: 34px;
+                font-weight: 600;
+            }
+        }
+        .hero__thumb{
+            margin-left: 0;
+        }
+    }
 }
 
 // index-2

@@ -2942,6 +2942,42 @@ label.error {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 1199px) {
+  .hero .banner-content {
+    padding: 60px 0 60px;
+  }
+  .hero .banner-content h1 {
+    font-size: 46px;
+    font-weight: 600;
+  }
+  .hero .hero__thumb {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero .banner-content {
+    padding: 20px 0 60px;
+  }
+  .hero .banner-content h1 {
+    font-size: 46px;
+    font-weight: 600;
+  }
+  .hero .hero__thumb {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero .banner-content {
+    padding: 20px 0 60px;
+  }
+  .hero .banner-content h1 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .hero .hero__thumb {
+    margin-left: 0;
+  }
+}
 
 .hero--secondary {
   padding-top: 170px;
