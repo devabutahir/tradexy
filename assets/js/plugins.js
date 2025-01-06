@@ -104,7 +104,7 @@
             .slick({
                 infinite: true,
                 // autoplay: true,
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 speed: 1500,
                 arrows: false,
@@ -224,8 +224,8 @@
                 speed: 1500,
                 arrows: true,
                 dots: false,
-                prevArrow: $(".prev-testimonials2"),
-                nextArrow: $(".next-testimonials2"),
+                prevArrow: $(".prev-testimonials1"),
+                nextArrow: $(".next-testimonials1"),
                 responsive: [
                     {
                         breakpoint: 992,

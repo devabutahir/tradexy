@@ -111,7 +111,6 @@
 
 
 .footer-secondary{
-    background: $primary-color;
     &::before,
     &::after{
         display: none;
@@ -126,7 +125,7 @@
         flex-wrap: wrap;
         gap: 20px 60px;
         .btn_theme{
-            border-color: $secondary-color;
+            border-color: rgba(255, 255, 255, 0.30);
             padding: 0;
             &:before{
                 background: $secondary-color;
@@ -135,6 +134,7 @@
                 color: $secondary-color;
             }
             &:hover{
+                border-color: $primary-color;
                 .btn_theme_inner span i {
                     color: $primary-color;
                 }
@@ -181,15 +181,14 @@
     }
 
     .footer-secondary .footer-secondary__content{
-        justify-content: flex-start;
-        gap: 40px;
+        justify-content: center;
+        gap: 20px 36px;
         .quick-link {
             margin-bottom: 0;
         }
     }
 }
 @media (max-width: 767px) {
-    
     .footer{
         .newsletter__content-form .emailSubscribe {
             padding: 4px 18px;
@@ -203,7 +202,6 @@
         }
     } 
 }
-
 @media (max-width: 575px) {
     .footer__newsletter-form{
         width: 100%;
@@ -213,9 +211,9 @@
     }
     .footer-secondary .footer-secondary__content .quick-link .quick-link__list {
         gap: 12px 16px;
+        justify-content: center;
     }
 }
- 
 @media (max-width: 479px) {
     .footer .footer__newsletter-form .newsletter__content-form input.emailSubscribe{
         padding: 16px 20px;

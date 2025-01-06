@@ -427,6 +427,49 @@ h6>a {
     padding-bottom: 80px;
 }
 
+@media (max-width: 1199px) {
+
+    .section_md_pt {
+        padding-top: 60px;
+    }
+
+    .part_md_pt {
+        margin-top: 60px;
+    }
+
+    .part_md_pt40 {
+        margin-top: 40px;
+    }
+
+    .mb_40 {
+        margin-bottom: 30px;
+    }
+
+    .mt_40 {
+        margin-top: 30px;
+    }
+
+    .mb_60 {
+        margin-bottom: 48px;
+    }
+
+    .mt_60 {
+        margin-top: 48px!important;
+    }
+
+    .pt_70 {
+        padding-top: 52px;
+    }
+  
+    .pt_80 {
+        padding-top: 60px;
+    }
+
+    .py_60 {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
 @media (max-width: 991px) {
 
     .section_md_pt {
@@ -442,11 +485,11 @@ h6>a {
     }
 
     .mb_40 {
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
 
     .mt_40 {
-        margin-top: 38px;
+        margin-top: 30px;
     }
 
     .mb_60 {
@@ -474,11 +517,11 @@ h6>a {
 @media (max-width: 767px) {
    
     .mb_40 {
-        margin-bottom: 36px;
+        margin-bottom: 28px;
     }
 
     .mt_40 {
-        margin-top: 36px;
+        margin-top: 28px;
     }
 }
 
@@ -486,3 +529,15 @@ h6>a {
 /* ==== 
   --------- (2.2) typography styles end ---------
   ==== */
+
+
+  //Color & Background
+  .white-bg{
+    background: $white;
+  }
+  .cmn-bg1{
+    background: $cmn-bg1;
+  }
+  .cmn-bg2{
+    background: $cmn-bg2;
+  }

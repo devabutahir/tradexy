@@ -1,18 +1,328 @@
 /* ==== 
- --------- (5.0) all sections styles start ---------
+ --------- all sections styles start ---------
  ==== */
-.animation{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+
+ //Custom Card
+ .card--custom{
+    padding: 36px;
+    border-radius: 16px;
+    border: none;
+    border:1px solid $neutral-n-40;
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
 }
-//  index-1
-.feature{
+.card--small{
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    .card--small-icon{
+        @include box(60px);
+        svg{
+            max-width: calc(100% - 24px);
+        }
+    }
+    .card--small-content{
+        .card--small-title{
+            margin-bottom: 8px; 
+        }
+        .card--small-text{
+            font-size: 14px;
+            margin-bottom: 8px; 
+            &:nth-last-of-type(1){
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+ //Custom Card
+
+//Apps Download 01
+.download-app{
+    position: relative;
+    z-index: 0;
+    ul.section__content-list{
+        display: flex;
+        align-items: center;
+        row-gap: 16px;
+        column-gap: 32px;
+        flex-wrap: wrap;
+        li{
+            width: calc(50% - 17px);
+            gap: 24px;
+        }
+    }
+    .download-app__thumb01{
+        position: relative;
+        z-index: 1;
+        .thumb{
+            max-width: 500px;
+            img{
+                width: 100%;
+            }
+        }
+        .app-circle{
+            position: absolute;
+            max-width: 666px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            animation: circless 10s linear infinite;
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        .download-app__thumb01{
+            .app-circle{
+                max-width: 466px;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .download-app__thumb01{
+            .app-circle{
+                max-width: 366px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .download-app__thumb01{
+            .thumb{
+                max-width: 400px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .app-circle{
+                max-width: 566px;
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .download-app__thumb01{
+            .thumb{
+                max-width: 300px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .app-circle{
+                max-width: 416px;
+            }
+        }
+    }
+}
+@keyframes circless {
+    100%{
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
+//Apps Download 01
+
+//Testimonial 01
+.testimonials{
+    position: relative;
+    z-index: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: url(../../assets/images/element/common-bg.png) no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+    .card--custom{
+        align-items: start;
+        &::after{
+            left: 10px;
+        }
+    }
+    .testimonials__author-review .text-start{
+        font-size: 18px;
+    }
+    .testimonials__author{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        text-align: start;
+        .testimonials__thumg{
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+        .testimonials__content .author__title{
+            margin-bottom: 8px;
+        }
+    }
+}
+//Testimonial 01
+
+//Traning Planing 01
+.traning-plan{
+    position: relative;
+    .section__content-list{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .choose-globe{
+        position: absolute;
+        top: 85px;
+        right: 260px;
+    }
+    .choole-line{
+        position: absolute;
+        right: 70px;
+        bottom: 10px;
+        animation: updown 3s infinite;
+    }
+    @media screen and (max-width: 991px) {
+        .section__content-list{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+//Traning Planing 01
+
+//About Style 01
+.about-section{
+    position: relative;
+    z-index: 0;
+    .message-ele{
+            position: absolute;
+            left: 3%;
+            bottom: 100px;
+            animation: previewShapeX 5s infinite;
+    }
+    .section__content-inner{
+        display: flex;
+        align-items: center;
+        row-gap: 32px;
+        column-gap: 24px;
+        flex-wrap: wrap;
+        .card--small{
+            width: calc(50% - 12px);
+            display: flex;
+            gap: 24px;
+            padding: 0;
+        }
+        @media screen and (max-width: 575px) {
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 24px;
+            .card--small{
+                width: calc(100%);
+                display: flex;
+                gap: 14px;
+                padding: 0;
+            }
+        }
+    }
+}
+//About Style 01
+
+//Working Style 01
+.working-process-section{
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65%;
+        background: url(../../assets/images/element/common-bg.png) no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    .card{
+        position: relative;
+        transition: all 0.4s;
+        padding: 36px 16px;
+        &::before{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 96%;
+            height: 96%;
+            content: "";
+            background: $cmn-bg2;
+            border-radius: 14px;
+            z-index: -1;
+        }
+        .card__icon{
+            @include box(136px);
+            border-radius: 50%;
+            box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            position: relative;
+            z-index: 0;
+            svg{
+                max-width: calc(100% - 55px);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                height: 104px;
+                width: 104px;
+                min-width: 104px;
+                border-radius: 50%;
+                box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+                border: 1px dashed $primary-color;
+            }
+            .number-bullet{
+                position: absolute;
+                top: 0;
+                right: -12px;
+                font-weight: 500;
+            }
+        }
+        &:hover{
+            background: $cmn-bg2;
+        }
+    }
+}
+.working-process--secondary{
+    &::before{
+        top: 78px;
+    }
+}
+//Working Style 01
+
+//Choose Section 01
+.choose-thumb1{
+    @media screen and (min-width: 1399px) {
+        direction: rtl;
+        margin-bottom: -120px;
+        img{
+            max-width: unset;
+        }
+    }
+}
+//Choose Section 01
+
+//Feature Section 01
+.feature-section{
     position: relative;
     .card{
+        padding: 36px 24px;
+        transition: all 0.5s;
         .card__icon{
             @include box(86px);
             background: $neutral-n-0;
@@ -27,9 +337,12 @@
             color: $neutral-n-700;
         }
         .btn_theme{
+            width: 60px;
+            height: 60px;
             margin: auto;
             margin-top: 24px;
             border: 1px solid $neutral-n-40; 
+            transform: scale(0);
             &:after{
                 transition: $transition;
                 background: white;
@@ -39,9 +352,7 @@
             }
         }
         &:hover{
-            &::after{
-                background: $primary-color;
-            }
+            background: $primary-color;
             .card__title a,
             .fs-small{
                 color: white;
@@ -50,10 +361,9 @@
                 color: $secondary-color;
             }
             .btn_theme{
-                border: 1px solid $secondary-color;
-                &:after{
-                    background: $secondary-color;
-                }
+                background: $white;
+                border-color: $white;
+                transform: scale(1);
                 &:hover{
                     i{
                         color: white;
@@ -62,23 +372,39 @@
             }
         }
     }
-    .animation{
-        img{
-            &:first-child{
-                position: absolute;
-                right: 4%;
-                top: 12%;
-                animation: pulse 7s infinite;
-            }
-            &:nth-child(2){
-                position: absolute;
-                left: 3%;
-                bottom: 7%;
-                animation: previewShapeX 5s infinite;
+    @media screen and (max-width: 1199px) {
+        .card{
+            .btn_theme{
+                width: 36px;
+                height: 36px;
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animation{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+//  index-1
+
 
 
 
@@ -277,116 +603,9 @@
     }
 }
 
-.working-process{
-    position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 65%;
-        background: $theme-secondary-bg;
-        opacity: 0.1000000015;
-        z-index: -1;
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        top: 125px;
-        right: 32px;
-        width: 221px;
-        height: 417px;
-        background:url(../images/working_process.png) no-repeat;
-        z-index: -1;
-        animation: previewShapeY 3s linear infinite;
-    }
-    
-    .card{
-        .card__icon{
-            @include box(136px);
-            border-radius: 50%;
-            box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: white;
-            position: relative;
-            z-index: 0;
-            svg{
-                max-width: calc(100% - 55px);
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                z-index: -1;
-                height: 104px;
-                width: 104px;
-                min-width: 104px;
-                border-radius: 50%;
-                box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
-                border: 1px dashed $primary-color;
-            }
-            .number-bullet{
-                position: absolute;
-                top: 0;
-                right: -12px;
-                font-weight: 500;
-            }
-        }
-    }
-}
-.working-process--secondary{
-    &::before{
-        top: 78px;
-    }
-}
 
-.about-us{
-    position: relative;
-    z-index: 0;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $theme-secondary-bg;
-        opacity: 0.1000000015;
-        z-index: -1;
-    }
-    .animation{
-        img{
-            &:first-child{
-                position: absolute;
-                right: 4%;
-                top: 12%;
-                animation: pulse 7s infinite;
-            }
-            &:nth-child(2){
-                position: absolute;
-                left: 3%;
-                bottom: 100px;
-                animation: previewShapeX 5s infinite;
-            }
-        }
-    }
-    .section__content-inner{
-        display: flex;
-        align-items: center;
-        row-gap: 32px;
-        column-gap: 24px;
-        flex-wrap: wrap;
 
-        .card--small{
-            width: calc(50% - 12px);
-            display: flex;
-            gap: 24px;
-            padding: 0;
-        }
-    }
-}
+
 
 
 
@@ -457,82 +676,6 @@
     }
     .calc_show{
         visibility: visible;
-    }
-}
-
-
-// testimonials
-.testimonials{
-    position: relative;
-    z-index: 0;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60%;
-        background: $theme-secondary-bg-rev;
-        opacity: 0.1000000015;
-        z-index: -1;
-    }
-    .card--custom{
-        background: url(../images/quote.png) no-repeat;
-        background-position: bottom 36px right 36px;
-        background-color: #fff;
-        align-items: start;
-        &::after{
-            left: 10px;
-        }
-    }
-    .testimonials__author-review .text-start{
-        font-size: 18px;
-    }
-    .testimonials__author{
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        text-align: start;
-        .testimonials__thumg{
-            img{
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-            }
-        }
-        .testimonials__content .author__title{
-            margin-bottom: 8px;
-        }
-    }
-}
-
-
-// .download-app start
-.download-app{
-    position: relative;
-    z-index: 0;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $theme-secondary-bg-rev;
-        opacity: 0.1000000015;
-        z-index: -1;
-    }
-    ul.section__content-list{
-        display: flex;
-        align-items: center;
-        row-gap: 16px;
-        column-gap: 32px;
-        flex-wrap: wrap;
-
-        li{
-            width: calc(50% - 17px);
-            gap: 24px;
-        }
     }
 }
 
