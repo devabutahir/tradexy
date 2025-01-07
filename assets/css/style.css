@@ -6393,6 +6393,18 @@ label.error {
 .testimonials .testimonials__author .testimonials__content .author__title {
   margin-bottom: 8px;
 }
+.testimonials.style2::after {
+  display: none;
+}
+.testimonials.style2 .card {
+  transition: all 0.4s;
+}
+.testimonials.style2 .card:hover {
+  background: rgba(19, 47, 89, 0.05);
+}
+.testimonials.style2 .slick-slide.slick-current.slick-active {
+  background: rgba(19, 47, 89, 0.05);
+}
 
 .traning-plan {
   position: relative;
@@ -7273,9 +7285,9 @@ label.error {
   top: 0;
   height: 100%;
   width: calc(100% - 320px);
-  background: linear-gradient(90deg, #074C3E 0%, #FCB650 100%);
+  background: url(../../assets/images/element/common-bg.png) no-repeat center center;
+  background-size: cover;
   border-radius: 16px;
-  opacity: 0.1000000015;
   z-index: -1;
 }
 .loan-solution .loan-solution__thumb {

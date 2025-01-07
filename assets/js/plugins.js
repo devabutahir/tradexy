@@ -242,6 +242,36 @@
                 ],
             });
 
+        // testimonials-slider2
+        $(".testimonials-slider2")
+            .not(".slick-initialized")
+            .slick({
+                infinite: true,
+                centerMode: true,
+                autoplay: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 1500,
+                arrows: true,
+                dots: false,
+                prevArrow: $(".prev-testimonials1"),
+                nextArrow: $(".next-testimonials1"),
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    }
+                ],
+            });
+
         // index-2
         // testimonials-secondary slider
         $(".testimonials-secondary_slider")

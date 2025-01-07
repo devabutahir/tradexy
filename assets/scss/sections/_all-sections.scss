@@ -163,6 +163,20 @@
             margin-bottom: 8px;
         }
     }
+    &.style2{
+        &::after{
+            display: none;
+        }
+        .card{
+            transition: all 0.4s;
+            &:hover{
+                background: rgba(19, 47, 89, 0.05);
+            }
+        }
+        .slick-slide.slick-current.slick-active{
+            background: rgba(19, 47, 89, 0.05);
+        }
+    }
 }
 //Testimonial 01
 
@@ -1094,9 +1108,9 @@
         top: 0;
         height: 100%;
         width: calc(100% - 320px);
-        background: $theme-secondary-bg;
+        background: url(../../assets/images/element/common-bg.png) no-repeat center center;
+        background-size: cover;
         border-radius: 16px;
-        opacity: 0.1000000015;
         z-index: -1;
     }
 
