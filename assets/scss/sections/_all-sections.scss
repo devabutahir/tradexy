@@ -323,6 +323,8 @@
     .card{
         padding: 36px 24px;
         transition: all 0.5s;
+        border: 1px solid rgba(19, 47, 89, 0.20);
+        background: rgba(19, 47, 89, 0.05);
         .card__icon{
             @include box(86px);
             background: $neutral-n-0;
@@ -349,6 +351,7 @@
             }
             i{
                 color: $primary-color;
+                font-size: 24px;
             }
         }
         &:hover{
@@ -382,6 +385,179 @@
     }
 }
 
+//Broker Section 01
+.broker-review-wrap{
+    display: grid;
+    gap: 32px;
+    .broker-review-inner{
+        padding: 24px 24px;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+        border-radius: 12px;
+        position: relative;
+        .badge{
+            padding: 8px 10px;
+            border-radius: 4px;
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            background: $secondary-color3;
+            position: absolute;
+            left: 16px;
+            top: -12px;
+        }
+    }
+    @media screen and (max-width: 1399px) {
+        .broker-review-inner{
+            padding: 24px 20px;
+        }  
+        gap: 28px;
+    }
+    @media screen and (max-width: 1199px) {
+        .broker-review-inner{
+            padding: 24px 18px;
+        } 
+        gap: 24px; 
+    }
+    @media screen and (max-width: 575px) {
+        .broker-review-inner{
+            padding: 24px 16px;
+        }  
+    }
+}
+.broker-review-item{
+    gap: 40px;
+    position: relative;
+    .broker-thumb-area{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &.style1{
+        .broker-thumb-area{
+            .thumb{
+                width: 120px;
+                min-width: 120px;
+                height: 120px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .broker-ratting-box{
+            .customer-text{
+                text-wrap: nowrap;
+            }
+        }
+        .breoker-button-area{
+            .terms{
+                text-wrap: nowrap;
+            }
+        }
+        @media screen and (max-width: 1199px) {
+            gap: 30px;
+            .broker-thumb-area{
+                .thumb{
+                    width: 80px;
+                    min-width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        @media screen and (max-width: 991px) {
+            gap: 20px;
+            flex-wrap: wrap;
+            display: grid;
+            justify-content: center;
+            .broker-thumb-area{
+                flex-wrap: wrap;
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                .thumb{
+                    width: 80px;
+                    min-width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1399px) {
+        .broker-thumb-area{
+            gap: 18px;
+        }    
+    }
+}
+.view-btn{
+    &.view-active{
+        i{
+            transform: rotate(180deg);
+            font-weight: 600;
+        }
+    }
+}
+.view-content-wrap{
+    display: none;
+    width: 100% !important;
+    min-width: 100% !important;
+    // height: 0;
+    border-radius: 8px;
+    background: rgba(7, 76, 62, 0.05);
+    padding: 24px;
+    transition: all 0.5s;
+    .cartified-cheking{
+        .line{
+            width: 1px;
+            height: 21px;
+            opacity: 0.3;
+            background: #2660B5;
+        }
+    }
+    &.active{
+        // height: 100%;
+    }
+    .view-de-title{
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+    }
+    .vie-wrap{
+        background: #fff;
+        .vie-item{
+            background: rgba(7, 76, 62, 0.05);
+            border-radius: 8px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                color: #404A60;
+                width: calc(100% / 2);
+            }
+            .rat{
+                font-weight: 500;
+            }
+            &:nth-child(even){
+                background: $neutral-n-0;
+            }
+            @media screen and (max-width: 550px) {
+                flex-wrap: wrap;
+                span{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        padding: 16px;
+        .line{
+            display: none;
+        }
+    }
+}
+//Broker Section 01
 
 
 

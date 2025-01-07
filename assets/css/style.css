@@ -723,6 +723,26 @@ h6 > a {
   background: rgba(19, 47, 89, 0.05);
 }
 
+.black-clr {
+  color: #222E48;
+}
+
+.pra-clr {
+  color: #404A60;
+}
+
+.primary-clr {
+  color: #2660B5;
+}
+
+.secondary-clr {
+  color: #FCB650 !important;
+}
+
+.secondary-clr2 {
+  color: #EB7A23 !important;
+}
+
 /* ==== 
  --------- (2.3) global styles start ---------
  ==== */
@@ -961,9 +981,6 @@ input[type=radio]:checked:before {
 }
 .star_review i {
   color: white;
-}
-.star_review .star-active {
-  color: #FCB650;
 }
 
 .card {
@@ -3275,30 +3292,6 @@ label.error {
   position: relative;
   z-index: 0;
 }
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #03211B;
-  z-index: -1;
-}
-.footer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/footer_bg.png);
-  background-color: #03211B;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  z-index: -1;
-}
 .footer .footer__title {
   color: #FFF;
 }
@@ -3341,6 +3334,14 @@ label.error {
 }
 .footer .newsletter__content-form .emailSubscribe i {
   font-size: 24px;
+}
+.footer.footer-style2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-size: cover;
+  background-position: center center;
 }
 
 .quick-link ul {
@@ -4681,116 +4682,6 @@ label.error {
     display: grid;
     justify-content: center;
   }
-}
-
-.loan-reviews_card4 {
-  gap: 30px;
-}
-@media screen and (max-width: 767px) {
-  .loan-reviews_card4 {
-    gap: 20px;
-  }
-  .loan-reviews_card4 .review-line {
-    display: none;
-  }
-  .loan-reviews_card4 .load-price-box {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-}
-@media screen and (max-width: 1399px) {
-  .loan-reviews_card4 {
-    flex-wrap: wrap !important;
-  }
-}
-.loan-reviews_card4 .view-btn.view-active i {
-  transform: rotate(180deg);
-  font-weight: 600;
-}
-.loan-reviews_card4 .view-content-wrap {
-  display: none;
-  width: 100% !important;
-  min-width: 100% !important;
-  height: 0;
-  border-radius: 8px;
-  background: rgba(7, 76, 62, 0.05);
-  padding: 24px;
-  transition: all 0.5s;
-}
-.loan-reviews_card4 .view-content-wrap.active {
-  height: 100%;
-}
-.loan-reviews_card4 .view-content-wrap .view-de-title {
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-}
-.loan-reviews_card4 .view-content-wrap .vie-wrap {
-  background: #fff;
-}
-.loan-reviews_card4 .view-content-wrap .vie-wrap .vie-item {
-  background: rgba(7, 76, 62, 0.05);
-  border-radius: 8px;
-  padding: 8px 16px;
-  display: flex;
-  align-items: center;
-}
-.loan-reviews_card4 .view-content-wrap .vie-wrap .vie-item span {
-  font-size: 14px;
-  color: #404A60;
-  width: 50%;
-}
-.loan-reviews_card4 .view-content-wrap .vie-wrap .vie-item .rat {
-  font-weight: 500;
-}
-.loan-reviews_card4 .view-content-wrap .vie-wrap .vie-item:nth-child(even) {
-  background: #FFF;
-}
-@media screen and (max-width: 550px) {
-  .loan-reviews_card4 .view-content-wrap .vie-wrap .vie-item {
-    flex-wrap: wrap;
-  }
-  .loan-reviews_card4 .view-content-wrap .vie-wrap .vie-item span {
-    width: 100%;
-  }
-}
-.loan-reviews_card4 .personal-loan-inner .personal-loan-box .pay-in {
-  width: 164px;
-  display: flex;
-  font-size: 14px;
-  align-items: center;
-  padding-right: 10px;
-}
-.loan-reviews_card4 .personal-loan-inner .personal-loan-box .pay-in::before {
-  position: absolute;
-  right: 0;
-  content: ":";
-  color: #002922;
-}
-.loan-reviews_card4 .personal-loan-inner .personal-loan-box .pay-name {
-  font-size: 14px;
-  font-weight: 500;
-}
-.loan-reviews_card4 .pra-ofset {
-  font-size: 14px;
-  color: #222E48;
-  border-top: 1px solid #DFE0E4;
-  margin-top: 16px;
-  padding-top: 20px;
-}
-@media screen and (min-width: 1199px) {
-  .loan-reviews_card4 .pra-ofset {
-    position: absolute;
-  }
-}
-
-.loan-reviews-information5 .loan-reviews_card4 .price-content p {
-  font-size: 14px;
-}
-.loan-reviews-information5 .loan-reviews_card4 .prie-line {
-  width: 1px;
-  height: 60px;
-  background: #DFE0E4;
 }
 
 .working-section4 {
@@ -6660,6 +6551,8 @@ label.error {
 .feature-section .card {
   padding: 36px 24px;
   transition: all 0.5s;
+  border: 1px solid rgba(19, 47, 89, 0.2);
+  background: rgba(19, 47, 89, 0.05);
 }
 .feature-section .card .card__icon {
   width: 86px;
@@ -6694,6 +6587,7 @@ label.error {
 }
 .feature-section .card .btn_theme i {
   color: #2660B5;
+  font-size: 24px;
 }
 .feature-section .card:hover {
   background: #2660B5;
@@ -6717,6 +6611,173 @@ label.error {
   .feature-section .card .btn_theme {
     width: 36px;
     height: 36px;
+  }
+}
+
+.broker-review-wrap {
+  display: grid;
+  gap: 32px;
+}
+.broker-review-wrap .broker-review-inner {
+  padding: 24px 24px;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  position: relative;
+}
+.broker-review-wrap .broker-review-inner .badge {
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  background: #1F783E;
+  position: absolute;
+  left: 16px;
+  top: -12px;
+}
+@media screen and (max-width: 1399px) {
+  .broker-review-wrap {
+    gap: 28px;
+  }
+  .broker-review-wrap .broker-review-inner {
+    padding: 24px 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .broker-review-wrap {
+    gap: 24px;
+  }
+  .broker-review-wrap .broker-review-inner {
+    padding: 24px 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .broker-review-wrap .broker-review-inner {
+    padding: 24px 16px;
+  }
+}
+
+.broker-review-item {
+  gap: 40px;
+  position: relative;
+}
+.broker-review-item .broker-thumb-area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.broker-review-item.style1 .broker-thumb-area .thumb {
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+}
+.broker-review-item.style1 .broker-thumb-area .thumb img {
+  width: 100%;
+  height: 100%;
+}
+.broker-review-item.style1 .broker-ratting-box .customer-text {
+  text-wrap: nowrap;
+}
+.broker-review-item.style1 .breoker-button-area .terms {
+  text-wrap: nowrap;
+}
+@media screen and (max-width: 1199px) {
+  .broker-review-item.style1 {
+    gap: 30px;
+  }
+  .broker-review-item.style1 .broker-thumb-area .thumb {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .broker-review-item.style1 {
+    gap: 20px;
+    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+  }
+  .broker-review-item.style1 .broker-thumb-area {
+    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .broker-review-item.style1 .broker-thumb-area .thumb {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .broker-review-item .broker-thumb-area {
+    gap: 18px;
+  }
+}
+
+.view-btn.view-active i {
+  transform: rotate(180deg);
+  font-weight: 600;
+}
+
+.view-content-wrap {
+  display: none;
+  width: 100% !important;
+  min-width: 100% !important;
+  border-radius: 8px;
+  background: rgba(7, 76, 62, 0.05);
+  padding: 24px;
+  transition: all 0.5s;
+}
+.view-content-wrap .cartified-cheking .line {
+  width: 1px;
+  height: 21px;
+  opacity: 0.3;
+  background: #2660B5;
+}
+.view-content-wrap .view-de-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.view-content-wrap .vie-wrap {
+  background: #fff;
+}
+.view-content-wrap .vie-wrap .vie-item {
+  background: rgba(7, 76, 62, 0.05);
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+.view-content-wrap .vie-wrap .vie-item span {
+  font-size: 14px;
+  color: #404A60;
+  width: 50%;
+}
+.view-content-wrap .vie-wrap .vie-item .rat {
+  font-weight: 500;
+}
+.view-content-wrap .vie-wrap .vie-item:nth-child(even) {
+  background: #FFF;
+}
+@media screen and (max-width: 550px) {
+  .view-content-wrap .vie-wrap .vie-item {
+    flex-wrap: wrap;
+  }
+  .view-content-wrap .vie-wrap .vie-item span {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .view-content-wrap {
+    padding: 16px;
+  }
+  .view-content-wrap .line {
+    display: none;
   }
 }
 
