@@ -398,6 +398,97 @@
         }
     }
 }
+.attain-card{
+    &.card{
+        padding: 36px 24px;
+        transition: all 0.5s;
+        border: 1px solid rgba(19, 47, 89, 0.20);
+        background: $white;
+        border-radius: 0;
+        .card__icon{
+            @include box(86px);
+            background: $neutral-n-0;
+            border: 1px solid $neutral-n-40;
+            margin: auto;
+        }
+        .card__title a,
+        .fs-small{
+            transition: 0.3s;
+        }
+        .fs-small{
+            color: $neutral-n-700;
+        }
+        .btn_theme{
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            margin-top: 24px;
+            border: 1px solid $neutral-n-40; 
+            transform: scale(0);
+            &:after{
+                transition: $transition;
+                background: white;
+            }
+            i{
+                color: $primary-color;
+                font-size: 24px;
+            }
+        }
+        &:hover{
+            background: $primary-color;
+            .card__title a,
+            .fs-small{
+                color: white;
+            }
+            .card__title a:hover{
+                color: $secondary-color;
+            }
+            .btn_theme{
+                background: $white;
+                border-color: $white;
+                transform: scale(1);
+                &:hover{
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.attain-financial-wrap{
+    @media screen and (max-width: 490px) {
+        flex-wrap: wrap;
+        gap: 14px;
+        .attain-financial-inner{
+            display: grid;
+            gap: 14px;
+        }
+    }
+    .attain-financial-inner{
+        @media screen and (min-width: 490px) {
+            .card{
+                &:first-child{
+                    border-bottom: unset !important;
+                }
+            }
+        }
+    }
+    .attain-financial-inner1{
+        @media screen and (min-width: 490px) {
+            .card{
+                &:last-child{
+                    border-right: unset;
+                }
+            }
+        }
+    }
+    .attain-financial-inner2{
+        @media screen and (min-width: 490px) {
+            margin-top: 60px;
+        }
+    }
+}
 
 //Broker Section 01
 .broker-review-wrap{
@@ -884,17 +975,6 @@
 .why-choose{
     position: relative;
     z-index: 0;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $theme-secondary-bg-rev;
-        opacity: 0.1000000015;
-        z-index: -1;
-    }
     .section__content-inner{
         display: flex;
         flex-direction: column;
@@ -910,8 +990,28 @@
             }
             .card__icon{
                 @include box(60px);
-                background: #074c3e05;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
             }
+        }
+        @media screen and (max-width: 1199px) {
+            .card{
+                gap: 16px;
+            }
+            
+        }
+    }
+}
+.choose-thumb2{
+    img{
+        max-width: unset;
+    }
+    @media screen and (max-width: 1199px) {
+        img{
+            max-width: 100%;
         }
     }
 }
