@@ -2,6 +2,19 @@
  --------- (2.3) global styles start ---------
  ==== */
 
+ .interest-badge{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    font-family: $font-primary;
+    background: $secondary-color2;
+    padding: 1px 40px;
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 7% 50%, 0% 0%);
+    position: absolute;
+    top: 0; 
+    right: 0;
+}
+
 .common-circle{
     width: 160px;
     height: 160px;

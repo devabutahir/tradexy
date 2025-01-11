@@ -182,6 +182,12 @@ h6>a {
 .headingSix {
     font-size: $font-size;
 }
+.headingSeven {
+    font-size: 16px;
+}
+.headingeight {
+    font-size: 14px;
+}
 
 // fonts 
 .font_primary {
@@ -534,6 +540,18 @@ h6>a {
   //Color & Background
   .white-bg{
     background: $white !important;
+  }
+  .white-clr{
+    color: $white !important;
+  }
+  .primary-bg{
+    background: $primary-color;
+  }
+  .secondary-bg{
+    background: $secondary-color;
+  }
+  .secondary-bg2{
+    background: $secondary-color2;
   }
   .cmn-bg1{
     background: $cmn-bg1;

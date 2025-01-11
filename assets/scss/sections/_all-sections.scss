@@ -244,6 +244,21 @@
 }
 //About Style 01
 
+//About Style 02
+.about-section02{
+    .prog-bar{
+        background: #EAEFF7;
+    }
+    @media screen and (max-width: 991px) {
+        .card--small-icon{
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+        }
+    }
+}
+//About Style 02
+
 //Working Style 01
 .working-process-section{
     position: relative;
@@ -512,6 +527,11 @@
             top: -12px;
         }
     }
+    .custom-line{
+        width: 1px;
+        height: 150px;
+        background: $neutral-n-40;
+    }
     @media screen and (max-width: 1399px) {
         .broker-review-inner{
             padding: 24px 20px;
@@ -571,6 +591,26 @@
             }
         }
         @media screen and (max-width: 991px) {
+            gap: 20px;
+            flex-wrap: wrap;
+            display: grid;
+            justify-content: center;
+            .broker-thumb-area{
+                flex-wrap: wrap;
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                .thumb{
+                    width: 80px;
+                    min-width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    &.style02{
+        @media screen and (max-width: 1199px) {
             gap: 20px;
             flex-wrap: wrap;
             display: grid;
@@ -663,6 +703,63 @@
     }
 }
 //Broker Section 01
+
+//Video Section 01
+.video-tutorail-content{
+    border-left: 1px solid $cmn-bg2;
+    .tutorial-count-wrap{
+        border-bottom: 1px solid $cmn-bg2;
+        display: flex;
+        gap: 30px;
+        padding-left: 50px;
+        .count-item{
+            .cont{
+                color: $secondary-color2;
+                font-size: 32px;
+                font-weight: 600;
+                span{
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%;
+                    color: $black;
+                }
+            }
+        }
+        .line{
+            height: 135px;
+            width: 1px;
+            background: $cmn-bg2;
+        }
+    }
+    .others-cont{
+        padding-left: 50px;
+    }
+    @media screen and (max-width: 1199px) {
+        .tutorial-count-wrap{
+            gap: 14px;
+            padding-left: 20px;
+            .count-item{
+                .cont{
+                    font-size: 22px;
+                    font-weight: 600;
+                    span{
+                        font-size: 28px;
+                    }
+                }
+            }
+            .line{
+                height: 75px;
+                width: 1px;
+                background: $cmn-bg2;
+            }
+        }
+        .others-cont{
+            padding-left: 20px;
+        }
+    }
+}
+//Video Section 01
 
 
 
@@ -1092,6 +1189,97 @@
             .card__content{
                 text-align: start;
             }
+        }
+    }
+}
+
+//Trades Singnals
+.tradex-single-wrapper{
+    display: flex;
+    .line-step{
+        width: 1px;
+        height: 278px;
+        background: $neutral-n-50;
+    }
+    .tradex-single-item{
+        width: 100%;
+        transition: all 0.5s;
+        .step{
+            margin-bottom: 130px;
+        }
+        .boxes{
+            transition: all 0.5s;
+            padding: 24px 14px;
+            border-radius: 100px;
+            .icon{
+                width: 80px;
+                height: 80px;
+                min-width: 80px;
+                margin: -60px auto 18px;
+                img{
+                    width: 40px;
+                }
+            }
+        }
+        &:hover{
+            .boxes{
+                background: $primary-color;
+                h4{
+                    a{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        .tradex-single-item{
+            .step{
+                margin-bottom: 50px;
+                text-align: center !important;
+            }
+            .boxes{
+                .icon{
+                    width: 65px;
+                    height: 65px;
+                    min-width: 65px;
+                    img{
+                        width: 29px;
+                    }
+                }
+            }
+        }
+        .line-step{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+        .tradex-single-item{
+            .step{
+                margin-bottom: 50px;
+                text-align: center !important;
+            }
+            .boxes{
+                .icon{
+                    width: 65px;
+                    height: 65px;
+                    min-width: 65px;
+                    img{
+                        width: 29px;
+                    }
+                }
+            }
+        }
+        .line-step{
+            display: none;
         }
     }
 }
