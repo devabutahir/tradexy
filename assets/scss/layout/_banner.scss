@@ -171,7 +171,6 @@
         }
     }
 }
-
 // index-2
 .hero--secondary{  
     padding-top: 170px;
@@ -227,12 +226,141 @@
         }
     }
 }
-
-
-
-
-
-
+//..Hero3
+.hero-version3{
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        background: none;
+        background: url(../../assets/images/hero/hero-bg3.png) no-repeat center center;
+        background-size: cover;
+        opacity: 1;
+        z-index: -1;
+    }
+    .section__content{
+        padding-bottom: 85px;
+        padding-top: 60px;
+        p{
+            font-weight: 400;
+        }
+    }
+    .loan-tabbing-wrap{
+        gap: 24px;
+        justify-content: center;
+        // margin-bottom: -80px;
+        position: relative;
+        z-index: 1;
+        .loan-tab-items{
+            background: $white;
+            padding: 24px 16px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.4s;
+            overflow: hidden;
+            position: relative;
+            width: calc(90% / 4);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            .box-inner{
+                background: $secondary-color2;
+                width: 100%;
+                height: 0%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.5s;
+                opacity: 0;
+                .mortgage-icon{
+                    background: $primary-color;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    transition: all 0.5s;
+                    i{
+                        font-size: 16px;
+                        color: $white;
+                    }
+                }
+            }
+            .loan-thumb{
+                margin-bottom: 12px;
+                transition: all 0.4s;
+            }
+            &:hover{
+                .box-inner{
+                    left: 0;
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                }
+                background: $secondary-color2;
+            }
+        }
+    }
+    @media screen and (max-width:1199px ) {
+        padding-top: 140px;
+        .section__content{
+            padding-top: 20px;
+            padding-bottom: 65px;
+        }
+        .loan-tabbing-wrap{
+            gap: 14px;
+            .loan-tab-items{
+                padding: 24px 12px;
+                width: calc(90% / 4);
+                h4{
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px){
+        .loan-tabbing-wrap{
+            margin-bottom: -0px;
+            padding-bottom: 70px;
+            gap: 14px;
+            .loan-tab-items{
+                padding: 24px 12px;
+                width: calc(90% / 3);
+            }
+        }
+    }
+    @media screen and (max-width: 767px){
+        .section__content{
+            padding-top: 0px;
+        }
+        .loan-tabbing-wrap{
+            gap: 14px;
+            .loan-tab-items{
+                padding: 24px 12px;
+                width: calc(90% / 2);
+            }
+        }
+    }
+    @media screen and (max-width: 450px){
+        .loan-tabbing-wrap{
+            .loan-tab-items{
+                padding: 24px 12px;
+                width: calc(100%);
+            }
+        }
+    }
+}
+@keyframes zom {
+    50%{
+        transform: scale(1.02);
+    }
+}
 // banner section
 .banner{  
     width: 100%;
@@ -341,8 +469,6 @@
         }
     }
 }
-
-
 @media (max-width: 1199px) {
     .hero {
         .hero__thumb{
@@ -378,7 +504,6 @@
         height: auto;
     }
 }
-
 @media (max-width: 991px) {
     .hero {
         .btn-group{
@@ -427,7 +552,6 @@
         height: auto;
     }
 }
-
 @media (max-width: 767px) {
     .hero {
         .hero__thumb{
@@ -448,7 +572,6 @@
     
     }
 }
-
 @media (max-width: 575px) {
     .hero {
         .hero__thumb{
@@ -474,7 +597,6 @@
         display: none;
     }
 }
-
 @media (max-width: 479px) {
     .hero {
         .hero__thumb{
@@ -511,7 +633,6 @@
         }
     }
 }
-
 @media (max-width: 372px) {
     .hero .btn_theme{
         width: 100%;

@@ -1,5 +1,5 @@
 /* ==== 
- --------- (4.3) footer styles start ---------
+ --------- (000) footer styles start ---------
  ==== */
 
 .footer{  
@@ -57,7 +57,6 @@
         background-position: center center;
     }
 }
-
 .quick-link ul{
     display: flex;
     flex-direction: column;
@@ -70,7 +69,6 @@
         }     
     } 
 } 
-
 .footer__copyright{
     padding: 30px 0;
     border-top: 1px solid #ffffff1e;
@@ -91,8 +89,6 @@
         }   
     } 
 }
-
-
 .footer-secondary{
     &::before,
     &::after{
@@ -139,6 +135,21 @@
     }
     .footer__copyright{
         justify-content: center;
+    }
+}
+
+//Footer Version 03
+.tradexy-company-footer{
+    max-width: 366px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 10px;
+    margin-left: auto;
+    .boxes{
+        max-width: 286px;
+        text-align: center;
+    }
+    @media screen and (max-width: 991px) {
+        
     }
 }
 

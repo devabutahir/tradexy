@@ -518,7 +518,7 @@
             padding: 8px 10px;
             border-radius: 4px;
             color: $white;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 150%;
             background: $secondary-color3;
@@ -535,6 +535,10 @@
     @media screen and (max-width: 1399px) {
         .broker-review-inner{
             padding: 24px 20px;
+            .badge{
+                padding: 6px 10px;
+                font-size: 12px;
+            }
         }  
         gap: 28px;
     }
@@ -761,6 +765,31 @@
 }
 //Video Section 01
 
+//--Faq
+.load-faq-tabs{
+    border: 1px solid $neutral-n-30;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    li{
+        .nav-link{
+            border: 1px solid $neutral-n-30;
+            background: rgba(7, 76, 62, 0.05);
+            border-radius: 32px;
+            font-size: 16px;
+            font-weight: 500;
+            color: $neutral-n-700;
+            padding: 12px 20px;
+            &.active{
+                background: $primary-color;
+                color: #fff !important;
+                font-size: 16px;
+            }
+        }
+    }
+}
 
 
 
