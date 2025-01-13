@@ -426,6 +426,191 @@
     }
 }
 
+//Hero Version4
+.hero-version4{
+    padding-top: 160px;
+    .hero-content4{
+        margin-bottom: 60px;
+        h1{
+            font-size: 122px;
+            font-weight: 800;
+        }
+        h2{
+            span{
+                color: $secondary-color2;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+    .hero4-homeloan-wrap{
+        background: #fff;
+        box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+        padding: 20px;
+        border-radius: 12px;
+        .title{
+            color: #222E48;
+            margin-bottom: 22px;
+        }
+        .home-loan-items{
+            border-radius: 8px;
+            border: 1px solid rgba(7, 76, 62, 0.10);
+            background: rgba(7, 76, 62, 0.05);
+            padding: 24px 24px;
+            text-align: center;
+            img{
+                width: 64px;
+                height: 64px;
+                object-fit: contain;
+                margin: 0 auto 16px;
+            }
+            h4{
+                color: #222E48;
+                font-size: 18px;
+            }
+        }
+        .slider-navigation{
+            display: flex;
+            justify-content: space-between;
+            width: 105%;
+            position: absolute;
+            top: 40%;
+            left: -20px;
+            transform: translateY(-50%);
+            z-index: 1;
+            button{
+                background: #fff;
+                border-color: #fff;
+                &:hover{
+                    background: $primary-color;
+                    border-color: $primary-color;
+                }
+            }
+        }
+        @media screen and (max-width: 1399px) {
+            .home-loan-items{
+                padding: 20px 12px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto 12px;
+                }
+                h4{
+                    font-size: 16px;
+                }
+            }
+            .slick-slide{
+                margin: 0 6px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            .slider-navigation{
+                width: initial !important;
+                position: initial;
+                justify-content: center;
+                top: 44%;
+                left: 12px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .slick-slide {
+        margin: 0px 8px;
+    }
+    @media screen and (max-width: 1599px) {
+        .hero-content4{
+            margin-bottom: 60px;
+            h1{
+                font-size: 96px;
+                font-weight: 800;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .hero4-homeloan-wrap{
+            margin-bottom: 70px;
+        }
+    }
+    @media screen and (max-width: 1399px) {
+        padding-top: 160px;
+        .hero-content4{
+            margin-bottom: 50px;
+            h1{
+                font-size: 78px;
+                font-weight: 800;
+            }
+            h2{
+                font-size: 29px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        padding-top: 140px;
+        .hero4-homeloan-wrap{
+            margin: 0 24px 30px 24px;
+        }
+        .slider-navigation{
+            button{
+                background: #ebebeb !important;
+                &:hover{
+                    background: $primary-color !important;
+                    border-color: $primary-color !important;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .hero-content4{
+            margin-bottom: 40px;
+            h1{
+                font-size: 58px;
+                font-weight: 800;
+            }
+            h2{
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding-top: 120px;
+        .hero4-homeloan-wrap{
+            margin: 0 2px 30px 2px;
+        }
+        .hero-content4{
+            margin-bottom: 40px;
+            h1{
+                font-size: 42px;
+                font-weight: 800;
+            }
+            h2{
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.hero-thumb4{
+    padding-left: 20px;
+    position: relative;
+}
+@keyframes zomin {
+    50%{
+        transform: scale(1.05);
+    }
+}
+
 
 @media (max-width: 1850px) {
     .hero .hero__animation img:nth-child(4) {
