@@ -4358,6 +4358,7 @@ label.error {
 .about-progress {
   margin-top: 48px;
   margin-bottom: 65px;
+  color: rgb(38, 96, 181);
 }
 .about-progress .test {
   color: #222E48;
