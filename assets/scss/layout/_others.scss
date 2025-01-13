@@ -382,9 +382,10 @@
             .icon{
                 width: 54px;
                 height: 54px;
-                background: $secondary-color;
+                background: $secondary-color2;
                 i{
                     font-size: 22px;
+                    color: $white;
                 }
             }
             .cont{
@@ -736,42 +737,7 @@
 
 
 //Working Process
-.working-section4{
-    background: url(../../assets/images/footer/footer4-bg.png) no-repeat center center;
-    background-size: cover;
-    padding: 120px 0 120px;
-    .section__header{
-        max-width: 740px;
-        h2{
-            font-size: 54px;
-        }
-        .section__header-sub-title{
-            color: $secondary-color;
-        }
-        .section__header-title{
-            color: $neutral-n-0;
-        }
-        p{
-            color: $neutral-n-0;
-        }
-    }
-    @media screen and (max-width: 991px) {
-        padding: 80px 0;
-        .section__header{
-            max-width: 700px;
-            h2{
-                font-size: 39px;
-            }
-        }
-    }
-    @media screen and (max-width: 575px) {
-        .section__header{
-            max-width: 700px;
-            h2{
-                font-size: 32px;
-            }
-        }
-    }
+.working-section{
     &.testimonial4{
         position: relative;
         z-index: 1;
@@ -846,16 +812,18 @@
             .icon{
                 width: 80px;
                 height: 80px;
-                border: 1px solid rgba(252, 182, 80, 0.50);
-                background: rgba(255, 255, 255, 0.10);
+                border: 1px dashed $white;
+                background: $primary-color;
                 margin-bottom: 32px;
                 img{
+                    filter: brightness(25);
                     transition: all 0.5s;
+                    width: 45px;
                 }
             }
            .cont{
             h3,p{
-                color: $neutral-n-0;
+                color: $black;
             }
            } 
            &:hover{
@@ -925,46 +893,6 @@
             flex-wrap: wrap;
         }
     }
-    .working-thumb4{
-        max-width: 526px;
-        animation: updown3 2s linear infinite;
-        overflow: hidden;
-        .mimg{
-            width: 100%;
-        }
-        @keyframes updown3 {
-            50%{
-                transform: translateY(10px);
-            }
-        }
-        .loan-bag{
-            animation: updown3 2s linear infinite;
-            top: 16px;
-            left: 16px;
-            width: 80px;
-            height: 80px;
-        }
-        .loan-sine{
-            animation: leftright 2s linear infinite;
-            right: 30px;
-            top: 60px;
-            width: 80px;
-        }
-        .loan-handeling{
-            animation: leftright 2s linear infinite;
-            bottom: 9px;
-            right: -16px;
-            width: 100px;
-            height: 80px;
-        }
-        .loan-agency{
-            animation: leftright 2s linear infinite;
-            bottom: 9px;
-            left: -16px;
-            width: 100px;
-            height: 80px;
-        }
-    }
     @keyframes leftright {
         50%{
             transform: translateX(-10px);
@@ -972,15 +900,26 @@
     }
     @media screen and (max-width: 991px) {
         display: grid;
-        .working-thumb4{
-            max-width: 526px;
-            margin: 0 auto;
-            .mimg{
-                width: 100%;
-            }
-        }
     }
 }
+
+.working-video-area{
+    max-width: 526px;
+    height: 490px;
+    overflow: hidden;
+    margin: 0 auto;
+    video{
+        object-fit: cover;
+    }
+    @media screen and (max-width: 1199px) {
+        max-width: 400px;
+        height: 450px;
+    }
+    @media screen and (max-width: 991px) {
+        max-width: 400px;
+        height: 380px;
+    }
+  }
 
 //Step Process 
 .step-process-item{

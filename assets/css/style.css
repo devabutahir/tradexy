@@ -4447,10 +4447,11 @@ label.error {
 .about-mission-vission .mission-body .mission-more .icon {
   width: 54px;
   height: 54px;
-  background: #FCB650;
+  background: #EB7A23;
 }
 .about-mission-vission .mission-body .mission-more .icon i {
   font-size: 22px;
+  color: #ffffff;
 }
 .about-mission-vission .mission-body .mission-more .cont span {
   color: #222E48;
@@ -4797,56 +4798,17 @@ label.error {
   }
 }
 
-.working-section4 {
-  background: url(../../assets/images/footer/footer4-bg.png) no-repeat center center;
-  background-size: cover;
-  padding: 120px 0 120px;
-}
-.working-section4 .section__header {
-  max-width: 740px;
-}
-.working-section4 .section__header h2 {
-  font-size: 54px;
-}
-.working-section4 .section__header .section__header-sub-title {
-  color: #FCB650;
-}
-.working-section4 .section__header .section__header-title {
-  color: #FFF;
-}
-.working-section4 .section__header p {
-  color: #FFF;
-}
-@media screen and (max-width: 991px) {
-  .working-section4 {
-    padding: 80px 0;
-  }
-  .working-section4 .section__header {
-    max-width: 700px;
-  }
-  .working-section4 .section__header h2 {
-    font-size: 39px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .working-section4 .section__header {
-    max-width: 700px;
-  }
-  .working-section4 .section__header h2 {
-    font-size: 32px;
-  }
-}
-.working-section4.testimonial4 {
+.working-section.testimonial4 {
   position: relative;
   z-index: 1;
   background: transparent;
   background-color: #F2F3F3;
 }
-.working-section4.testimonial4 .section__header {
+.working-section.testimonial4 .section__header {
   z-index: 1;
   position: relative;
 }
-.working-section4.testimonial4::before {
+.working-section.testimonial4::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -4856,7 +4818,7 @@ label.error {
   background: url(../../assets/images/footer/footer4-bg.png) no-repeat center center;
   background-size: cover;
 }
-.working-section4.testimonial4 .card {
+.working-section.testimonial4 .card {
   padding: 24px 24px;
   background: #FFF;
   border: unset;
@@ -4865,32 +4827,32 @@ label.error {
   gap: 0;
   margin-bottom: 40px;
 }
-.working-section4.testimonial4 .card .author__thumg {
+.working-section.testimonial4 .card .author__thumg {
   text-align: start;
   width: 60px;
   height: 60px;
   margin-bottom: -60px;
 }
-.working-section4.testimonial4 .card .author__thumg img {
+.working-section.testimonial4 .card .author__thumg img {
   border-radius: 50%;
 }
-.working-section4.testimonial4 .card .author__desi {
+.working-section.testimonial4 .card .author__desi {
   margin-bottom: 0;
 }
-.working-section4.testimonial4 .card .element-quote {
+.working-section.testimonial4 .card .element-quote {
   width: 48px;
   height: 48px;
   -o-object-fit: contain;
      object-fit: contain;
   opacity: 0.15;
 }
-.working-section4.testimonial4 .card::after {
+.working-section.testimonial4 .card::after {
   display: none;
 }
-.working-section4.testimonial4 .card .star_review i {
+.working-section.testimonial4 .card .star_review i {
   font-size: 19px;
 }
-.working-section4.testimonial4 .card p {
+.working-section.testimonial4 .card p {
   font-size: 18px;
   margin-bottom: 32px;
 }
@@ -4912,15 +4874,17 @@ label.error {
 .working-wrapper4 .working-inner .working-items .icon {
   width: 80px;
   height: 80px;
-  border: 1px solid rgba(252, 182, 80, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px dashed #ffffff;
+  background: #2660B5;
   margin-bottom: 32px;
 }
 .working-wrapper4 .working-inner .working-items .icon img {
+  filter: brightness(25);
   transition: all 0.5s;
+  width: 45px;
 }
 .working-wrapper4 .working-inner .working-items .cont h3, .working-wrapper4 .working-inner .working-items .cont p {
-  color: #FFF;
+  color: #000000;
 }
 .working-wrapper4 .working-inner .working-items:hover .icon img {
   transform: rotate(10deg);
@@ -4985,46 +4949,6 @@ label.error {
     flex-wrap: wrap;
   }
 }
-.working-wrapper4 .working-thumb4 {
-  max-width: 526px;
-  animation: updown3 2s linear infinite;
-  overflow: hidden;
-}
-.working-wrapper4 .working-thumb4 .mimg {
-  width: 100%;
-}
-@keyframes updown3 {
-  50% {
-    transform: translateY(10px);
-  }
-}
-.working-wrapper4 .working-thumb4 .loan-bag {
-  animation: updown3 2s linear infinite;
-  top: 16px;
-  left: 16px;
-  width: 80px;
-  height: 80px;
-}
-.working-wrapper4 .working-thumb4 .loan-sine {
-  animation: leftright 2s linear infinite;
-  right: 30px;
-  top: 60px;
-  width: 80px;
-}
-.working-wrapper4 .working-thumb4 .loan-handeling {
-  animation: leftright 2s linear infinite;
-  bottom: 9px;
-  right: -16px;
-  width: 100px;
-  height: 80px;
-}
-.working-wrapper4 .working-thumb4 .loan-agency {
-  animation: leftright 2s linear infinite;
-  bottom: 9px;
-  left: -16px;
-  width: 100px;
-  height: 80px;
-}
 @keyframes leftright {
   50% {
     transform: translateX(-10px);
@@ -5034,12 +4958,28 @@ label.error {
   .working-wrapper4 {
     display: grid;
   }
-  .working-wrapper4 .working-thumb4 {
-    max-width: 526px;
-    margin: 0 auto;
+}
+
+.working-video-area {
+  max-width: 526px;
+  height: 490px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.working-video-area video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1199px) {
+  .working-video-area {
+    max-width: 400px;
+    height: 450px;
   }
-  .working-wrapper4 .working-thumb4 .mimg {
-    width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .working-video-area {
+    max-width: 400px;
+    height: 380px;
   }
 }
 
@@ -6296,6 +6236,33 @@ label.error {
   }
 }
 
+.about-thumbv5 {
+  direction: rtl;
+  margin-right: -50px;
+}
+@media screen and (max-width: 1399px) {
+  .about-thumbv5 {
+    margin-right: 0;
+    margin-left: -50px;
+    direction: rtl;
+    width: 100%;
+  }
+  .about-thumbv5 img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about-thumbv5 {
+    margin-right: 0;
+    margin-left: 0px;
+    direction: rtl;
+    width: 100%;
+  }
+  .about-thumbv5 img {
+    width: 100%;
+  }
+}
+
 .working-process-section {
   position: relative;
   z-index: 1;
@@ -6560,6 +6527,9 @@ label.error {
   position: absolute;
   left: 16px;
   top: -12px;
+}
+.broker-review-wrap .broker-review-inner.style4 .broker-review-item .cont {
+  max-width: 314px;
 }
 .broker-review-wrap .custom-line {
   width: 1px;

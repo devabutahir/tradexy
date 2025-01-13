@@ -259,6 +259,31 @@
 }
 //About Style 02
 
+//About Style 04
+.about-thumbv5{
+    direction: rtl;
+    margin-right: -50px;
+    @media  screen and (max-width: 1399px) {
+        margin-right: 0;
+        margin-left: -50px;
+        direction: rtl;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    @media  screen and (max-width: 991px) {
+        margin-right: 0;
+        margin-left: 0px;
+        direction: rtl;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+//About Style 04
+
 //Working Style 01
 .working-process-section{
     position: relative;
@@ -525,6 +550,13 @@
             position: absolute;
             left: 16px;
             top: -12px;
+        }
+        &.style4{
+            .broker-review-item{
+                .cont{
+                    max-width: 314px;
+                }
+            }
         }
     }
     .custom-line{
