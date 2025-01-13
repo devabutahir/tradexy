@@ -1718,23 +1718,7 @@
 
 //frequently-asking
 .faq-thumb4{
-    max-width: 475px;
-    margin: 0 auto;
-    .mimg{
-        width: 100%;
-    }
-    .faq-load-ele{
-        position: absolute;
-        top: 0;
-        left: -60px;
-        animation: updown 2s linear infinite;
-    }
-    .faq-home-ele{
-        position: absolute;
-        bottom: 140px;
-        left: -50px;
-        animation: updown 2s linear infinite;
-    }
+    direction: rtl;
 }
 .frequently-asking{
     .accordion-item{

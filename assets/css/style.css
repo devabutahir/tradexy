@@ -5718,23 +5718,7 @@ label.error {
 }
 
 .faq-thumb4 {
-  max-width: 475px;
-  margin: 0 auto;
-}
-.faq-thumb4 .mimg {
-  width: 100%;
-}
-.faq-thumb4 .faq-load-ele {
-  position: absolute;
-  top: 0;
-  left: -60px;
-  animation: updown 2s linear infinite;
-}
-.faq-thumb4 .faq-home-ele {
-  position: absolute;
-  bottom: 140px;
-  left: -50px;
-  animation: updown 2s linear infinite;
+  direction: rtl;
 }
 
 .frequently-asking .accordion-item .accordion-header .accordion-button {
@@ -6159,6 +6143,56 @@ label.error {
 }
 .testimonials.style2 .slick-slide.slick-current.slick-active {
   background: rgba(19, 47, 89, 0.05);
+}
+.testimonials.style4 {
+  position: relative;
+  z-index: 1;
+}
+.testimonials.style4::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  content: "";
+  background: url(../../assets/images/element/testimonial-bg4.png) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+.testimonials.style4::after {
+  display: none;
+}
+.testimonials.style4 .card--custom {
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+  border: unset;
+  border-left: 3px solid #EB7A23;
+  margin-bottom: 34px;
+}
+.testimonials.style4 .card--custom .testimonials__author {
+  margin-bottom: -65px;
+}
+.testimonials.style4 .card--custom .author__thumg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .testimonials.style4 .card--custom {
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+    border: unset;
+    border-left: 1px solid #EB7A23;
+    margin-bottom: 14px;
+  }
+  .testimonials.style4 .card--custom .testimonials__author {
+    margin-bottom: 0px;
+  }
+  .testimonials.style4 .card--custom .author__thumg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
 
 .traning-plan {
