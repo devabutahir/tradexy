@@ -1539,62 +1539,50 @@
     <!-- faq end -->
 
     <!-- Footer Area Start -->
-    <footer class="footer-section5 position-relative">
+    <footer class="footer footer-section5 position-relative">
         <div class="container">
-            <div class="footer-top">
+            <div class="subscribe-wrapper5 newsletter d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-lg-between justify-content-center gap-3">
+                <h2 class="white-clr fw-normal text-lg-start text-center">Subscribe to our newsletter for the latest updates</h2>
+                <form method="POST" autocomplete="off" id="frmSubscribe" class="newsletter__content-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="sMail" name="sMail" placeholder="Email Address" required>
+                        <button type="submit" class="emailSubscribe btn_theme btn_theme_active py-2 px-3 border-0" name="emailSubscribe" id="emailSubscribe"><i class="bi bi-cursor fs-small"></i> <span></span></button>
+                    </div>
+                    <span id="subscribeMsg"></span>
+                </form>
+            </div>
+            <div class="footer-top section">
                 <div class="row g-4 justify-content-between">
-                    <div class="col-lg-5">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__contact wow fadeInUp" data-wow-duration="0.8s">
-                            <h4 class="footer__title mb-4">Contact</h4>
-                            <div class="footer__content d-flex flex-lg-nowrap flex-wrap flex-lg-column">
-                                <a href="tel:+1-234-567-891" class="mb-xl-4 mb-3">
+                            <h4 class="footer__title text-white mb-4">Contact</h4>
+                            <div class="footer__content d-grid gap-3">
+                                <a href="tel:+1-234-567-891">
                                     <span class="btn_theme social_box">
                                         <i class="bi bi-telephone-plus"></i>
                                     </span> 
-                                    </span>
+                                    <span class="white-clr">
                                         (209) 555-0104 <br> (316) 555-0116
-                                    <span>
+                                    </span>
                                 </a> 
-                                <a href="mailto:info@example.com" class="mb-xl-4 mb-3">
+                                <a href="mailto:info@example.com">
                                     <span class="btn_theme social_box">
                                         <i class="bi bi-envelope-open"></i> 
                                     </span> 
-                                    </span> info@gmail.com <br> example@gmail.com <span>
+                                    <span class="white-clr"> info@gmail.com <br> example@gmail.com </span>
                                 </a> 
                                 <a href="#">
                                      <span class="btn_theme social_box">
                                         <i class="bi bi-geo-alt"></i>
                                     </span>
-                                    <span>
+                                    <span class="white-clr">
                                         2118 Thornridge Cir. Syracuse, <br> Connecticut 35624
                                     </span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 order-2 order-md-0">
-                        <div class="footer5-widget">
-                            <h4 class="footer__title text-white mb-xl-4 mb-3">Home Link</h4>
-                            <ul class="page-linking d-grid gap-xxl-3 gap-2">
-                                <li><a href="index.html" class="text-white fs-seven">Home 01</a></li>
-                                <li><a href="index.html" class="text-white fs-seven">Home 02</a></li>
-                                <li><a href="index.html" class="text-white fs-seven">Home 03</a></li>
-                                <li><a href="index.html" class="text-white fs-seven">Home 04</a></li>
-                                <li><a href="index.html" class="text-white fs-seven">Home 05</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer5-widget mt-md-5 mt-4">
-                            <h4 class="footer__title text-white mb-xl-4 mb-3">Details Link</h4>
-                            <ul class="d-grid gap-xxl-3 gap-2">
-                                <li><a href="service-details.html" class="text-white">Service Details</a></li>
-                                <li><a href="loan-reviews-details.html" class="text-white">Loan Review Details</a></li>
-                                <li><a href="blog-details.html" class="text-white">Blog Details</a></li>
-                                <li><a href="contact.html" class="text-white">Terms & Conditions</a></li>
-                                <li><a href="contact.html" class="text-white">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 order-3 order-md-0">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer5-widget">
                             <h4 class="footer__title text-white mb-xl-4 mb-3">Quick Link</h4>
                             <ul class="d-grid gap-xxl-3 gap-2">
@@ -1605,7 +1593,9 @@
                                 <li><a href="blog.html" class="text-white">Blog</a></li>
                             </ul>
                         </div>
-                        <div class="footer5-widget mt-md-5 mt-4">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer5-widget">
                             <h4 class="footer__title text-white mb-xl-4 mb-3">More Link</h4>
                             <ul class="page-linking d-grid gap-xxl-3 gap-2">
                                 <li><a href="contact.html" class="text-white fs-seven">Contact Us</a></li>
@@ -1616,13 +1606,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 order-1">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="finview5-logo-area mb-md-0 mb-3">
-                            <a href="#" class="flogo mb-xl-4 mb-3"><img src="assets/images/logo-light.png" alt="img"></a>
-                            <p class="text-white">Welcome to Finview, your trusted resource for financial loan reviews and comparisons. Our dedicated team of experts analyzes</p>
-                            <div class="social-area">
-                                <h4 class="text-white">Follow Us</h4>
-                                <div class="social flex-wrap mt_20">
+                            <a href="#" class="flogo mb-md-4 mb-3"><img src="assets/images/logo/logo-light.png" alt="img"></a>
+                            <p class="text-white">TRADEXY is a comprehensive platform designed to empower traders at every level. TRADEXY provides the tools.</p>
+                            <div class="social-area mt_20">
+                                <div class="social flex-wrap">
                                     <a href="#" class="btn_theme social_box"><i class="bi bi-facebook"></i></a>
                                     <a href="#" class="btn_theme social_box"><i class="bi bi-twitter"></i></a>
                                     <a href="#" class="btn_theme social_box"><i class="bi bi-pinterest"></i></a>
@@ -1635,9 +1624,16 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom text-white text-xl-end text-center py-lg-4 py-3">
+        <div class="footer-bottom text-white py-lg-4 py-3">
             <div class="container">
-                <p>Copyright &copy;2024 <a href="index.html">FINVIEW.</a> Designed By <a href="https://themeforest.net/user/pixelaxis">Pixelaxis</a></p>
+                <div class="footer__copyright gap-2 pt-0 pb-0 border-0">
+                    <p class="copyright text-center">Copyright &copy; <span id="copyYear"></span> <a href="#" class="secondary_color">Tredexy</a>. Designed By <a href="#" class="secondary_color">Pixelaxis</a></p>
+                    <ul class="footer__copyright-conditions">
+                        <li><a href="contact.html" class="white-clr">Help & Support</a></li>
+                        <li><a href="#" class="white-clr">Privacy policy</a></li>
+                        <li><a href="#" class="white-clr">Terms & Conditions</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
