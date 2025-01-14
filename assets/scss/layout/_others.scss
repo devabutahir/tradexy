@@ -485,23 +485,34 @@
 .about-content5{
     .mission-content{
         margin-bottom: 40px;
+        .mission-list{
+            display: grid;
+            gap: 12px 14px;
+            grid-template-columns: repeat(2, 1fr);
+            @media screen and (max-width: 500px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 9px 14px;
+                margin-top: 20px;
+            }
+        }
     }
     .mission-more{
         .icon{
-            background: $secondary-color;
+            background: $secondary-color2;
             width: 54px;
             height: 54px;
             i{
                 font-size: 22px;
+                color: $white;
             }
         }
         .cont{
             span{
                 font-size: 16px;
-                color: $neutral-n-0;
+                color: $neutral-n-700;
             }
             a{
-                color: $neutral-n-0;
+                color: $neutral-n-700;
                 font-size: 18px;
                 font-weight: 500;
             }
@@ -935,12 +946,15 @@
             height: 64px;
             background: $neutral-n-0;
             border-radius: 8px;
+            img{
+                width: 40px;
+            }
         }
     }
     .badge{
         font-size: 120px;
         font-weight: 600;
-        color: rgb(7, 76, 62, 0.3);
+        color: rgb(38, 96, 181, 0.3);
         position: absolute;
         top: -130px;
         left: 10px;
@@ -965,9 +979,9 @@
     }
 }
 .have-account{
-    background: rgba(0, 41, 34, 0.05);
+    border: 1px solid rgba(235, 122, 35, 0.20);
+    background: rgba(235, 122, 35, 0.05);
     border-radius: 12px;
-    border: 1px solid #DFE;
     padding: 20px 24px;
     margin-top: 40px;
 }
@@ -1306,6 +1320,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         img{
+            width: 72px;
+            height: 72px;
             &:nth-child(1){
                 animation: leftright 2s linear infinite;
             }
@@ -1662,23 +1678,39 @@
 
 //Faq Style 5
 .faq-thumb5{
-    direction: rtl;
-    img{
-        max-width: unset;
+    z-index: 1;
+    .faq-thumb-small{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 2px solid $white;
+        border-radius: 50%;
+        animation: zomin 2s linear infinite;
     }
-    @media screen and (max-width: 1199px) {
-        width: 100%;
-        img{
-            width: 100%;
-            max-width: 100%;
-        }
+    .rocket-ele{
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        z-index: -1;
+        animation: rots 3s linear infinite;
     }
-    @media screen and (max-width: 991px) {
-        max-width: 400px;
-        margin: 0 auto;
-        img{
-            width: 100%;
+    @media screen and (max-width: 480px) {
+        .faq-thumb-small{
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 120px;
         }
+        .rocket-ele{
+            bottom: -0px;
+            right: 0;
+            width: 200px;
+        }  
+    }
+}
+@keyframes rots {
+    50%{
+        transform: rotate(10deg);
     }
 }
 

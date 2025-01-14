@@ -77,6 +77,16 @@ a.conditions_apply{
             height: 220px;
         }
     }
+    &.style2{
+        background: $secondary-color2;
+        border-color: $secondary-color2;
+        &::after{
+            background: $secondary-color2;
+        }
+        &:hover{
+            background: transparent;
+        }
+    }
 }    
 .btn_theme_active {
     color: white;
