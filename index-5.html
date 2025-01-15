@@ -45,17 +45,16 @@
     </div>
 
     <!--header-section start-->
-    <header class="header-section header-version3">
+    <header class="header-section header-version5 header-light">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo-light.png" class="logo" alt="logo"></a>
                         <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="bi bi-list"></i>
                         </a>
-
-                        <div class="collapse navbar-collapse ms-auto " id="navbar-content">
+                        <div class="collapse navbar-collapse me-auto " id="navbar-content">
                             <div class="main-menu d-flex align-items-center">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
@@ -95,35 +94,36 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact.html">Contact us</a>
                                     </li>
+                                    <form action="#" class="header-fiffrent-form d-xxl-flex d-none">
+                                        <input type="text" placeholder="Search" required>
+                                        <button type="submit" class="search_icon"><i class="bi bi-search white-clr"></i></button>
+                                    </form>
                                 </ul>
-                                <div class="nav-right d-none d-xl-block">
-                                    <div class="nav-right__search">
-                                        <form action="#" class="header-fiffrent-form d-xxl-flex d-none">
-                                            <input type="text" placeholder="Search" required>
+                            </div>
+                        </div>
+                        <div class="nav-right border-0 p-0 d-none d-xl-block">
+                            <div class="nav-right__search">
+                                
+                                <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white d-xxl-none"> <i class="bi bi-search"></i> <span></span> </a>    
+                                <div class="language-box style2 d-flex align-items-center justify-content-center position-relative">
+                                    <select name="language">
+                                        <option value="1">En</option>
+                                        <option value="2">Es</option>
+                                        <option value="3">Hy</option>
+                                        <option value="3">De</option>
+                                    </select>
+                                    <i class="bi bi-globe icon white-clr"></i>
+                                </div>
+                                <a href="contact.html" class="btn_theme style2 btn_theme_active">Contact Us <i class="bi bi-arrow-up-right"></i><span></span></a>
+                            </div>
+                            <div class="nav-right__search-inner">
+                                <div class="nav-search-inner__form">
+                                    <form method="POST" id="search" class="inner__form">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search" required>
                                             <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
-                                        </form>
-                                        <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white d-xxl-none"> <i class="bi bi-search"></i> <span></span> </a>    
-                                        <div class="language-box d-flex align-items-center justify-content-center position-relative">
-                                            <select name="language">
-                                                <option value="1">En</option>
-                                                <option value="2">Es</option>
-                                                <option value="3">Hy</option>
-                                                <option value="3">De</option>
-                                            </select>
-                                            <i class="bi bi-globe icon"></i>
                                         </div>
-                                        <a href="sign-in.html" class="btn_theme btn_theme_active">Sign In <i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    </div>
-                                    <div class="nav-right__search-inner">
-                                        <div class="nav-search-inner__form">
-                                            <form method="POST" id="search" class="inner__form">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search" required>
-                                                    <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                         <div class="custom-nevbar__top d-none d-md-block">
                             <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
                             <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
+                                <img src="assets/images/logo/logo-light.png" alt="logo">
                             </div>
                         </div>
                         <ul class="custom-nevbar__right-location">
@@ -214,47 +214,99 @@
     <!-- header-section end -->
 
     <!-- Hero Section Start -->
-    <section class="hero hero-version5 position-relative cus-z1">
-        <div class="container position-relative">
-            <div class="row g-7">
-                <div class="col-lg-7 col-md-12">
-                    <div class="hero-content5">
-                        <h4 class="fw-semibold d-flex align-items-center mb-md-3 mb-2 gap-2"><img src="assets/images/section-arrow-right.png" alt="icon"> Easily Find the Right Loan Quickly</h4>
-                        <h1 class="mb-lg-4 mb-3 wow fadeInUp text-white" data-wow-duration="1s">Discover the Best <br> Loan Options </h1>
-                        <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-xl-3 gap-2">
-                            <div class="member-active">
-                                <span class="mb-xl-3 mb-2 d-block text-white">5M+ Active Members</span>
-                                <div class="member-active-inner">
-                                    <span class="member rounded-circle"><img src="assets/images/active-member1.png" alt="img" class="rounded-circle"></span>
-                                    <span class="member rounded-circle"><img src="assets/images/active-member2.png" alt="img" class="rounded-circle"></span>
-                                    <span class="member rounded-circle"><img src="assets/images/active-member3.png" alt="img" class="rounded-circle"></span>
-                                    <span class="member rounded-circle"><img src="assets/images/active-member4.png" alt="img" class="rounded-circle"></span>
-                                    <span class="member plus rounded-circle d-center"><i class="bi bi-plus-lg"></i></span>
+    <section class="hero-version5 position-relative cus-z1">
+        <div class="hero-version5-wrapper">
+            <div class="hero-version5-items bg-fixed" data-background="assets/images/hero/banner5-slide1.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="hero-content5">
+                                <h4 class="fw-semibold d-flex align-items-center mb-lg-4 mb-md-3 mb-3 gap-2"><img src="assets/images/element/section-badge5.png" alt="icon" class="d-sm-block d-none section-badge5"> Accurate Signals for Steady Trading Success</h4>
+                                <h1 class="mb-lg-4 mb-3 wow fadeInUp text-white" data-wow-duration="1s">Follow Leaders, Succeed in Trading </h1>
+                                <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-xl-3 gap-2">
+                                    <div class="member-active">
+                                        <span class="mb-xl-3 mb-2 d-block text-white">5M+ Active Members</span>
+                                        <div class="member-active-inner">
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author1.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author2.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author3.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author5.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member plus rounded-circle d-center"><i class="bi bi-plus-lg"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="line d-md-block d-none"></div>
+                                    <p class="wow fadeInDown text-white" data-wow-duration="0.8s">Learn from industry-leading traders and gain valuable insights to elevate your trading skills. With expert guidance and proven strategies.</p>
+                                </div>
+                                <div class="btn-group-area d-flex align-items-center gap-lg-3 gap-2 flex-wrap">
+                                    <a href="sign-in.html" class="btn_theme btn_theme_active">Start Tracking Transactions<span></span></a>
+                                    <a href="about.html" class="btn_theme secound-btn">Explore Reviews<span></span></a>
                                 </div>
                             </div>
-                            <div class="line d-md-block d-none"></div>
-                            <p class="wow fadeInDown text-white" data-wow-duration="0.8s">We provide clear, step-by-step assistance tailored to your unique financial needs, ensuring that you find the perfect loan with confidence.</p>
-                        </div>
-                        <div class="btn-group-area d-flex align-items-center gap-lg-3 gap-2 flex-wrap">
-                            <a href="sign-in.html" class="btn_theme btn_theme_active">Loan Calculator <i class="bi bi-arrow-up-right"></i><span></span></a>
-                            <a href="about.html" class="btn_theme secound-btn">About us<i class="bi bi-arrow-up-right"></i><span></span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12">
-                    <div class="hero5-thumb-inner">
-                        <div class="thumb">
-                            <img src="assets/images/hero5-thumb.png" alt="img">
+            </div>
+            <div class="hero-version5-items bg-fixed" data-background="assets/images/hero/banner5-slide2.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="hero-content5">
+                                <h4 class="fw-semibold d-flex align-items-center mb-lg-4 mb-md-3 mb-3 gap-2"><img src="assets/images/element/section-badge5.png" alt="icon" class="d-sm-block d-none section-badge5"> Accurate Signals for Steady Trading Success</h4>
+                                <h1 class="mb-lg-4 mb-3 wow fadeInUp text-white" data-wow-duration="1s">Follow Leaders, Succeed in Trading </h1>
+                                <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-xl-3 gap-2">
+                                    <div class="member-active">
+                                        <span class="mb-xl-3 mb-2 d-block text-white">5M+ Active Members</span>
+                                        <div class="member-active-inner">
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author1.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author2.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author3.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author5.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member plus rounded-circle d-center"><i class="bi bi-plus-lg"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="line d-md-block d-none"></div>
+                                    <p class="wow fadeInDown text-white" data-wow-duration="0.8s">Learn from industry-leading traders and gain valuable insights to elevate your trading skills. With expert guidance and proven strategies.</p>
+                                </div>
+                                <div class="btn-group-area d-flex align-items-center gap-lg-3 gap-2 flex-wrap">
+                                    <a href="sign-in.html" class="btn_theme btn_theme_active">Start Tracking Transactions<span></span></a>
+                                    <a href="about.html" class="btn_theme secound-btn">Explore Reviews<span></span></a>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Ele -->
+                    </div>
+                </div>
+            </div>
+            <div class="hero-version5-items bg-fixed" data-background="assets/images/hero/banner5-slide3.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="hero-content5">
+                                <h4 class="fw-semibold d-flex align-items-center mb-lg-4 mb-md-3 mb-3 gap-2"><img src="assets/images/element/section-badge5.png" alt="icon" class="d-sm-block d-none section-badge5"> Accurate Signals for Steady Trading Success</h4>
+                                <h1 class="mb-lg-4 mb-3 wow fadeInUp text-white" data-wow-duration="1s">Follow Leaders, Succeed in Trading </h1>
+                                <div class="d-flex flex-md-nowrap flex-wrap align-items-center gap-xl-3 gap-2">
+                                    <div class="member-active">
+                                        <span class="mb-xl-3 mb-2 d-block text-white">5M+ Active Members</span>
+                                        <div class="member-active-inner">
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author1.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author2.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author3.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member rounded-circle"><img src="assets/images/testimonial/testimonial-author5.png" alt="img" class="rounded-circle"></span>
+                                            <span class="member plus rounded-circle d-center"><i class="bi bi-plus-lg"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="line d-md-block d-none"></div>
+                                    <p class="wow fadeInDown text-white" data-wow-duration="0.8s">Learn from industry-leading traders and gain valuable insights to elevate your trading skills. With expert guidance and proven strategies.</p>
+                                </div>
+                                <div class="btn-group-area d-flex align-items-center gap-lg-3 gap-2 flex-wrap">
+                                    <a href="sign-in.html" class="btn_theme btn_theme_active">Start Tracking Transactions<span></span></a>
+                                    <a href="about.html" class="btn_theme secound-btn">Explore Reviews<span></span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Element -->
-        <img src="assets/images/faq-loan-ele.png" alt="img" class="loan-ele">
-        <img src="assets/images/faq-home-ele.png" alt="img" class="home-ele">
-        <img src="assets/images/loan-doller.png" alt="img" class="loan-doller">
     </section>
     <!--Hero Section End -->
 
@@ -265,44 +317,44 @@
                 <div class="hero-homelon-slider2">
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/homeloan.png" alt="img">
-                            <h4>Home</h4>
+                            <img src="assets/images/icon/forex-tranding.png" alt="img">
+                            <h4>Forex Trading</h4>
                         </div>
                     </div>
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/students-loan.png" alt="img">
-                            <h4>Student</h4>
+                            <img src="assets/images/icon/stock-tranding.png" alt="img">
+                            <h4>Stock Trading</h4>
                         </div>
                     </div>
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/businessloan.png" alt="img">
-                            <h4>Business</h4>
+                            <img src="assets/images/icon/index.png" alt="img">
+                            <h4>Index Trading</h4>
                         </div>
                     </div>
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/medicalloan.png" alt="img">
-                            <h4>Medical</h4>
+                            <img src="assets/images/icon/options.png" alt="img">
+                            <h4>Options</h4>
                         </div>
                     </div>
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/personalloan.png" alt="img">
-                            <h4>Personal</h4>
+                            <img src="assets/images/icon/futures.png" alt="img">
+                            <h4>Futures</h4>
                         </div>
                     </div>
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/constructionloan.png" alt="img">
-                            <h4>Construction</h4>
+                            <img src="assets/images/icon/bond.png" alt="img">
+                            <h4>Bond Trading</h4>
                         </div>
                     </div>
                     <div class="slide-card">
                         <div class="home-loan-items">
-                            <img src="assets/images/refinanceloan.png" alt="img">
-                            <h4>Refinance</h4>
+                            <img src="assets/images/icon/commondity.png" alt="img">
+                            <h4>Commodity</h4>
                         </div>
                     </div>
                 </div>
@@ -335,6 +387,7 @@
             <div class="broker-review-wrap">
                 <div class="broker-review-inner style5 white-bg">
                     <span class="badge fs-small">01</span>
+                    <span class="tranding-badge5">Tranding</span>
                     <div class="broker-review-item style1 style02 d-flex align-items-center position-relative wow fadeInUp" data-wow-duration="0.8s">
                         <div class="broker-thumb-area">
                             <div class="thumb rounded-circle">
@@ -401,8 +454,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="broker-review-inner style4 white-bg">
-                    <span class="badge fs-small">RANK 02</span>
+                <div class="broker-review-inner style5 white-bg">
+                    <span class="badge fs-small">02</span>
+                    <span class="tranding-badge5">Tranding</span>
                     <div class="broker-review-item style1 style02 d-flex align-items-center position-relative wow fadeInUp" data-wow-duration="0.8s">
                         <div class="broker-thumb-area">
                             <div class="thumb rounded-circle">
@@ -469,8 +523,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="broker-review-inner style4 white-bg">
-                    <span class="badge fs-small">RANK 03</span>
+                <div class="broker-review-inner style5 white-bg">
+                    <span class="badge fs-small">03</span>
+                    <span class="tranding-badge5">Tranding</span>
                     <div class="broker-review-item style1 style02 d-flex align-items-center position-relative wow fadeInUp" data-wow-duration="0.8s">
                         <div class="broker-thumb-area">
                             <div class="thumb rounded-circle">
@@ -537,8 +592,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="broker-review-inner style4 white-bg">
-                    <span class="badge fs-small">RANK 04</span>
+                <div class="broker-review-inner style5 white-bg">
+                    <span class="badge fs-small">04</span>
+                    <span class="tranding-badge5">Tranding</span>
                     <div class="broker-review-item style1 style02 d-flex align-items-center position-relative wow fadeInUp" data-wow-duration="0.8s">
                         <div class="broker-thumb-area">
                             <div class="thumb rounded-circle">

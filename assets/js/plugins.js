@@ -99,6 +99,20 @@
         });
 
         // feature slider
+        $(".hero-version5-wrapper")
+            .not(".slick-initialized")
+            .slick({
+                infinite: true,
+                autoplay: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 1000,
+                arrows: false,
+                fade: true,
+                dots: true,
+            });
+
+        // feature slider
         $(".feature_slider")
             .not(".slick-initialized")
             .slick({

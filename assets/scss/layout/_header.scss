@@ -68,10 +68,10 @@
     left: 0;
     width: 100%;
     z-index: 299;
-   .container{
-        max-width: 1770px;
-        margin: 0 auto;
-   }
+    .container{
+            max-width: 1770px;
+            margin: 0 auto;
+    }
     .navbar {
         padding: 20px 0;
         margin: 0;
@@ -82,11 +82,31 @@
             border: none;
             color: $white;
             border: none !important;
-    
+
             &:focus {
                 outline: 0;
                 box-shadow: none;
             }
+        }
+    }
+    &.header-version5{
+        padding-top: 24px;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.15);
+        &.header-active{
+            padding-top: 0;
+            background: linear-gradient(90deg, #132f59 0%, rgb(19, 47, 89) 18.81%, rgba(19, 47, 89, 0.80) 34.63%, rgb(19, 47, 89) 54.23%, rgba(19, 47, 89, 0.40) 67.36%, rgba(19, 47, 89, 0.661) 100%);
+        }
+        .navbar-nav{
+            align-items: center;
+        }
+        .header-fiffrent-form{
+            height: 50px;
+           .search_icon{
+            background: $secondary-color2;
+           } 
+        }
+        @media screen and (max-width: 1850px) {
+            padding-top: 0;
         }
     }
 }
