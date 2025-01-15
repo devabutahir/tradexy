@@ -227,6 +227,11 @@
             }
         }
     }
+    @media screen and (max-width: 1399px) {
+        .nav-right__search{
+            gap: 14px;
+        }
+    }
 }
 .header-fiffrent-form{
     display: flex;
@@ -273,7 +278,7 @@
     top: -70px;
     transform: translateY(70px);
     transition: transform .5s;
-    background-color: $neutral-n-900;
+    background: #132F59;
     left: 0;
     width: 100%;
     .navbar {
