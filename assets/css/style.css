@@ -3505,29 +3505,6 @@ label.error {
   text-align: start;
   text-transform: capitalize;
 }
-.banner .banner__content .breadcrumb {
-  margin-top: 24px;
-  --bs-breadcrumb-item-padding-x: 4px;
-}
-.banner .banner__content .breadcrumb .breadcrumb-item {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-}
-.banner .banner__content .breadcrumb .breadcrumb-item a {
-  color: #ffffff;
-  font-family: "Jost", sans-serif;
-}
-.banner .banner__content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  content: "\f285";
-  font-family: "bootstrap-icons";
-  color: #ffffff;
-  font-size: 14px;
-}
-.banner .banner__content .breadcrumb .breadcrumb-item.active {
-  color: #FCB650;
-}
 
 .hero-version4 {
   padding-top: 160px;
@@ -4008,6 +3985,59 @@ label.error {
     width: 103%;
     position: initial;
     transform: translateY(-50%);
+  }
+}
+
+.breadcrumb-bannner {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb-bannner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(90deg, #132F59 0%, rgba(19, 47, 89, 0.9) 18.81%, rgba(19, 47, 89, 0.8) 34.63%, rgba(19, 47, 89, 0.6) 54.23%, rgba(19, 47, 89, 0.4) 67.36%, rgba(19, 47, 89, 0.1) 100%);
+  z-index: 1;
+}
+.breadcrumb-bannner .banner__content {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb-bannner .breadcrumb {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb-bannner .breadcrumb .breadcrumb-item {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.breadcrumb-bannner .breadcrumb .breadcrumb-item a {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+}
+.breadcrumb-bannner .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: "\f285";
+  font-family: "bootstrap-icons";
+  color: #ffffff;
+  font-size: 14px;
+}
+.breadcrumb-bannner .breadcrumb .breadcrumb-item.active {
+  color: #FCB650;
+}
+.breadcrumb-bannner.style1 {
+  padding: 215px 0 120px;
+}
+@media screen and (max-width: 1199px) {
+  .breadcrumb-bannner.style1 {
+    padding: 150px 0 70px;
   }
 }
 
