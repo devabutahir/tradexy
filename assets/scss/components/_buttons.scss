@@ -220,38 +220,6 @@ a.conditions_apply{
     }
 }
 @media (max-width: 1399px) {
-    .sidebar-filter,
-    .sidebar_fixed{
-        top: initial;
-        z-index: 2;
-        transition: $transition;
-        &.show{
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-    .sidebar_btn{
-        position: sticky;
-        top: 140px;
-        background: $primary-color;
-        padding: 12px 16px;
-        color: white;
-        font-weight: 700;
-        font-size: 20px;
-        border-radius: 16px;
-        &:hover,
-        &:focus{
-            color: white;
-
-        }
-    }
-    .btn_sticky{
-        position: sticky;
-        top: 100px;
-        z-index: 9;
-    }
-}
-@media (max-width: 1399px) {
     .sidebar-xxl-fixed{
         position: absolute;
         transform: translateX(-200px);
