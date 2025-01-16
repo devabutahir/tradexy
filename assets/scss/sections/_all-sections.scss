@@ -2116,6 +2116,15 @@
 
 // loan-reviews page
 
+// Some Sticky 
+.brokerage-right-sticky{
+   @media screen and (min-width: 992px) {
+    position: sticky;
+    top: 120px;
+   }
+}
+// Some Sticky 
+
 
 // loan-reviews details
 .reviews-details{
@@ -2147,7 +2156,7 @@
             .charges__card{
                 border-radius: 16px;
                 border: 1px solid $neutral-n-40;
-                background: rgba(7, 76, 62, 0.03);
+                background: rgba(19, 47, 89, 0.03);
                 display: flex;
                 flex-direction: row;
                 gap: 24px;

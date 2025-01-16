@@ -45,19 +45,19 @@
     </div>
 
     <!--header-section start-->
-    <header class="header-section ">
+    <header class="header-section header-version3 header-light">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo-light.png" class="logo" alt="logo"></a>
                         <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="bi bi-list"></i>
                         </a>
 
-                        <div class="collapse navbar-collapse ms-auto " id="navbar-content">
-                            <div class="main-menu">
-                                <ul class="navbar-nav mb-lg-0 mx-auto">
+                        <div class="collapse navbar-collapse me-auto " id="navbar-content">
+                            <div class="main-menu d-flex align-items-center">
+                                <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
                                         <ul class="dropdown-menu">
@@ -69,16 +69,37 @@
                                         </ul>
                                     </li> 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Brokerage Reviews</a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
+                                            <li><a class="dropdown-item" href="#">Brokerage Reviews 01</a></li>
+                                            <li><a class="dropdown-item" href="#0">Brokerage Reviews02</a></li>
+                                            <li><a class="dropdown-item" href="#0">Brokerage Reviews03</a></li>
                                         </ul>
                                     </li> 
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="loan-comparison.html">Loan Comparison</a>
-                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Market Analysis</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Analysis01</a></li>
+                                            <li><a class="dropdown-item" href="#">Analysis02</a></li>
+                                            <li><a class="dropdown-item" href="#">Analysis03</a></li>
+                                        </ul>
+                                    </li> 
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Educate</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Educate01</a></li>
+                                            <li><a class="dropdown-item" href="#">Educate02</a></li>
+                                            <li><a class="dropdown-item" href="#">Educate03</a></li>
+                                        </ul>
+                                    </li> 
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serve</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Serve01</a></li>
+                                            <li><a class="dropdown-item" href="#">Serve02</a></li>
+                                            <li><a class="dropdown-item" href="#">Serve03</a></li>
+                                        </ul>
+                                    </li> 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
                                         <ul class="dropdown-menu">
@@ -92,25 +113,35 @@
                                             <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact us</a>
-                                    </li>
                                 </ul>
-                                <div class="nav-right d-none d-xl-block">
-                                    <div class="nav-right__search">
-                                        <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white"> <i class="bi bi-search"></i> <span></span> </a>    
-                                        <a href="sign-in.html" class="btn_theme btn_theme_active">Sign In <i class="bi bi-arrow-up-right"></i><span></span></a>
-                                    </div>
-                                    <div class="nav-right__search-inner">
-                                        <div class="nav-search-inner__form">
-                                            <form method="POST" id="search" class="inner__form">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search" required>
-                                                    <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
-                                                </div>
-                                            </form>
+                            </div>
+                        </div>
+                        <div class="nav-right border-0 p-0 d-none d-xl-block">
+                            <div class="nav-right__search">
+                                <form action="#" class="header-fiffrent-form d-xxl-flex d-none">
+                                    <input type="text" placeholder="Search" required>
+                                    <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
+                                </form>
+                                <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white d-xxl-none"> <i class="bi bi-search"></i> <span></span> </a>    
+                                <div class="language-box style2 d-flex align-items-center justify-content-center position-relative">
+                                    <select name="language">
+                                        <option value="1">En</option>
+                                        <option value="2">Es</option>
+                                        <option value="3">Hy</option>
+                                        <option value="3">De</option>
+                                    </select>
+                                    <i class="bi bi-globe icon white-clr"></i>
+                                </div>
+                                <a href="sign-in.html" class="btn_theme btn_theme_active">Sign In <i class="bi bi-arrow-up-right"></i><span></span></a>
+                            </div>
+                            <div class="nav-right__search-inner">
+                                <div class="nav-search-inner__form">
+                                    <form method="POST" id="search" class="inner__form">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search" required>
+                                            <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +207,7 @@
                         <div class="custom-nevbar__top d-none d-md-block">
                             <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
                             <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
+                                <img src="assets/images/logo/logo-light.png" alt="logo">
                             </div>
                         </div>
                         <ul class="custom-nevbar__right-location">
@@ -199,28 +230,19 @@
         </div>
     </div>
     <!-- header-section end -->
-
+    
     <!-- Banner Start -->
-    <section class="banner">
+    <section class="breadcrumb-bannner bg-fixed style1" data-background="assets/images/hero/breadcrumb-banner2.png">
         <div class="container ">
-            <div class="row gy-4 gy-sm-0 align-items-center">
-                <div class="col-12 col-sm-6">
-                    <div class="banner__content">
-                        <h1 class="banner__title display-4 wow fadeInLeft" data-wow-duration="0.8s">Loan Reviews - details</h1> 
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb wow fadeInRight" data-wow-duration="0.8s">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item">Loan Reviews</li>
-                                <li class="breadcrumb-item active" aria-current="page">details</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="banner__thumb text-end">
-                        <img src="assets/images/reviews_banner.png" alt="image">
-                    </div>
-                </div>
+            <div class="banner__content">
+                <h1 class="banner__title mb-3 display-4 text-white wow fadeInLeft" data-wow-duration="0.8s">Reviews Details 01</h1> 
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb wow fadeInRight" data-wow-duration="0.8s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Brokerage Reviews</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Details 01</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
@@ -229,15 +251,15 @@
     <!-- loan-reviews-details start -->
     <section class="reviews-details section">
         <div class="container ">
-            <div class="row">
-                <div class="col-12 col-xl-8 order-1 order-xl-0">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8 order-1 order-xl-0">
                     <div class="reviews-details__area">
                         <div class="reviews-details__part wow fadeInUp" data-wow-duration="0.8s">
                             <div class="loan-reviews loan-reviews--quaternary wow fadeInUp" data-wow-duration="0.8s">
                                 <div class="loan-reviews_card card">
                                     <div class="loan-reviews__part-one">
                                         <div class="loan-reviews__thumb">
-                                            <img src="assets/images/loan_reviews_logo2.png" alt="image">
+                                            <img src="assets/images/broker/icmarkets-card.png" alt="image">
                                         </div>
                                         <div class="loan-reviews__review">
                                             <p class="rating"> 4.9</p>
@@ -255,8 +277,8 @@
                                     </div>
                                     <div class="loan-reviews__part-two">
                                         <div class="reviews-heading">
-                                            <h4 class="reviews-heading__title">Student Loans</h4>
-                                            <p class="reviews-heading__content">Canada Largest online mortgage lender</p>
+                                            <h4 class="reviews-heading__title">IC Markets</h4>
+                                            <p class="reviews-heading__content">IC Markets is a trusted broker.</p>
                                         </div>
                                         <div class="reviews-inner">
                                             <ul>
@@ -270,76 +292,75 @@
                                 </div>
                             </div>
                             <div class="section__content wow fadeInUp" data-wow-duration="0.8s">
-                                <h2 class="section__content-title">The Benefits of Consolidating Your Student Loans</h2>
-                                <p class="section__content-text">At FINVIEW, we provide comprehensive and unbiased loan reviews to help you navigate the complex world of financial lending. Our team of experts meticulously researches and analyzes various loan options to provide you with reliable and up-to-date information.</p>
-                                <p class="section__content-text">When it comes to Loan, we've conducted a thorough review to provide you with all the essential details. We delve into the details of each loan, examining interest rates, repayment terms, eligibility criteria, and any associated fees.</p>
+                                <h2 class="section__content-title">Overview</h2>
+                                <p class="section__content-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                <p class="section__content-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             </div>
                             <div class="card charges__card flex-column flex-xxl-row wow fadeInUp" data-wow-duration="0.8s">
                                 <div class="charges__part">
                                     <span class="charges__part-percentage">15%</span>
                                     <div class="charges__part-content">
-                                        <p class="charges__part-title mb-2">Interest Rate</p>
-                                        <p class="fs-small">Provide the current interest rate for loan</p>
+                                        <p class="charges__part-title mb-2">Regulation</p>
+                                        <p class="fs-small">FCA (UK), ASIC (Australia), NFA (US).</p>
                                     </div>
                                 </div>
                                 <div class="charges__part">
                                     <span class="charges__part-percentage">70%</span>
                                     <div class="charges__part-content">
-                                        <p class="charges__part-title mb-2">Loan Amount Range</p>
-                                        <p class="fs-small">Specify the minimum and maximum loan</p>
+                                        <p class="charges__part-title mb-2">Maximum leverage</p>
+                                        <p class="fs-small">Specify the minimum and maximum leverage</p>
                                     </div>
                                 </div>
                                 <div class="charges__part">
                                     <span class="charges__part-percentage">20%</span>
                                     <div class="charges__part-content">
-                                        <p class="charges__part-title mb-2">Fees and Charges</p>
-                                        <p class="fs-small">List any fees or charges associated with loan</p>
+                                        <p class="charges__part-title mb-2">Supported languages</p>
+                                        <p class="fs-small">English, Russian, French, Polish etc.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="repayment section__content wow fadeInUp" data-wow-duration="0.8s">
-                                <h3 class="section__content-title">Repayment Terms</h3>
+                                <h3 class="section__content-title">Key Features</h3>
                                 <div class="section__content-inner-list">
                                     <ol class="number">
-                                        <li>Loan Duration:
-                                            <ol class="bullet">
-                                                <li>Specify the length of time borrowers have to repay the loan. For example, it could be expressed in months or years.</li>
+                                        <li>01. Low Spreads :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
                                             </ol>
                                         </li>
-                                        <li> Payment Frequency:
-                                            <ol class="bullet">
-                                                <li>Indicate how often borrowers are required to make payments. Common options include monthly, bi-monthly, bi-weekly, or weekly payments.</li>
+                                        <li>02. Fast Execution :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
                                             </ol>
                                         </li>
-                                        <li> Amortization Type:
-                                            <ol class="bullet">
-                                                <li>Describe whether the loan follows an amortizing or interest-only repayment structure. In an amortizing loan, each payment includes both principal and interest, while an interest-only loan requires only interest payments during a specific period.</li>
+                                        <li>03. Multiple Platforms :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
                                             </ol>
                                         </li>
-                                        <li>Payment Calculation:
-                                            <ol class="bullet">
-                                                <li>IExplain how the loan payment is calculated. This may include factors such as the loan amount, interest rate, and loan duration</li>
+                                        <li>04. Regulation :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
                                             </ol>
                                         </li>
-                                        <li> Prepayment Penalties:
-                                            <ol class="bullet">
-                                                <li>If applicable, mention any penalties or fees associated with making early or additional payments towards the loan balance.</li>
+                                        <li>05. Wide Range of Assets :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
+                                                <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</li>
                                             </ol>
                                         </li>
-                                        <li> Grace Period:
-                                            <ol class="bullet">
-                                                <li>If there is a grace period before the borrower needs to start making repayments, specify the duration and any conditions that apply.</li>
+                                        <li>06. Leverage :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nulla in gravida facilisis, nunc eros eleifend purus, ut tincidunt neque lacus ut eros.</li>
                                             </ol>
                                         </li>
-                                        
-                                        <li> Late Payment Policy:
-                                            <ol class="bullet">
-                                                <li>Outline the consequences and potential fees for late payments, including any grace periods and the impact on credit score.</li>
-                                            </ol>
-                                        </li>
-                                        <li> Payment Options:
-                                            <ol class="bullet">
+                                        <li>07. Payment Options :
+                                            <ol class="bullet d-grid gap-xxl-3 gap-xl-2 gap-1">
                                                 <li>Provide information on the available payment methods, such as automatic bank transfers, online payments, or physical check payments.</li>
                                             </ol>
                                         </li>
@@ -361,18 +382,93 @@
                                 <div class="pro__part free">
                                     <h4 class="gap-6 mb-4"><i class="bi bi-x-circle-fill"></i> Cons</h4>
                                     <ul>
-                                        <li><i class="bi bi-x-lg"></i>Competitive Interest Rate</li>
-                                        <li><i class="bi bi-x-lg"></i>Flexible Repayment Options</li>
-                                        <li><i class="bi bi-x-lg"></i>Quick Approval and Disbursement</li>
-                                        <li><i class="bi bi-x-lg"></i>No Collateral Required</li>
-                                        <li><i class="bi bi-x-lg"></i>Rewards or Benefits</li>
-                                        <li><i class="bi bi-x-lg"></i>Favorable Terms and Conditions</li>
+                                        <li><i class="bi bi-x-lg"></i>Higher Interest Rates</li>
+                                        <li><i class="bi bi-x-lg"></i>Strict Eligibility Criteria</li>
+                                        <li><i class="bi bi-x-lg"></i>Prepayment Penalties</li>
+                                        <li><i class="bi bi-x-lg"></i>Fees and Charges</li>
+                                        <li><i class="bi bi-x-lg"></i>Limited Borrowing Amount</li>
+                                        <li><i class="bi bi-x-lg"></i>Potential Impact on Credit</li>
                                     </ul>
                                 </div>
                             </div>
-                            <p class="wow fadeInUp" data-wow-duration="0.8s">It's important to customize the repayment terms section for each loan you review, ensuring that you accurately represent the specific details of that loan. Additionally, consider using clear and concise language to help borrowers easily understand the repayment conditions associated with the loan.</p>
+                            <p class="wow fadeInUp" data-wow-duration="0.8s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nulla in gravida facilisis, nunc eros eleifend purus, ut tincidunt neque lacus ut eros.</p>
                         </div>
-    
+                        <div class="reviews-details__part wow fadeInUp" data-wow-duration="0.8s">
+                            <div class="faq-section" id="faqa">
+                                <div class="accordion" id="faq">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-1" aria-expanded="true" aria-controls="faq-accordion-1"> 
+                                                What is Forex trading?
+                                            </button>
+                                        </h5>
+                                        <div id="faq-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                                <p class="mb-0">
+                                                    A Forex broker is a company that provides a platform for you to trade currencies, often offering tools, signals, and support for successful trading.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-2" aria-expanded="true" aria-controls="faq-accordion-2"> 
+                                                How do I start trading Forex?
+                                            </button>
+                                        </h5>
+                                        <div id="faq-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                                <p class="mb-0">
+                                                    A Forex broker is a company that provides a platform for you to trade currencies, often offering tools, signals, and support for successful trading.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-3" aria-expanded="true" aria-controls="faq-accordion-3"> 
+                                                What is a Forex broker?
+                                            </button>
+                                        </h5>
+                                        <div id="faq-accordion-3" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                                <p class="mb-0">
+                                                    A Forex broker is a company that provides a platform for you to trade currencies, often offering tools, signals, and support for successful trading.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-4" aria-expanded="true" aria-controls="faq-accordion-4"> 
+                                                What are Forex signals?
+                                            </button>
+                                        </h5>
+                                        <div id="faq-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                                <p class="mb-0">
+                                                    A Forex broker is a company that provides a platform for you to trade currencies, often offering tools, signals, and support for successful trading.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-5" aria-expanded="true" aria-controls="faq-accordion-5"> 
+                                                How can I profit from Forex trading?
+                                            </button>
+                                        </h5>
+                                        <div id="faq-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                                <p class="mb-0">
+                                                    A Forex broker is a company that provides a platform for you to trade currencies, often offering tools, signals, and support for successful trading.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="reviews-details__part wow fadeInUp" data-wow-duration="0.8s">
                             <div class="average-reviews">
                                 <h4 class="average-reviews__title">Average Reviews</h4>
@@ -450,11 +546,11 @@
                                             <i class="bi bi-star-fill secondary-clr2"></i>
                                             <i class="bi bi-star-half secondary-clr2"></i>
                                         </div>
-                                        <p>Our satisfied clients have experienced success with our services and loan recommendations. Here are some of their testimonials highlighting their positive experiences and the value they received</p>  
+                                        <p>“TRADEXY has been a game-changer for me! The trading signals are spot on, and the platform is easy to use. I’ve seen consistent profits since I started using it, I trust TRADEXY for all my trades, IC Markets is the ultimate platform for professional trading.”</p>  
                                     </div>
                                     <div class="gap-7">
                                         <div class="author__thumbs">
-                                            <img src="assets/images/author.png" alt="image">
+                                            <img src="assets/images/testimonial/testimonial-author1.png" alt="image">
                                         </div>
                                         <div class="author__info">
                                             <h5 class="author__name">Darrell Steward</h5>
@@ -473,7 +569,7 @@
                                         <div class="reply__content">
                                             <div class="gap-7">
                                                 <div class="author__thumbs">
-                                                    <img src="assets/images/author2.png" alt="Author">
+                                                    <img src="assets/images/testimonial/testimonial-author2.png" alt="Author">
                                                 </div>
                                                 <form method="POST" class="reply__form">
                                                     <div >
@@ -500,7 +596,7 @@
                                     </div>
                                     <div class="gap-7">
                                         <div class="author__thumbs">
-                                            <img src="assets/images/author3.png" alt="image">
+                                            <img src="assets/images/testimonial/testimonial-author2.png" alt="image">
                                         </div>
                                         <div class="author__info">
                                             <h5 class="author__name">Albert Flores</h5>
@@ -519,7 +615,7 @@
                                         <div class="reply__content">
                                             <div class="gap-7">
                                                 <div class="author__thumbs">
-                                                    <img src="assets/images/author2.png" alt="Author">
+                                                    <img src="assets/images/testimonial/testimonial-author3.png" alt="Author">
                                                 </div>
                                                 <form method="POST" class="reply__form">
                                                     <div >
@@ -545,7 +641,7 @@
                                     </div>
                                     <div class="gap-7">
                                         <div class="author__thumbs">
-                                            <img src="assets/images/author4.png" alt="image">
+                                            <img src="assets/images/testimonial/testimonial-author3.png" alt="image">
                                         </div>
                                         <div class="author__info">
                                             <h5 class="author__name">Annette Black</h5>
@@ -564,7 +660,7 @@
                                         <div class="reply__content">
                                             <div class="gap-7">
                                                 <div class="author__thumbs">
-                                                    <img src="assets/images/author2.png" alt="Author">
+                                                    <img src="assets/images/testimonial/testimonial-author4.png" alt="Author">
                                                 </div>
                                                 <form method="POST" class="reply__form">
                                                     <div >
@@ -577,97 +673,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section__cta text-start mt_40">
+                            <div class="section__cta text-start mt-xxl-4 mt-xl-3 mt-md-1 mt-0">
                                 <a href="sign-in.html" class="btn_theme btn_theme_active">See All Reviews <i class="bi bi-arrow-up-right"></i><span></span></a>
                             </div>
                         </div>
-                        <div class="reviews-details__part wow fadeInUp" data-wow-duration="0.8s">
-                            <div class="faq-section" id="faqa">
-                                <div class="accordion" id="faq">
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-1" aria-expanded="true" aria-controls="faq-accordion-1"> 
-                                                How do I apply for a loan through your platform?
-                                            </button>
-                                        </h5>
-                                        <div id="faq-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faq">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">
-                                                    The interest rate depends on several factors, including the type of loan, the borrower's creditworthiness, and current market conditions. Interest rates can be fixed (remain constant) or variable (fluctuate over time).
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-2" aria-expanded="true" aria-controls="faq-accordion-2"> 
-                                                What types of loans do you review and compare?
-                                            </button>
-                                        </h5>
-                                        <div id="faq-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faq">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">
-                                                    Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-3" aria-expanded="true" aria-controls="faq-accordion-3"> 
-                                                Can I trust the information provided on your website?
-                                            </button>
-                                        </h5>
-                                        <div id="faq-accordion-3" class="accordion-collapse collapse show" data-bs-parent="#faq">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">
-                                                    Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-4" aria-expanded="true" aria-controls="faq-accordion-4"> 
-                                                Do you offer financial advice or recommendations?
-                                            </button>
-                                        </h5>
-                                        <div id="faq-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faq">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">
-                                                    Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-accordion-5" aria-expanded="true" aria-controls="faq-accordion-5"> 
-                                                How do I apply for a loan through your platform?
-                                            </button>
-                                        </h5>
-                                        <div id="faq-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faq">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">
-                                                    Absolutely. We strive to provide reliable and up-to-date information. Our team follows strict editorial guidelines to ensure the accuracy and integrity of our content. However,
-                                                </p>
-                                            </div>
-                                        </div>
+                        <form class="reviews-details__part write-commnets wow fadeInUp" data-wow-duration="0.8s">
+                            <h4 class="average-reviews__title">Write a Comments</h4>
+                           <div class="d-grid gap-xxl-4 gap-3">
+                                <div class="write-form">
+                                    <label for="nmae">Name</label>
+                                    <input type="text" placeholder="Enter Name...">
+                                </div>
+                                <div class="write-form">
+                                    <label for="nmae">Email </label>
+                                    <input type="email" placeholder="Enter Email...">
+                                </div>
+                                <div class="write-form">
+                                    <label for="nmae">Ratting </label>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <i class="bi bi-star rating"></i>
+                                        <i class="bi bi-star rating"></i>
+                                        <i class="bi bi-star rating"></i>
+                                        <i class="bi bi-star rating"></i>
+                                        <i class="bi bi-star rating"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                <div class="write-form">
+                                    <label for="nmae">Comments </label>
+                                    <textarea name="comments" placeholder="Write you comments..."></textarea>
+                                </div>
+                                <div class="section__cta text-start mt-xl-3 mt-2">
+                                    <button type="button" class="btn_theme btn_theme_active">Submit Comments <i class="bi bi-arrow-up-right"></i><span></span></button>
+                                </div>
+                           </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-12 col-xl-4 btn_sticky">
-                    <div class="d-inline-block d-xl-none mb-4">
-                        <button class="sidebar_btn"> <i class="bi bi-layout-text-sidebar"></i> <span>Loan Info</span></button>    
-                    </div>
-                    <div class="sidebar sidebar_fixed sidebar-xl-fixed cus_scrollbar">
+                <div class="col-12 col-lg-4">
+                    <div class="sidebar brokerage-right-sticky">
                         <div class="sidebar__part">
-                            <h4 class="sidebar__part-title">Loan Applying Info</h4>
+                            <h4 class="sidebar__part-title">Broker Info</h4>
                             <div class="minimum-loan mb-4">
-                                <p class="minimum-loan__title">Minimum Loan Start</p>
+                                <p class="minimum-loan__title">Minimum deposit</p>
                                 <span class="fs-4">$199</span>
                             </div>
                             <ul>
@@ -704,72 +751,100 @@
     <!-- loan-reviews-details end -->
 
     <!-- Footer Area Start -->
-    <footer class="footer">
+    <footer class="footer footer-section5 position-relative">
         <div class="container">
-            <div class="row section gy-5 gy-xl-0">
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="about-company wow fadeInLeft" data-wow-duration="0.8s">
-                        <div class="footer__logo mb-4">
-                            <a href="index.html">
-                                <img src="assets/images/logo/logo-light.png" alt="Logo">
-                            </a>
-                        </div>
-                        <p>TRADEXY is a comprehensive platform designed to empower traders at every level. TRADEXY provides the tools, insights.</p>
-                        <div class="social mt_32">
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-facebook"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-twitter"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-pinterest"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-twitch"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-skype"></i><span></span></a>
-                        </div>
+            <div class="subscribe-wrapper5 newsletter d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-lg-between justify-content-center gap-3">
+                <h2 class="white-clr fw-normal text-lg-start text-center">Subscribe to our newsletter for the latest updates</h2>
+                <form method="POST" autocomplete="off" id="frmSubscribe" class="newsletter__content-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="sMail" name="sMail" placeholder="Email Address" required>
+                        <button type="submit" class="emailSubscribe btn_theme btn_theme_active py-2 px-3 border-0" name="emailSubscribe" id="emailSubscribe"><i class="bi bi-cursor fs-small"></i> <span></span></button>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer__contact ms-sm-4 ms-xl-0 wow fadeInUp" data-wow-duration="0.8s">
-                        <h4 class="footer__title mb-4">Contact</h4>
-                        <div class="footer__content">
-                            <a href="tel:+1-234-567-891"> <span class="btn_theme social_box"> <i class="bi bi-telephone-plus"></i> </span> (316) 555-0116 <span></span> </a> 
-                            <a href="mailto:info@example.com"> <span class="btn_theme social_box"> <i class="bi bi-envelope-open"></i> </span> info@example.com <span></span> </a> 
-                            <a href="#"> <span class="btn_theme social_box"> <i class="bi bi-geo-alt"></i> </span> 31 Brandy Way, Sutton, SM2 6SE <span></span> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="newsletter wow fadeInDown" data-wow-duration="0.8s">
-                        <h4 class="footer__title mb-4">Newsletter</h4>
-                        <p class="mb_32">Subscribe our newsletter to get our latest update & news</p>
-                        <form method="POST" autocomplete="off" id="frmSubscribe" class="newsletter__content-form">
-                            <div class="input-group">
-                                <input type="email" class="form-control" id="sMail" name="sMail" placeholder="Email Address" required>
-                                <button type="submit" class="emailSubscribe btn_theme btn_theme_active" name="emailSubscribe" id="emailSubscribe"><i class="bi bi-cursor"></i> <span></span></button>
+                    <span id="subscribeMsg"></span>
+                </form>
+            </div>
+            <div class="footer-top section">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer__contact wow fadeInUp" data-wow-duration="0.8s">
+                            <h4 class="footer__title text-white mb-4">Contact</h4>
+                            <div class="footer__content d-grid gap-3">
+                                <a href="tel:+1-234-567-891">
+                                    <span class="btn_theme social_box">
+                                        <i class="bi bi-telephone-plus"></i>
+                                    </span> 
+                                    <span class="white-clr">
+                                        (209) 555-0104 <br> (316) 555-0116
+                                    </span>
+                                </a> 
+                                <a href="mailto:info@example.com">
+                                    <span class="btn_theme social_box">
+                                        <i class="bi bi-envelope-open"></i> 
+                                    </span> 
+                                    <span class="white-clr"> info@gmail.com <br> example@gmail.com </span>
+                                </a> 
+                                <a href="#">
+                                     <span class="btn_theme social_box">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </span>
+                                    <span class="white-clr">
+                                        2118 Thornridge Cir. Syracuse, <br> Connecticut 35624
+                                    </span>
+                                </a>
                             </div>
-                            <span id="subscribeMsg"></span>
-                        </form>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="quick-link ms-sm-4 ms-xl-0 wow fadeInRight" data-wow-duration="0.8s">
-                        <h4 class="footer__title mb-4">Quick Link</h4>
-                        <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="revies.html">Brokerage Reviews</a></li>
-                            <li><a href="marketanalysis.html">Market Analysis</a></li>
-                            <li><a href="educatess.html">Educate</a></li>
-                            <li><a href="servers.html">Serve</a></li>
-                        </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer5-widget">
+                            <h4 class="footer__title text-white mb-xl-4 mb-3">Quick Link</h4>
+                            <ul class="d-grid gap-xxl-3 gap-2">
+                                <li><a href="about.html" class="text-white">About us</a></li>
+                                <li><a href="loan-reviews.html" class="text-white">Loan Review</a></li>
+                                <li><a href="loan-comparison.html" class="text-white">Loan Comparison</a></li>
+                                <li><a href="service.html" class="text-white">Service</a></li>
+                                <li><a href="blog.html" class="text-white">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer5-widget">
+                            <h4 class="footer__title text-white mb-xl-4 mb-3">More Link</h4>
+                            <ul class="page-linking d-grid gap-xxl-3 gap-2">
+                                <li><a href="contact.html" class="text-white fs-seven">Contact Us</a></li>
+                                <li><a href="faq.html" class="text-white fs-seven">FAQs</a></li>
+                                <li><a href="sign-up.html" class="text-white fs-seven">Sign Up</a></li>
+                                <li><a href="sign-in.html" class="text-white fs-seven">Sign In</a></li>
+                                <li><a href="error.html" class="text-white fs-seven">404 Error</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="finview5-logo-area mb-md-0 mb-3">
+                            <a href="#" class="flogo mb-md-4 mb-3"><img src="assets/images/logo/logo-light.png" alt="img"></a>
+                            <p class="text-white">TRADEXY is a comprehensive platform designed to empower traders at every level. TRADEXY provides the tools.</p>
+                            <div class="social-area mt_20">
+                                <div class="social flex-wrap">
+                                    <a href="#" class="btn_theme social_box"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="btn_theme social_box"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="btn_theme social_box"><i class="bi bi-pinterest"></i></a>
+                                    <a href="#" class="btn_theme social_box"><i class="bi bi-twitch"></i></a>
+                                    <a href="#" class="btn_theme social_box"><i class="bi bi-skype"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer__copyright">
-                        <p class="copyright text-center">Copyright &copy; <span id="copyYear"></span> <a href="#" class="secondary_color">Tredexy</a>. Designed By <a href="#" class="secondary_color">Pixelaxis</a></p>
-                        <ul class="footer__copyright-conditions">
-                            <li><a href="contact.html">Help & Support</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="footer-bottom text-white py-lg-4 py-3">
+            <div class="container">
+                <div class="footer__copyright gap-2 pt-0 pb-0 border-0">
+                    <p class="copyright text-center">Copyright &copy; <span id="copyYear"></span> <a href="#" class="secondary_color">Tredexy</a>. Designed By <a href="#" class="secondary_color">Pixelaxis</a></p>
+                    <ul class="footer__copyright-conditions">
+                        <li><a href="contact.html" class="white-clr">Help & Support</a></li>
+                        <li><a href="#" class="white-clr">Privacy policy</a></li>
+                        <li><a href="#" class="white-clr">Terms & Conditions</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -1429,6 +1429,11 @@ span.material-symbols-outlined {
 .gap-7 {
   gap: 20px;
 }
+@media screen and (max-width: 991px) {
+  .gap-7 {
+    gap: 16px;
+  }
+}
 
 .gap-8 {
   -moz-column-gap: 32px;
@@ -6033,7 +6038,7 @@ label.error {
 .write-commnets .write-form input {
   border-radius: 30px;
   border: 1px solid #DFE0E4;
-  background: rgba(7, 76, 62, 0.03);
+  background: rgba(19, 47, 89, 0.03);
   width: 100%;
   padding: 12px 24px;
 }
@@ -6083,8 +6088,25 @@ label.error {
   font-size: 20px;
   font-weight: 600;
 }
+@media screen and (max-width: 1399px) {
+  .loan-adjustment-details .loan-increment-wrap {
+    justify-content: center;
+    gap: 14px 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .loan-adjustment-details .loan-increment-wrap {
+    justify-content: flex-start;
+  }
+}
 .loan-adjustment-details .loan-review-details-head {
   margin-bottom: 40px;
+}
+.loan-adjustment-details .loan-review-details-head .loan-reviews__part-one {
+  min-width: 180px;
+}
+.loan-adjustment-details .loan-review-details-head .price-content {
+  max-width: 800px;
 }
 .loan-adjustment-details .loan-review-details-head .loan-reviews__part-one {
   border: 1px solid #DFE0E4;
@@ -6189,13 +6211,13 @@ label.error {
 }
 
 .terms-ratting {
-  background: #FCB650;
+  background: #EB7A23;
   border-radius: 12px;
   height: 100%;
   padding: 20px 18px;
 }
 .terms-ratting .star-active {
-  color: #13203B;
+  color: #ffffff;
 }
 .terms-ratting .rat-title {
   font-weight: 500;
@@ -8195,6 +8217,13 @@ label.error {
   padding: 0 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .brokerage-right-sticky {
+    position: sticky;
+    top: 120px;
+  }
+}
+
 .reviews-details .reviews-details__area {
   display: flex;
   gap: 45px;
@@ -8222,7 +8251,7 @@ label.error {
 .reviews-details .reviews-details__area .reviews-details__part .charges__card {
   border-radius: 16px;
   border: 1px solid #DFE0E4;
-  background: rgba(7, 76, 62, 0.03);
+  background: rgba(19, 47, 89, 0.03);
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -9082,6 +9111,14 @@ label.error {
   }
   .comments-area .author__content {
     padding: 14px;
+  }
+  .comments-area .author__content .author__thumbs {
+    width: 60px;
+    height: 60px;
+  }
+  .comments-area .author__content .author__thumbs img {
+    width: 100%;
+    height: 100%;
   }
 }
 /* ==== 

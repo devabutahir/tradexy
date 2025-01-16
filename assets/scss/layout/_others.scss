@@ -1545,7 +1545,7 @@
         input{
             border-radius: 30px;
             border: 1px solid #DFE0E4;
-            background: rgba(7, 76, 62, 0.03);
+            background: rgba(19, 47, 89, 0.03);
             width: 100%;
             padding: 12px 24px;
         }
@@ -1596,9 +1596,22 @@
                 }
            }
         }
+        @media screen and (max-width: 1399px) {
+            justify-content: center;
+            gap: 14px 20px;
+        }
+        @media screen and (max-width: 575px) {
+            justify-content: flex-start;
+        }
     }
     .loan-review-details-head{
         margin-bottom: 40px;
+        .loan-reviews__part-one{
+            min-width: 180px;
+        }
+        .price-content{
+            max-width: 800px;
+        }
         .loan-reviews__part-one{
             border: 1px solid #DFE0E4;
             padding: 12px;
@@ -1702,12 +1715,12 @@
     }
 }
 .terms-ratting{
-    background: $secondary-color;
+    background: $secondary-color2;
     border-radius: 12px;
     height: 100%;
     padding: 20px 18px;
     .star-active{
-        color: #13203B;
+        color: $white;
     }
     .rat-title{
         font-weight: 500;
