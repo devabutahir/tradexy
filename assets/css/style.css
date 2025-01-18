@@ -8675,6 +8675,59 @@ label.error {
   transform: scale(1.1);
 }
 
+.tutoraila-tabbing-wrap .nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #FFF;
+  max-width: 485px;
+  border-radius: 100px;
+  padding: 8px;
+  margin: 0 auto;
+  border: 1px solid #EBECEF;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link {
+  transition: all 0.4s;
+  border-radius: 30px;
+  transition: all 0.35s ease-in-out;
+  border-radius: 32px;
+  border: 1px solid #EBECEF;
+  background: #FAFAFB;
+  padding: 5px 14px 5px 5px;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link span {
+  transition: all 0.4s;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link .icons {
+  transition: all 0.4s;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  background: #ffffff;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link .icons i {
+  color: #222E48;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link a {
+  padding: 12px 24px;
+  width: 100%;
+  gap: 16px;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link:hover, .tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link:focus, .tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link.active {
+  background: #2660B5;
+  color: #FFF;
+}
+.tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link:hover span, .tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link:focus span, .tutoraila-tabbing-wrap .nav-tabs .nav-item .nav-link.active span {
+  color: #FFF;
+}
+@media screen and (max-width: 1199px) {
+  .tutoraila-tabbing-wrap .nav-tabs {
+    border-radius: 10px;
+    padding: 12px 12px;
+  }
+}
+
 /* ==== 
  --------- (5.0) all sections styles end ---------
  ==== */
