@@ -386,7 +386,9 @@ input[type="radio"]{
                 padding: 8px 16px;
                 color: $neutral-n-500;
                 font-size: 14px;
-                background: rgba(7, 76, 62, 0.03);
+                font-weight: 500;
+                border: 1px solid var(--Neutral-N40, #DFE0E4);
+                background: rgba(19, 47, 89, 0.05);
                 &.btn_theme {
                     .btn_theme_inner span{
                         font-size: 14px;

@@ -413,7 +413,7 @@ h6 > a {
 }
 
 .headingSix {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .headingSeven {
@@ -791,6 +791,10 @@ h6 > a {
 .container.container-cus {
   max-width: 1560px;
   margin: 0 auto;
+}
+
+.w-100 {
+  width: 100% !important;
 }
 
 /* ==== 
@@ -1171,7 +1175,9 @@ input[type=radio]:checked:before {
   padding: 8px 16px;
   color: #404A60;
   font-size: 14px;
-  background: rgba(7, 76, 62, 0.03);
+  font-weight: 500;
+  border: 1px solid var(--Neutral-N40, #DFE0E4);
+  background: rgba(19, 47, 89, 0.05);
 }
 .tag-area .tag .tag-content .btn_theme.btn_theme .btn_theme_inner span {
   font-size: 14px;
@@ -7202,6 +7208,35 @@ label.error {
   }
 }
 
+.weekly-review-item {
+  padding: 9px;
+}
+.weekly-review-item .badge {
+  padding: 8px 16px;
+  border-radius: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  background: #2660B5;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.weekly-review-item .card--secondary__content .card--secondary__time {
+  gap: 6px 18px;
+}
+.weekly-review-item .card--secondary__content .card--secondary__time span {
+  color: 16px;
+  font-weight: 500;
+  color: #404A60;
+}
+@media screen and (max-width: 1199px) {
+  .weekly-review-item .card--secondary__content .card--secondary__time {
+    gap: 6px 12px;
+  }
+}
+
 .animation {
   position: absolute;
   left: 0;
@@ -8224,6 +8259,13 @@ label.error {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .review-right-sidebar {
+    position: sticky;
+    top: 120px;
+  }
+}
+
 .reviews-details .reviews-details__area {
   display: flex;
   gap: 45px;
@@ -8416,6 +8458,31 @@ label.error {
   align-items: center;
 }
 
+.review-details-inner2 .popup-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: #EB7A23;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.review-details-inner2 .popup-video i {
+  color: #FFF;
+  font-size: 24px;
+}
+.review-details-inner2 .tag-area {
+  border-top: 1px dashed #2660B5;
+  padding-top: 24px;
+  margin-top: 30px;
+}
+
 .contact,
 .loan-reviews--tertiary,
 .reviews-details,
@@ -8481,14 +8548,14 @@ label.error {
   transition: all 0.35s ease-in-out;
 }
 .sidebar .sidebar__part .category li a {
-  padding: 12px 32px;
+  padding: 12px 24px;
   width: 100%;
   gap: 16px;
 }
 .sidebar .sidebar__part .category li .caregory__icon {
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -8552,6 +8619,60 @@ label.error {
 }
 .sidebar .sidebar__part .recent-posts .recent-posts__part .recent-posts__thumb img {
   border-radius: 16px;
+}
+@media screen and (max-width: 1199px) {
+  .sidebar .sidebar__part .recent-posts {
+    gap: 26px;
+  }
+  .sidebar .sidebar__part .recent-posts .recent-posts__part {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .sidebar .sidebar__part .recent-posts .recent-posts__part .recent-posts__thumb {
+    max-width: 70px;
+    flex-shrink: 0;
+  }
+  .sidebar .sidebar__part .recent-posts .recent-posts__part .recent-posts__thumb img {
+    width: 100%;
+    border-radius: 16px;
+  }
+  .sidebar .sidebar__part .recent-posts .recent-posts__part .recent-posts__title h5 a {
+    font-size: 17px;
+  }
+}
+
+.video-tutorial__item {
+  border: 1px solid #DFE0E4;
+  transition: all 0.5s;
+}
+.video-tutorial__item .video-tutorial__thumb {
+  width: 100%;
+}
+.video-tutorial__item .video-tutorial__thumb img {
+  width: 100%;
+  transition: all 0.4s;
+}
+.video-tutorial__item .video-tutorial__icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+}
+.video-tutorial__item .video-tutorial__icon img {
+  width: 100%;
+  height: 100%;
+}
+.video-tutorial__item .video-tutorial-cont .card--secondary__time span {
+  color: #404A60;
+}
+.video-tutorial__item:hover {
+  border-color: #2660B5;
+}
+.video-tutorial__item:hover h6 a {
+  color: #2660B5;
+}
+.video-tutorial__item:hover .video-tutorial__thumb img {
+  transform: scale(1.1);
 }
 
 /* ==== 

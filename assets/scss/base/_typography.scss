@@ -181,7 +181,7 @@ h6>a {
 }
 
 .headingSix {
-    font-size: $font-size;
+    font-size: 18px;
 }
 .headingSeven {
     font-size: 16px;
@@ -598,4 +598,8 @@ h6>a {
         max-width: 1560px;
         margin: 0 auto;
     }
+  }
+
+  .w-100{
+    width: 100% !important;
   }

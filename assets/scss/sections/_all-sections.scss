@@ -1021,6 +1021,40 @@
     }
 }
 
+//weekly-review-item
+.weekly-review-item{
+    padding: 9px;
+    .badge{
+        padding: 8px 16px;
+        border-radius: 0 0 12px 0;
+        font-size: 14px;
+        font-weight: 600;
+        background: $primary-color;
+        color: $white;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .card--secondary__content{
+        .card--secondary__time{
+            gap: 6px 18px;
+            span{
+                color: 16px;
+                font-weight: 500;
+                color: $neutral-n-500;
+            }
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        .card--secondary__content{
+            .card--secondary__time{
+                gap: 6px 12px;
+            }
+        }
+    }
+}
+
 
 
 
@@ -2123,6 +2157,12 @@
     top: 120px;
    }
 }
+.review-right-sidebar{
+    @media screen and (min-width: 992px) {
+        position: sticky;
+        top: 120px;
+    }
+}
 // Some Sticky 
 
 
@@ -2335,6 +2375,33 @@
         }
     }
 }
+//review-details
+.review-details-inner2{
+    .popup-video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background: $secondary-color2;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        i{
+            color: $neutral-n-0;
+            font-size: 24px;
+        }
+    }
+    .tag-area{
+        border-top: 1px dashed $primary-color;
+        padding-top: 24px;
+        margin-top: 30px;
+    }
+}
 
 .contact,
 .loan-reviews--tertiary,
@@ -2394,19 +2461,23 @@
             gap: 12px;
             li{
                 border-radius: 30px;
-                background: $neutral-n-20;
+                background: #F5F6F7;
                 transition: $transition;
                 a{
-                    padding: 12px 32px;
+                    padding: 12px 24px;
                     width: 100%;
                     gap: 16px;
                 }
                 .caregory__icon{
-                    @include box(32px);
+                    @include box(36px);
                     background: $neutral-n-0;
                     box-shadow: $box-shadow-2;
                     svg{
                         max-width: calc(100% - 12px);
+                        path{
+                            // stroke: #265fb574;
+
+                        }
                     }
                 }
                 .caregory__content{
@@ -2469,9 +2540,75 @@
                     }
                 }
             }
+            @media screen and (max-width: 1199px) {
+                gap: 26px;
+                .recent-posts__part{     
+                    display: flex;
+                    gap: 12px;
+                    align-items: flex-start;
+                    .recent-posts__thumb{
+                        max-width: 70px;
+                        flex-shrink: 0;
+                        img{
+                            width: 100%;
+                            border-radius: 16px;
+                        }
+                    }
+                    .recent-posts__title{
+                        h5{
+                            a{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
+//Video Tutorial 
+.video-tutorial__item{
+    border: 1px solid $neutral-n-40;
+    transition: all 0.5s;
+    .video-tutorial__thumb{
+        width: 100%;
+        img{
+            width: 100%;
+            transition: all 0.4s;
+        }
+    }
+    .video-tutorial__icon{
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .video-tutorial-cont{
+        .card--secondary__time{
+            span{
+                color: $neutral-n-500;
+            }
+        }
+    }
+    &:hover{
+        border-color: $primary-color;
+        h6{
+            a{
+                color: $primary-color;
+            }
+        }
+        .video-tutorial__thumb{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+//Video Tutorial 
 
 /* ==== 
  --------- (5.0) all sections styles end ---------
