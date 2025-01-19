@@ -1884,32 +1884,25 @@
 }
 
 // sign-up
+.authentication-wrapper{
+    .authentication-content-left{
+        .logos{
+            margin-bottom: 120px;
+        }
+        .boxes{
+            margin-bottom: 180px;
+        }
+    }
+}
 .sign-up{  
     position: relative;
+    width: 100%;
+    height: 100vh;
     z-index: 0;
-    // overflow: initial;
-    &:after{
-        content: "";
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background: $theme-secondary-bg;
-        border-radius: 16px;
-        opacity: 0.1000000015;
-        z-index: -1;
-    }
     .sign-up__form{
-        padding: 32px;
         border-radius: 16px;
         background: $neutral-n-0;
         box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
-        .sign-up__title{
-            margin-bottom: 16px;
-        }
-        .sign-up__sub-title{
-            color: $neutral-n-700;
-        }
         .sign-up__form-part{
             display: flex;
             gap: 20px;
@@ -2285,7 +2278,6 @@
                 }
             }
     
-    
             .average-reviews{
                 .average-reviews__title,
                 .average-reviews__content{
@@ -2372,6 +2364,82 @@
                 gap: 12px;
                 align-items: center;
             }
+        }
+    }
+}
+.average-reviews{
+    .average-reviews__title,
+    .average-reviews__content{
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px dashed $neutral-n-50;
+    }
+    .average-reviews__content{
+        margin-bottom: 0;
+    }
+
+    .average-reviews__card{
+        padding: 26px 48px;
+        background: $primary-color;
+        color: $neutral-n-0;
+        text-align: center;
+        border-radius: 16px;
+    }
+    .average-reviews__count{
+        font-size: 24px;
+        span{
+            color: $secondary-color;
+        }
+    }
+    .star_review{
+        padding: 8px 0;
+        justify-content: center;
+    }
+
+    .progress-area{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .progress-area__part{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            // position: relative;
+            span i{
+                color: $secondary-color;
+            }
+            .prog-bar{
+                height: 12px;
+                width: 100%;
+                background: $neutral-n-30;
+            }
+        
+            .prog-percentage {
+                height: 12px !important;
+                background: $secondary-color;
+                animation: none;
+                position: relative;
+                &::before{
+                    content: attr(per);
+                    position: absolute;
+                    top: 7px;
+                }
+            }         
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .average-reviews__title,
+        .average-reviews__content{
+            padding-bottom: 18px;
+            margin-bottom: 18px;
+        }
+
+        .average-reviews__card{
+            padding: 20px 40px;
+            background: $primary-color;
+            color: $neutral-n-0;
+            text-align: center;
+            border-radius: 16px;
         }
     }
 }
@@ -2572,10 +2640,40 @@
     border: 1px solid $neutral-n-40;
     transition: all 0.5s;
     .video-tutorial__thumb{
+        position: relative;
         width: 100%;
         img{
             width: 100%;
             transition: all 0.4s;
+        }
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            content: "";
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.168) 0%, rgba(0, 0, 0, 0.3) 100%);
+            transition: all 0.5s;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .popup-video{
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            border-radius: 50%;
+            background: $secondary-color2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: all 0.5s;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 1;
+            i{
+                color: $neutral-n-0;
+                font-size: 24px;
+            }
         }
     }
     .video-tutorial__icon{
@@ -2594,6 +2692,43 @@
             }
         }
     }
+    //Video tutorial Style 2
+    &.style2{
+        background: $neutral-n-0;
+        .video-tutorial__thumb{
+            &::before{
+                display: none;
+            }
+        }
+        .badge-graphic{
+            border-radius: 8px;
+            border: 1px solid rgba(31, 120, 62, 0.20);
+            background: rgba(31, 120, 62, 0.05);
+            font-weight: 500;
+            padding: 4px 12px;
+            i,span{
+                color: $secondary-color3;
+            }
+            &.style2{
+                border-radius: 8px;
+                border: 1px solid rgba(235, 122, 35, 0.20);
+                background: rgba(235, 122, 35, 0.05);
+                i,span{
+                    color: $secondary-color2;
+                }
+            }
+        }
+        .graphic-content{
+            .lession-stream{
+                border-bottom: 1px solid $neutral-n-40;
+                border-top: 1px solid $neutral-n-40;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
     &:hover{
         border-color: $primary-color;
         h6{
@@ -2602,10 +2737,42 @@
             }
         }
         .video-tutorial__thumb{
+            &::before{
+                width: 100%;
+            }
             img{
                 transform: scale(1.1);
             }
+            .popup-video{
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
+    }
+    @media screen and (max-width: 1199px) {
+        .video-tutorial__thumb{
+            .popup-video{
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.graphic-select{
+    padding: 12px 38px 12px 22px;
+    &::after{
+        border-bottom: 2px solid #404A60;
+        border-right: 2px solid #404A60;
+        width: 9px;
+        height: 9px;
+        right: 18px;
+        margin-top: -6px;
+    }
+    .current{
+        color:  #404A60 !important;
     }
 }
 //Video Tutorial 
@@ -2662,6 +2829,59 @@
         @media screen and (max-width: 1199px) {
             border-radius: 10px;
             padding: 12px 12px;
+        }
+    }
+}
+
+//aitable sponsor 
+.aitable-sponsor{
+    padding: 60px 0;
+    &.style1{
+        background: rgba(19, 47, 89, 0.05);
+    }
+    &.style2{
+        background: $neutral-n-0;
+    }
+    @media screen and (max-width: 1199px) {
+        padding: 40px 0;
+    }
+    @media screen and (max-width: 991px) {
+        padding: 20px 0;
+        .aitable-sponsor-item{
+            margin: 0 25px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding: 20px 0;
+        .aitable-sponsor-item{
+            margin: 0 16px;
+        }
+    }
+}
+.aitable-sponsor-item{
+    max-width: 155px;
+    height: 31px;
+    margin: 0 35px;
+    text-align: center;
+    img{
+        margin: 0 auto;
+        height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+//error-page
+.error-page{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    .error-page__thumb{
+        max-width: 750px;
+        margin: 0 auto;
+        img{
+            width: 100%;
         }
     }
 }

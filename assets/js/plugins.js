@@ -151,6 +151,46 @@
                 ],
             });
 
+        // feature slider
+        $(".aitable-sponsor-wrap")
+            .not(".slick-initialized")
+            .slick({
+                infinite: true,
+                autoplay: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                speed: 1500,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 6,
+                        },
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 5,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                    }
+                ],
+            });
+
         // Hero Loan4
         $(".hero-homelon-slider")
         .not(".slick-initialized")
