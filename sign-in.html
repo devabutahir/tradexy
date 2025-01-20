@@ -45,43 +45,72 @@
     </div>
       
     <!-- sign-up start -->
-    <section class="sign-up section">
-        <div class="container">
+    <section class="sign-up d-center">
+        <div class="container-fluid p-0">
             <div class="authentication-wrapper">
                 <div class="authentication-content-left">
                     <a href="index.html" class="logos d-block"><img src="assets/images/logo/logo.png" alt="img"></a>
                     <div class="boxes">
-                        <a href="#" class="d-flex align-items-center gap-2 fw-semibold primary-clr mb-xl-5 mb-4">
+                        <a href="index.html" class="d-flex align-items-center gap-2 fw-semibold primary-clr mb-xxl-5 mb-4">
                             <i class="bi bi-arrow-left primary-clr headingFive"></i> Back Here
                         </a>
-                        <h2 class="mb-lg-3 mb-2 black-clr">Let’s Get Started!</h2>
-                        <p class="pra-clr mb_40">Please Enter your Email Address to Start your Online Application</p>
+                        <h2 class="mb-lg-3 mb-2 black-clr">Welcome Back!</h2>
+                        <p class="pra-clr mb_40">Sign in to your account and join us</p>
                         <form method="POST" autocomplete="off" id="frmContactus" class="sign-up__form me-lg-4 me-xxl-0">
-                            <div class="sign-up__form-part">
-                                <div class="input-single">
-                                    <label class="label" for="email">Enter Your Email ID</label>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email..." required>
+                            <div class="row g-4">
+                                <div class="col-md-12">
+                                    <div class="input-single">
+                                        <label class="label" for="email">Enter Your Email ID</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your email ID here" required>
+                                    </div>
                                 </div>
-                                <div class="input-single">
-                                    <label class="label" for="password">Enter Your Password</label>
-                                    <div class="input-pass">
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password..." required>
-                                        <span class="password-eye-icon"></span>
+                                <div class="col-md-12">
+                                    <div class="input-single">
+                                        <label class="label" for="password">Password</label>
+                                        <div class="input-pass">
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" required>
+                                            <span class="password-eye-icon"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="#" class="fs-small forget-pass">Forget password</a>
                             </div>
-                            <p class="have_account">Do you have an account? <a href="sign-up.html" class="signin">Signup</a></p>
+                            <p class="have_account">Don’t have an account? <a href="sign-up.html" class="signin">Sign Up</a></p>
                             <span id="msg"></span> 
-                            <button type="submit" class="btn_theme mt_32" name="submit" id="submit">Sign In<i class="bi bi-arrow-up-right"></i><span></span></button>
+                            <button type="submit" class="btn_theme mt_32 w-100 d-center" name="submit" id="submit">Sign In<i class="bi bi-arrow-up-right"></i><span></span></button>
                         </form>
                     </div>
-                    <p>
+                    <p class="copyright text-lg-start text-center">
                         Copyright &copy;2025 <a href="index.html" class="secondary-clr">TRADEXY.</a> Designed By Pixelaxis
                     </p>
                 </div>
-                <div class="authentication-video">
-                    
+                <div class="authentication-video position-relative">
+                    <video class="w-100 h-100" controls muted loop autoplay playsinline preload="none">
+                        <source src="https://softivuspro.com/pic/vid/videoplayback%20(1).mp4" type="video/mp4">
+                    </video>
+                    <div class="video-review-boxes">
+                        <div class="author position-relative rounded-circle mb-4">
+                            <img src="assets/images/testimonial/testimonial-author1.png" alt="img" class="rounded-circle">
+                            <!--quote-->
+                            <div class="quote d-center">
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.375 0.25H1.75C1.35218 0.25 0.970644 0.408035 0.68934 0.68934C0.408035 0.970644 0.25 1.35218 0.25 1.75V7.75C0.25 8.14782 0.408035 8.52936 0.68934 8.81066C0.970644 9.09196 1.35218 9.25 1.75 9.25H7.375V10C7.375 10.7956 7.05893 11.5587 6.49632 12.1213C5.93371 12.6839 5.17065 13 4.375 13C4.17609 13 3.98532 13.079 3.84467 13.2197C3.70402 13.3603 3.625 13.5511 3.625 13.75C3.625 13.9489 3.70402 14.1397 3.84467 14.2803C3.98532 14.421 4.17609 14.5 4.375 14.5C5.56809 14.4988 6.71197 14.0243 7.55561 13.1806C8.39925 12.337 8.87376 11.1931 8.875 10V1.75C8.875 1.35218 8.71696 0.970644 8.43566 0.68934C8.15436 0.408035 7.77282 0.25 7.375 0.25ZM7.375 7.75H1.75V1.75H7.375V7.75ZM18.25 0.25H12.625C12.2272 0.25 11.8456 0.408035 11.5643 0.68934C11.283 0.970644 11.125 1.35218 11.125 1.75V7.75C11.125 8.14782 11.283 8.52936 11.5643 8.81066C11.8456 9.09196 12.2272 9.25 12.625 9.25H18.25V10C18.25 10.7956 17.9339 11.5587 17.3713 12.1213C16.8087 12.6839 16.0456 13 15.25 13C15.0511 13 14.8603 13.079 14.7197 13.2197C14.579 13.3603 14.5 13.5511 14.5 13.75C14.5 13.9489 14.579 14.1397 14.7197 14.2803C14.8603 14.421 15.0511 14.5 15.25 14.5C16.4431 14.4988 17.587 14.0243 18.4306 13.1806C19.2743 12.337 19.7488 11.1931 19.75 10V1.75C19.75 1.35218 19.592 0.970644 19.3107 0.68934C19.0294 0.408035 18.6478 0.25 18.25 0.25ZM18.25 7.75H12.625V1.75H18.25V7.75Z" fill="white"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <p class="pra-clr mb-3">
+                            “TRADEXY has been a game-changer for me! The trading signals are spot on, and the platform is easy to use.”
+                        </p>
+                        <div class="d-flex align-items-center gap-1 mb-3">
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-half secondary-clr2 headingSix"></i>
+                        </div>
+                        <h6 class="black-clr mb-1">Marvin McKinney</h6>
+                        <span class="pra-clr fs-small">Teacher</span>
+                    </div>
                 </div>
             </div>
         </div>

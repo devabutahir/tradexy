@@ -8027,42 +8027,119 @@ label.error {
   border-radius: 16px;
 }
 
-.authentication-wrapper .authentication-content-left .logos {
-  margin-bottom: 120px;
+.authentication-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1080px;
 }
-.authentication-wrapper .authentication-content-left .boxes {
-  margin-bottom: 180px;
+.authentication-wrapper .authentication-content-left {
+  max-width: 526px;
+  height: 1080px;
+  margin: 0 auto;
+  padding: 24px 30px;
+  display: grid;
+  justify-content: space-between;
+}
+.authentication-wrapper .authentication-content-left .copyright {
+  margin-top: auto;
+}
+.authentication-wrapper .authentication-video {
+  height: 1080px;
+  width: 948px;
+}
+.authentication-wrapper .authentication-video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.authentication-wrapper .authentication-video .video-review-boxes {
+  max-width: 413px;
+  border-radius: 12px;
+  padding: 32px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 23%;
+}
+.authentication-wrapper .authentication-video .video-review-boxes .author {
+  width: 88px;
+  height: 88px;
+  position: relative;
+}
+.authentication-wrapper .authentication-video .video-review-boxes .author .quote {
+  background: #2660B5;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1399px) {
+  .authentication-wrapper .authentication-content-left {
+    max-width: 526px;
+    margin: 0 auto;
+    padding: 24px 30px;
+  }
+  .authentication-wrapper .authentication-video .video-review-boxes {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .authentication-wrapper {
+    height: initial;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .authentication-wrapper .authentication-content-left {
+    max-width: 626px;
+    height: initial;
+    margin: 0 auto;
+    padding: 24px 18px;
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+  }
+  .authentication-wrapper .authentication-content-left .copyright {
+    margin-top: auto;
+  }
+  .authentication-wrapper .authentication-video {
+    height: initial;
+    width: 948px;
+  }
+  .authentication-wrapper .authentication-video video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .authentication-wrapper .authentication-video .video-review-boxes {
+    left: 20px;
+    bottom: 20px;
+    position: initial;
+  }
 }
 
 .sign-up {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 0;
 }
-.sign-up .sign-up__form {
-  border-radius: 16px;
-  background: #FFF;
-  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
-}
-.sign-up .sign-up__form .sign-up__form-part {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-.sign-up .sign-up__form .sign-up__form-part .form-control {
+.sign-up .sign-up__form .form-control {
   background: rgba(7, 76, 62, 0.03);
 }
-.sign-up .sign-up__form .sign-up__form-part .forget-pass {
+.sign-up .sign-up__form .forget-pass {
   color: #2660B5;
   justify-content: flex-end;
+  margin-top: 14px;
 }
 .sign-up .sign-up__form .have_account {
-  color: #222E48;
+  color: #404A60;
 }
 .sign-up .sign-up__form .have_account a {
   font-weight: 600;
-  color: #2660B5;
+  color: #EB7A23;
 }
 
 .contact:after {
@@ -8118,6 +8195,17 @@ label.error {
 }
 .contact .more-help .card--small .card--small-title {
   margin-bottom: 12px;
+}
+.contact .sign-up__form {
+  padding: 32px;
+}
+@media screen and (max-width: 991px) {
+  .contact .sign-up__form {
+    padding: 24px;
+  }
+  .contact .form-control {
+    padding: 12px 24px;
+  }
 }
 
 .service-details .card--secondary,

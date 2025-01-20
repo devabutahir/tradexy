@@ -43,307 +43,90 @@
     <div class="preloader">
         <span class="loader"></span>
     </div>
-
-    <!--header-section start-->
-    <header class="header-section ">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-xl nav-shadow" id="#navbar">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo" alt="logo"></a>
-                        <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            <i class="bi bi-list"></i>
+      
+    <!-- sign-up start -->
+    <section class="sign-up d-center">
+        <div class="container-fluid p-0">
+            <div class="authentication-wrapper">
+                <div class="authentication-content-left">
+                    <a href="index.html" class="logos d-block"><img src="assets/images/logo/logo.png" alt="img"></a>
+                    <div class="boxes">
+                        <a href="index.html" class="d-flex align-items-center gap-2 fw-semibold primary-clr mb-xxl-5 mb-4">
+                            <i class="bi bi-arrow-left primary-clr headingFive"></i> Back Here
                         </a>
-
-                        <div class="collapse navbar-collapse ms-auto " id="navbar-content">
-                            <div class="main-menu">
-                                <ul class="navbar-nav mb-lg-0 mx-auto">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                            <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                            <li><a class="dropdown-item" href="index-3.html">Home Three</a></li>
-                                            <li><a class="dropdown-item" href="index-4.html">Home Four</a></li>
-                                            <li><a class="dropdown-item" href="index-5.html">Home Five</a></li>
-                                        </ul>
-                                    </li> 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                            <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
-                                        </ul>
-                                    </li> 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="loan-comparison.html">Loan Comparison</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="about.html">about Us</a></li>
-                                            <li><a class="dropdown-item" href="service.html">service</a></li>
-                                            <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                                            <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                            <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
-                                            <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact us</a>
-                                    </li>
-                                </ul>
-                                <div class="nav-right d-none d-xl-block">
-                                    <div class="nav-right__search">
-                                        <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white"> <i class="bi bi-search"></i> <span></span> </a>    
-                                        <a href="sign-in.html" class="btn_theme btn_theme_active">Sign In <i class="bi bi-arrow-up-right"></i><span></span></a>
+                        <h2 class="mb-lg-3 mb-2 black-clr">Let’s Get Started!</h2>
+                        <p class="pra-clr mb_40">Please Enter your Email Address to Start your Online Application</p>
+                        <form method="POST" autocomplete="off" id="frmContactus" class="sign-up__form me-lg-4 me-xxl-0">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="input-single">
+                                        <label class="label" for="fname">First Name</label>
+                                        <input type="text" class="form-control" name="firstName" id="fname" placeholder="Jone" required>
                                     </div>
-                                    <div class="nav-right__search-inner">
-                                        <div class="nav-search-inner__form">
-                                            <form method="POST" id="search" class="inner__form">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search" required>
-                                                    <button type="submit" class="search_icon"><i class="bi bi-search"></i></button>
-                                                </div>
-                                            </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-single">
+                                        <label class="label" for="lastName">Last Name</label>
+                                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Fisher" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-single">
+                                        <label class="label" for="email">Enter Your Email ID</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your email ID here" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-single">
+                                        <label class="label" for="password">Password</label>
+                                        <div class="input-pass">
+                                            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" required>
+                                            <span class="password-eye-icon"></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Offcanvas More info-->
-    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
-        <div class="offcanvas-body custom-nevbar">
-            <div class="row">
-                <div class="col-md-7 col-xl-8">
-                    <div class="custom-nevbar__left">
-                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                        <ul class="custom-nevbar__nav mb-lg-0">
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                    <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                    <li><a class="dropdown-item" href="index-3.html">Home Three</a></li>
-                                    <li><a class="dropdown-item" href="index-4.html">Home Four</a></li>
-                                    <li><a class="dropdown-item" href="index-5.html">Home Five</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details2.html">Loan Reviews Details 02</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Loan Comparison</a>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about.html">about us</a></li>
-                                    <li><a class="dropdown-item" href="service.html">service</a></li>
-                                    <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-details.html">blog Details</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="sign-up.html">sign up</a></li>
-                                    <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="contact.html">contact us</a>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="sign-in.html">sign in</a>
-                            </li>
-                        </ul>
+                            <p class="have_account mt-sm-4 mt-3">Have an accounts? <a href="sign-in.html" class="signin">Sign In</a></p>
+                            <span id="msg"></span> 
+                            <button type="submit" class="btn_theme mt_32 w-100 d-center" name="submit" id="submit">Sign Up<i class="bi bi-arrow-up-right"></i><span></span></button>
+                        </form>
                     </div>
+                    <p class="copyright text-lg-start text-center">
+                        Copyright &copy;2025 <a href="index.html" class="secondary-clr">TRADEXY.</a> Designed By Pixelaxis
+                    </p>
                 </div>
-                <div class="col-md-5 col-xl-4">
-                    <div class="custom-nevbar__right">
-                        <div class="custom-nevbar__top d-none d-md-block">
-                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                            <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
+                <div class="authentication-video position-relative">
+                    <video class="w-100 h-100" controls muted loop autoplay playsinline preload="none">
+                        <source src="https://softivuspro.com/pic/vid/videoplayback.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-review-boxes">
+                        <div class="author position-relative rounded-circle mb-4">
+                            <img src="assets/images/testimonial/testimonial-author1.png" alt="img" class="rounded-circle">
+                            <!--quote-->
+                            <div class="quote d-center">
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.375 0.25H1.75C1.35218 0.25 0.970644 0.408035 0.68934 0.68934C0.408035 0.970644 0.25 1.35218 0.25 1.75V7.75C0.25 8.14782 0.408035 8.52936 0.68934 8.81066C0.970644 9.09196 1.35218 9.25 1.75 9.25H7.375V10C7.375 10.7956 7.05893 11.5587 6.49632 12.1213C5.93371 12.6839 5.17065 13 4.375 13C4.17609 13 3.98532 13.079 3.84467 13.2197C3.70402 13.3603 3.625 13.5511 3.625 13.75C3.625 13.9489 3.70402 14.1397 3.84467 14.2803C3.98532 14.421 4.17609 14.5 4.375 14.5C5.56809 14.4988 6.71197 14.0243 7.55561 13.1806C8.39925 12.337 8.87376 11.1931 8.875 10V1.75C8.875 1.35218 8.71696 0.970644 8.43566 0.68934C8.15436 0.408035 7.77282 0.25 7.375 0.25ZM7.375 7.75H1.75V1.75H7.375V7.75ZM18.25 0.25H12.625C12.2272 0.25 11.8456 0.408035 11.5643 0.68934C11.283 0.970644 11.125 1.35218 11.125 1.75V7.75C11.125 8.14782 11.283 8.52936 11.5643 8.81066C11.8456 9.09196 12.2272 9.25 12.625 9.25H18.25V10C18.25 10.7956 17.9339 11.5587 17.3713 12.1213C16.8087 12.6839 16.0456 13 15.25 13C15.0511 13 14.8603 13.079 14.7197 13.2197C14.579 13.3603 14.5 13.5511 14.5 13.75C14.5 13.9489 14.579 14.1397 14.7197 14.2803C14.8603 14.421 15.0511 14.5 15.25 14.5C16.4431 14.4988 17.587 14.0243 18.4306 13.1806C19.2743 12.337 19.7488 11.1931 19.75 10V1.75C19.75 1.35218 19.592 0.970644 19.3107 0.68934C19.0294 0.408035 18.6478 0.25 18.25 0.25ZM18.25 7.75H12.625V1.75H18.25V7.75Z" fill="white"/>
+                                </svg>                                
                             </div>
                         </div>
-                        <ul class="custom-nevbar__right-location">
-                            <li>
-                                <p class="mb-2">Phone: </p>
-                                <a href="tel:+123456789" class="fs-4 contact">+123 456 789</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Email: </p>
-                                <a href="mailto:Info@gmail.com" class="fs-4 contact">Info@gmail.com</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Location: </p>
-                                <p class="fs-4 contact">6391 Celina, Delaware 10299</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- header-section end -->
-    
-    <!-- Banner Start -->
-    <section class="banner">
-        <div class="container ">
-            <div class="row gy-4 gy-sm-0 align-items-center">
-                <div class="col-12 col-sm-6">
-                    <div class="banner__content">
-                        <h1 class="banner__title display-4 wow fadeInLeft" data-wow-duration="0.8s">Sign Up</h1> 
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb wow fadeInRight" data-wow-duration="0.8s">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item">pages</li>
-                                <li class="breadcrumb-item active" aria-current="page">Sign Up</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <div class="banner__thumb text-end">
-                        <img src="assets/images/signin_banner.png" alt="image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Banner End -->
-  
-    <!-- sign-up start -->
-    <section class="sign-up section">
-        <div class="container">
-            <div class="row gy-5 gy-xl-0 justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-12 col-lg-7 col-xxl-6">
-                    <form method="POST" autocomplete="off" id="frmContactus" class="sign-up__form me-lg-4 me-xxl-0 wow fadeInUp" data-wow-duration="0.8s">
-                        <h3 class="sign-up__title wow fadeInUp" data-wow-duration="0.8s">Let’s Get Started!</h3>
-                        <p class="sign-up__sub-title mb_40">Please enter your email address to join us</p>
-                        <div class="sign-up__form-part">
-                            <div class="input-group">
-                                <div class="input-single">
-                                    <label class="label" for="fname">First Name</label>
-                                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter First Name..." required>
-                                </div>
-                                <div class="input-single">
-                                    <label class="label" for="lname">Last Name</label>
-                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Last Name..." required>
-                                </div>
-                            </div>
-                            <div class="input-single">
-                                <label class="label" for="email">Enter Your Email ID</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email..." required>
-                            </div>
-                            <div class="input-single">
-                                <label class="label" for="password">Enter Your Password</label>
-                                <div class="input-pass">
-                                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password..." required>
-                                    <span class="password-eye-icon"></span>
-                                </div>
-                            </div>
+                        <p class="pra-clr mb-3">
+                            “TRADEXY has been a game-changer for me! The trading signals are spot on, and the platform is easy to use.”
+                        </p>
+                        <div class="d-flex align-items-center gap-1 mb-3">
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-fill secondary-clr2 headingSix"></i>
+                            <i class="bi bi-star-half secondary-clr2 headingSix"></i>
                         </div>
-                        <p class="have_account mt_24">Do you have an account? <a href="sign-in.html" class="signin">Signin</a></p>
-                        <span id="msg"></span> 
-                        <button type="submit" class="btn_theme mt_32" name="submit" id="submit">Sign Up<i class="bi bi-arrow-up-right"></i><span></span></button> 
-                    </form>
-                </div>
-                <div class="col-12 col-sm-7 col-lg-5 col-xxl-5">
-                    <div class="sign-up__thumb previewShapeY unset-xxl wow fadeInDown" data-wow-duration="0.8s">
-                        <img src="assets/images/sign_up.png" alt="images">
+                        <h6 class="black-clr mb-1">Marvin McKinney</h6>
+                        <span class="pra-clr fs-small">Teacher</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- sign-up end -->   
-
-    <!-- Footer Area Start -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row section gy-5 gy-xl-0">
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="about-company wow fadeInLeft" data-wow-duration="0.8s">
-                        <div class="footer__logo mb-4">
-                            <a href="index.html">
-                                <img src="assets/images/logo/logo-light.png" alt="Logo">
-                            </a>
-                        </div>
-                        <p>TRADEXY is a comprehensive platform designed to empower traders at every level. TRADEXY provides the tools, insights.</p>
-                        <div class="social mt_32">
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-facebook"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-twitter"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-pinterest"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-twitch"></i><span></span></a>
-                            <a href="#" class="btn_theme social_box"><i class="bi bi-skype"></i><span></span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="footer__contact ms-sm-4 ms-xl-0 wow fadeInUp" data-wow-duration="0.8s">
-                        <h4 class="footer__title mb-4">Contact</h4>
-                        <div class="footer__content">
-                            <a href="tel:+1-234-567-891"> <span class="btn_theme social_box"> <i class="bi bi-telephone-plus"></i> </span> (316) 555-0116 <span></span> </a> 
-                            <a href="mailto:info@example.com"> <span class="btn_theme social_box"> <i class="bi bi-envelope-open"></i> </span> info@example.com <span></span> </a> 
-                            <a href="#"> <span class="btn_theme social_box"> <i class="bi bi-geo-alt"></i> </span> 31 Brandy Way, Sutton, SM2 6SE <span></span> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="newsletter wow fadeInDown" data-wow-duration="0.8s">
-                        <h4 class="footer__title mb-4">Newsletter</h4>
-                        <p class="mb_32">Subscribe our newsletter to get our latest update & news</p>
-                        <form method="POST" autocomplete="off" id="frmSubscribe" class="newsletter__content-form">
-                            <div class="input-group">
-                                <input type="email" class="form-control" id="sMail" name="sMail" placeholder="Email Address" required>
-                                <button type="submit" class="emailSubscribe btn_theme btn_theme_active" name="emailSubscribe" id="emailSubscribe"><i class="bi bi-cursor"></i> <span></span></button>
-                            </div>
-                            <span id="subscribeMsg"></span>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-3">
-                    <div class="quick-link ms-sm-4 ms-xl-0 wow fadeInRight" data-wow-duration="0.8s">
-                        <h4 class="footer__title mb-4">Quick Link</h4>
-                        <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="revies.html">Brokerage Reviews</a></li>
-                            <li><a href="marketanalysis.html">Market Analysis</a></li>
-                            <li><a href="educatess.html">Educate</a></li>
-                            <li><a href="servers.html">Serve</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer__copyright">
-                        <p class="copyright text-center">Copyright &copy; <span id="copyYear"></span> <a href="#" class="secondary_color">Tredexy</a>. Designed By <a href="#" class="secondary_color">Pixelaxis</a></p>
-                        <ul class="footer__copyright-conditions">
-                            <li><a href="contact.html">Help & Support</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
 
     <!-- scroll to top -->
     <a href="#" class="scrollToTop"><i class="bi bi-chevron-double-up"></i></a>
