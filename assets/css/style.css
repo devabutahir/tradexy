@@ -5299,6 +5299,7 @@ label.error {
   height: 490px;
   overflow: hidden;
   margin: 0 auto;
+  border-radius: 12px;
 }
 .working-video-area video {
   -o-object-fit: cover;
@@ -8816,6 +8817,18 @@ label.error {
   }
 }
 
+.tutorial-video1 {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tutorial-video1 video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .video-tutorial__item {
   border: 1px solid #DFE0E4;
   transition: all 0.5s;
@@ -9052,6 +9065,38 @@ label.error {
 }
 .error-page .error-page__thumb img {
   width: 100%;
+}
+
+.pricing-plan-items {
+  background: #FFF;
+  padding: 24px 24px;
+  gap: 32px;
+  transition: all 0.4s;
+}
+.pricing-plan-items .icon-inner span {
+  color: #2660B5;
+}
+.pricing-plan-items.active, .pricing-plan-items:hover {
+  background: #2660B5;
+  color: #FFF;
+}
+.pricing-plan-items.active .border-bottom, .pricing-plan-items:hover .border-bottom {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.pricing-plan-items.active .icon-inner span, .pricing-plan-items:hover .icon-inner span {
+  color: #FFF;
+}
+.pricing-plan-items.active h2, .pricing-plan-items.active p, .pricing-plan-items.active ul, .pricing-plan-items.active li, .pricing-plan-items:hover h2, .pricing-plan-items:hover p, .pricing-plan-items:hover ul, .pricing-plan-items:hover li {
+  color: #FFF;
+}
+.pricing-plan-items.active .btn_theme, .pricing-plan-items:hover .btn_theme {
+  color: #2660B5;
+}
+.pricing-plan-items.active .btn_theme::after, .pricing-plan-items:hover .btn_theme::after {
+  background: #FFF;
+}
+.pricing-plan-items.active .branding-icon, .pricing-plan-items:hover .branding-icon {
+  filter: brightness(0) invert(1);
 }
 
 /* ==== 
