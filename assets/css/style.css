@@ -8914,19 +8914,19 @@ label.error {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.video-tutorial__item:hover {
+.video-tutorial__item.active, .video-tutorial__item:hover {
   border-color: #2660B5;
 }
-.video-tutorial__item:hover h6 a {
+.video-tutorial__item.active h6 a, .video-tutorial__item:hover h6 a {
   color: #2660B5;
 }
-.video-tutorial__item:hover .video-tutorial__thumb::before {
+.video-tutorial__item.active .video-tutorial__thumb::before, .video-tutorial__item:hover .video-tutorial__thumb::before {
   width: 100%;
 }
-.video-tutorial__item:hover .video-tutorial__thumb img {
+.video-tutorial__item.active .video-tutorial__thumb img, .video-tutorial__item:hover .video-tutorial__thumb img {
   transform: scale(1.1);
 }
-.video-tutorial__item:hover .video-tutorial__thumb .popup-video {
+.video-tutorial__item.active .video-tutorial__thumb .popup-video, .video-tutorial__item:hover .video-tutorial__thumb .popup-video {
   transform: translate(-50%, -50%) scale(1);
 }
 @media screen and (max-width: 1199px) {
@@ -9071,12 +9071,13 @@ label.error {
   background: #FFF;
   padding: 24px 24px;
   gap: 32px;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 .pricing-plan-items .icon-inner span {
   color: #2660B5;
 }
 .pricing-plan-items.active, .pricing-plan-items:hover {
+  padding: 48px 24px;
   background: #2660B5;
   color: #FFF;
 }
@@ -9097,6 +9098,111 @@ label.error {
 }
 .pricing-plan-items.active .branding-icon, .pricing-plan-items:hover .branding-icon {
   filter: brightness(0) invert(1);
+}
+
+.graphic-tutorial-rightbar .video-tutorial__item {
+  margin-bottom: 28px;
+}
+.graphic-tutorial-rightbar .price-del {
+  margin-bottom: 28px;
+  background: #ffffff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid #EBECEF;
+}
+.graphic-tutorial-rightbar .price-del del {
+  color: #6A7283;
+}
+.graphic-tutorial-rightbar .information-area {
+  margin-top: 30px;
+}
+.graphic-tutorial-rightbar .information-area .course-info li {
+  border-bottom: 1px dashed rgba(34, 46, 72, 0.4);
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  color: #404A60;
+}
+.graphic-tutorial-rightbar .information-area .course-info li i {
+  color: #404A60;
+}
+.graphic-tutorial-rightbar .information-area .course-info li div {
+  color: #404A60;
+}
+@media screen and (max-width: 1399px) {
+  .graphic-tutorial-rightbar .price-del {
+    background: #ffffff;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #EBECEF;
+  }
+}
+
+.graphic-tutorial-leftwrap .nav-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #FFF;
+  border-radius: 100px;
+  padding: 12px;
+  margin: 0 auto;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item {
+  width: 100%;
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link {
+  transition: all 0.4s;
+  transition: all 0.35s ease-in-out;
+  border-radius: 32px;
+  border: 1px solid rgba(19, 47, 89, 0.2);
+  background: rgba(19, 47, 89, 0.05);
+  padding: 13px 26px;
+  width: 100%;
+  justify-content: center;
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link span {
+  transition: all 0.4s;
+  color: #404A60;
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link i {
+  color: #404A60;
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link a {
+  padding: 12px 24px;
+  width: 100%;
+  gap: 16px;
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link:hover, .graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link:focus, .graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link.active {
+  background: #2660B5;
+  color: #FFF;
+}
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link:hover i,
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link:hover span, .graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link:focus i,
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link:focus span, .graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link.active i,
+.graphic-tutorial-leftwrap .nav-tabs .nav-item .nav-link.active span {
+  color: #FFF;
+}
+@media screen and (max-width: 1399px) {
+  .graphic-tutorial-leftwrap .nav-tabs {
+    flex-wrap: wrap;
+    padding: 24px 13px;
+  }
+  .graphic-tutorial-leftwrap .nav-tabs .nav-item {
+    width: initial;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .graphic-tutorial-leftwrap .nav-tabs {
+    border-radius: 10px;
+    padding: 20px 12px;
+  }
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* ==== 
