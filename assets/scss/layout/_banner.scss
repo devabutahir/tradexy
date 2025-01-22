@@ -940,6 +940,18 @@
     &.style1{
         padding: 215px 0 120px;
     }
+    &.breadcrumb-bannner{
+        padding: 140px 0 55px;
+        &::before{
+            background: #080E1A;
+        }
+        .breadcrumb{
+            gap: 8px 18px;
+        }
+        @media screen and (max-width: 1199px) {
+            padding: 120px 0 55px;
+        }
+    }
     @media screen and (max-width: 1199px) {
         &.style1{
             padding: 150px 0 70px;

@@ -651,6 +651,34 @@ h6 > a {
   padding-bottom: 80px;
 }
 
+.pb-120 {
+  padding-bottom: 120px;
+}
+@media screen and (max-width: 1199) {
+  .pb-120 {
+    padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 991) {
+  .pb-120 {
+    padding-bottom: 75px;
+  }
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+@media screen and (max-width: 1199) {
+  .pt-120 {
+    padding-top: 90px;
+  }
+}
+@media screen and (max-width: 991) {
+  .pt-120 {
+    padding-top: 75px;
+  }
+}
+
 @media (max-width: 1199px) {
   .section_md_pt {
     padding-top: 60px;
@@ -4039,6 +4067,20 @@ label.error {
 }
 .breadcrumb-bannner.style1 {
   padding: 215px 0 120px;
+}
+.breadcrumb-bannner.breadcrumb-bannner {
+  padding: 140px 0 55px;
+}
+.breadcrumb-bannner.breadcrumb-bannner::before {
+  background: #080E1A;
+}
+.breadcrumb-bannner.breadcrumb-bannner .breadcrumb {
+  gap: 8px 18px;
+}
+@media screen and (max-width: 1199px) {
+  .breadcrumb-bannner.breadcrumb-bannner {
+    padding: 120px 0 55px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .breadcrumb-bannner.style1 {
@@ -9100,6 +9142,11 @@ label.error {
   filter: brightness(0) invert(1);
 }
 
+.graphic-tutorial-rightbar {
+  z-index: 1;
+  background: #F3F5F7;
+  position: relative;
+}
 .graphic-tutorial-rightbar .video-tutorial__item {
   margin-bottom: 28px;
 }
@@ -9137,6 +9184,25 @@ label.error {
   }
 }
 
+.graphic-tutorial-leftwrap {
+  position: relative;
+  z-index: 1;
+}
+.graphic-tutorial-leftwrap .badge-tu {
+  border-radius: 8px;
+  border: 1px solid rgba(235, 122, 35, 0.2);
+  background: rgba(235, 122, 35, 0.05);
+  color: #EB7A23;
+  padding: 5px 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.graphic-tutorial-leftwrap .badge-tu i {
+  color: #EB7A23;
+}
+.graphic-tutorial-leftwrap .lifetime {
+  background: #2660B5;
+}
 .graphic-tutorial-leftwrap .nav-tabs {
   display: flex;
   flex-wrap: nowrap;
@@ -9199,10 +9265,164 @@ label.error {
     padding: 20px 12px;
   }
 }
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item {
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0 0;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button {
+  font-size: 20px;
+  padding: 20px 24px;
+  font-weight: 600;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button::after {
+  --arrow: "";
+  content: var(--arrow);
+  font-family: "bootstrap-icons";
+  font-weight: normal;
+  font-size: 24px;
+  width: initial;
+  height: initial;
+  min-width: initial;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  --bs-accordion-btn-icon-width: 1.75rem;
+  background: transparent;
+  color: #222E48;
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  --bs-accordion-active-color: $head-color;
+  --bs-accordion-active-bg:$tertiary-color;
+  --bs-accordion-btn-icon-transform: rotate(180deg);
+  background: #2660B5;
+  color: #FFF;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  --arrow: "";
+  font-family: "bootstrap-icons";
+  font-weight: normal;
+  background: transparent;
+  color: #FFF;
+}
 .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body {
+  border: unset !important;
+  margin-top: 0;
+  padding-top: 0;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body::before {
+  display: none;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: rgba(19, 47, 89, 0.05);
+  padding: 18px 28px;
+  transition: all 0.4s;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item div, .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item span {
+  color: #404A60;
+  font-size: 16px;
+  font-weight: 500;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item:not(:last-child) {
+  border-bottom: 1px dashed #DFE0E4;
+}
+.graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item:hover {
+  background: #FFF;
+}
+@media screen and (max-width: 991px) {
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button {
+    font-size: 20px;
+    padding: 18px 16px;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button::after {
+    --arrow: "";
+    font-size: 19px;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item div, .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button {
+    font-size: 20px;
+    padding: 18px 16px;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-header .accordion-button::after {
+    --arrow: "";
+    font-size: 19px;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 16px;
+    gap: 10px;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item .d-flex {
+    justify-content: center;
+  }
+  .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item div, .graphic-tutorial-leftwrap .curriculum-wrapper .accordion-item .accordion-body .curriculum-item span {
+    font-size: 14px;
+  }
+}
+.graphic-tutorial-leftwrap .instructor-ronald {
+  background: rgba(19, 47, 89, 0.05);
+}
+.graphic-tutorial-leftwrap .instructor-ronald .social a i {
+  color: #2660B5;
+}
+.graphic-tutorial-leftwrap .instructor-ronald .social a:hover i {
+  color: #FFF;
+}
+.graphic-tutorial-leftwrap .instructor-ronald .ronald-list {
+  border-top: 1px dashed #DFE0E4;
+  border-bottom: 1px dashed #DFE0E4;
+}
+.graphic-tutorial-leftwrap .instructor-ronald .ronald-list li {
+  color: #404A60;
+}
+.graphic-tutorial-leftwrap .write-commnets02 {
+  background: rgba(19, 47, 89, 0.05);
+}
+.graphic-tutorial-leftwrap .write-commnets02 input, .graphic-tutorial-leftwrap .write-commnets02 textarea {
+  background: #FFF;
+}
+.graphic-tutorial-leftwrap .graphic-reviews-cus {
+  background: rgba(19, 47, 89, 0.05);
+}
+.graphic-tutorial-leftwrap .graphic-reviews-cus .comments-area .author__content {
+  background: #FFF;
+}
+
+.graphic-tutorial-details .nav.nav-tabs {
+  position: relative;
+}
+.graphic-tutorial-details .nav.nav-tabs::before {
+  position: absolute;
+  bottom: 38px;
+  content: "";
+  width: 2181%;
+  height: 900%;
+  background: #080E1A;
+  z-index: -1;
 }
 
 /* ==== 

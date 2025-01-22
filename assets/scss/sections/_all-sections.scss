@@ -3036,6 +3036,9 @@
 
 //graphic tutorial Details
 .graphic-tutorial-rightbar{
+    z-index: 1;
+    background: #F3F5F7;
+    position: relative;
     .video-tutorial__item{
         margin-bottom: 28px;
     }
@@ -3075,7 +3078,26 @@
         }
     }
 }
+
+
 .graphic-tutorial-leftwrap{
+    position: relative;
+    z-index: 1;
+    .badge-tu{
+        border-radius: 8px;
+        border: 1px solid rgba(235, 122, 35, 0.20);
+        background: rgba(235, 122, 35, 0.05);
+        color: $secondary-color2;
+        padding: 5px 12px;
+        font-size: 16px;
+        font-weight: 500;
+        i{
+            color: $secondary-color2;
+        }
+    }
+    .lifetime{
+        background: $primary-color;
+    }
     .nav-tabs{
         display: flex;
         flex-wrap: nowrap;
@@ -3136,12 +3158,185 @@
     }
     .curriculum-wrapper{
        .accordion-item{
-        .accordion-body{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 0 0;
+            .accordion-header{
+                .accordion-button{
+                    font-size: 20px;
+                    padding: 20px 24px;
+                    font-weight: 600;
+                    &::after {
+                        --arrow: "\F22C";
+                        content: var(--arrow); 
+                        font-family: "bootstrap-icons";
+                        font-weight: normal;
+                        font-size: 24px;
+                        width: initial;
+                        height: initial;
+                        min-width: initial;
+                        line-height: 1;
+                        letter-spacing: normal;
+                        text-transform: none;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        direction: ltr;
+                        -webkit-font-feature-settings: 'liga';
+                        -webkit-font-smoothing: antialiased;
+                        --bs-accordion-btn-icon-width: 1.75rem;
+                        // --icon-bg: #414E6F;
+                        background: transparent;
+                        color: $neutral-n-700;
+                        opacity: 1;
+                        transition: $transition;
+            
+                    }
+                    &:not(.collapsed) {
+                        --bs-accordion-active-color: $head-color;
+                        --bs-accordion-active-bg:$tertiary-color;
+                        --bs-accordion-btn-icon-transform: rotate(180deg);
+                        background: $primary-color;
+                        color: $neutral-n-0;
+                        &::after {
+                            --arrow: '\F22C';
+                            font-family: "bootstrap-icons";
+                            font-weight: normal;
+                            background: transparent;
+                            color: $neutral-n-0;
+                        }
+                    }
+                }
+            }
+            .accordion-body{
+                border: unset !important;
+                margin-top: 0;
+                padding-top: 0;
+                &::before{
+                    display: none;
+                }
+                .curriculum-item{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: $cmn-bg2;
+                    padding: 18px 28px;
+                    transition: all 0.4s;
+                    div,span{
+                        color: $neutral-n-500;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    &:not(:last-child){
+                        border-bottom: 1px dashed $neutral-n-40;
+                    }
+                    &:hover{
+                        background: $neutral-n-0;
+                    }
+                }
+            }
+            @media screen and (max-width: 991px) {
+                .accordion-header{
+                    .accordion-button{
+                        font-size: 20px;
+                        padding: 18px 16px;
+                        &::after {
+                            --arrow: "\F22C";
+                            font-size: 19px;
+                        }
+                    }
+                }
+                .accordion-body{
+                    .curriculum-item{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 16px 16px;
+                        div,span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .accordion-header{
+                    .accordion-button{
+                        font-size: 20px;
+                        padding: 18px 16px;
+                        &::after {
+                            --arrow: "\F22C";
+                            font-size: 19px;
+                        }
+                    }
+                }
+                .accordion-body{
+                    .curriculum-item{
+                        display: grid;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding: 16px 16px;
+                        gap: 10px;
+                        .d-flex{
+                            justify-content: center;
+                        }
+                        div,span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
        } 
+    }
+    .instructor-ronald{
+        background: rgba(19, 47, 89, 0.05);
+        .social{
+            a{
+                i{
+                    color: $primary-color;
+                }
+                &:hover{
+                    i{
+                        color: $neutral-n-0;
+                    }
+                }
+            }
+        }
+        .ronald-list{
+            border-top: 1px dashed #DFE0E4;
+            border-bottom: 1px dashed #DFE0E4;
+            li{
+                color: $neutral-n-500;
+            }
+        }
+    }
+    .write-commnets02{
+        background: rgba(19, 47, 89, 0.05);
+        input,textarea{
+            background: $neutral-n-0;
+        }
+    }
+    .graphic-reviews-cus{
+        background: rgba(19, 47, 89, 0.05);
+        .comments-area{
+            .author__content{
+                background: $neutral-n-0;
+            }
+        }
+    }
+}
+.graphic-tutorial-details{
+    .nav.nav-tabs{
+        position: relative;
+        &::before{
+            position: absolute;
+            bottom: 38px;
+            content: "";
+            width: 2181%;
+            height: 900%;
+            background: #080E1A;
+            z-index: -1;
+        }
     }
 }
 //graphic tutorial Details
