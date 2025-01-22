@@ -82,7 +82,9 @@
             border: none;
             color: $white;
             border: none !important;
-
+            i{
+                font-size: 29px;
+            }
             &:focus {
                 outline: 0;
                 box-shadow: none;
@@ -418,7 +420,6 @@
         }
     }
     .offcanvas {
-        background: url(../images/inner_banner.png);
         @include background($neutral-n-900, no-repeat,  right center, cover);
 
         min-height: 100vh;
@@ -495,8 +496,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 100%;
-                gap: 60px;
+                gap: 40px;
                
                 .custom-nevbar__right-location{
                     display: flex;

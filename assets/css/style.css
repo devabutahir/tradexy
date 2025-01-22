@@ -2639,6 +2639,9 @@ label.error {
   color: #ffffff;
   border: none !important;
 }
+.header-section .navbar .navbar-toggler i {
+  font-size: 29px;
+}
 .header-section .navbar .navbar-toggler:focus {
   outline: 0;
   box-shadow: none;
@@ -2929,7 +2932,6 @@ label.error {
     transition: all 0.35s ease-in-out;
   }
   .offcanvas {
-    background: url(../images/inner_banner.png);
     background-color: #03211B;
     background-repeat: no-repeat;
     background-position: right center;
@@ -2999,8 +3001,7 @@ label.error {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    gap: 60px;
+    gap: 40px;
   }
   .offcanvas .offcanvas-body .custom-nevbar__right .custom-nevbar__right-location {
     display: flex;
@@ -4068,17 +4069,17 @@ label.error {
 .breadcrumb-bannner.style1 {
   padding: 215px 0 120px;
 }
-.breadcrumb-bannner.breadcrumb-bannner {
-  padding: 140px 0 55px;
+.breadcrumb-bannner.graphic-breadcrumb-bannner {
+  padding: 144px 0 55px;
 }
-.breadcrumb-bannner.breadcrumb-bannner::before {
+.breadcrumb-bannner.graphic-breadcrumb-bannner::before {
   background: #080E1A;
 }
-.breadcrumb-bannner.breadcrumb-bannner .breadcrumb {
+.breadcrumb-bannner.graphic-breadcrumb-bannner .breadcrumb {
   gap: 8px 18px;
 }
 @media screen and (max-width: 1199px) {
-  .breadcrumb-bannner.breadcrumb-bannner {
+  .breadcrumb-bannner.graphic-breadcrumb-bannner {
     padding: 120px 0 55px;
   }
 }

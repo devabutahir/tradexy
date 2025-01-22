@@ -390,7 +390,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        // background: url(../images/inner_banner.png);
         @include background($neutral-n-900, no-repeat,  bottom center, cover);
         z-index: -1;
     }
@@ -940,8 +939,8 @@
     &.style1{
         padding: 215px 0 120px;
     }
-    &.breadcrumb-bannner{
-        padding: 140px 0 55px;
+    &.graphic-breadcrumb-bannner{
+        padding: 144px 0 55px;
         &::before{
             background: #080E1A;
         }
