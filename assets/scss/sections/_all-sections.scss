@@ -395,10 +395,25 @@
 
 //watch Style 01
 .watch-section{
-    background-color: $cmn-bg2;
-    padding-top: 340px;
-    background-attachment: fixed;
+    position: relative;
+    height: 700px;
+    width: 100%;
+    z-index: 1;
+    .watch-cust-video{
+        video{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
     .watch-content{
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 16%;
         .popup-video{
             width: 52px;
             height: 52px;
@@ -414,6 +429,42 @@
         background: $white;
         border-radius: 16px 16px 0 0;
         padding: 40px 40px;
+    }
+    @media screen and (max-width: 767px) {
+        height: 700px;
+        width: 100%;
+        z-index: 1;
+        .watch-cust-video{
+            video{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .watch-content{
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            left: 16%;
+            .popup-video{
+                width: 52px;
+                height: 52px;
+                margin: 0 auto;
+                border-radius: 50%;
+                background: $secondary-color2;
+                i{
+                    color: $white;
+                    font-size: 22px;
+                }
+            }
+            max-width: 440px;
+            background: $white;
+            border-radius: 16px 16px 0 0;
+            padding: 40px 40px;
+        }
     }
 }
 //watch Style 01
