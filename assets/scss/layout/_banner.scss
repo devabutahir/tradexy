@@ -245,6 +245,8 @@
     .section__content{
         padding-bottom: 85px;
         padding-top: 60px;
+        max-width: 700px;
+        margin: 0 auto;
         p{
             font-weight: 400;
         }
@@ -274,6 +276,12 @@
                 left: 0;
                 transition: all 0.5s;
                 opacity: 0;
+                h4{
+                    color: $neutral-n-0;
+                    a{
+                        color: $neutral-n-0;
+                    }
+                }
                 .mortgage-icon{
                     background: $primary-color;
                     width: 44px;
@@ -434,7 +442,7 @@
         .home-loan-items{
             border-radius: 8px;
             border: 1px solid rgba(7, 76, 62, 0.10);
-            background: rgba(7, 76, 62, 0.05);
+            background: rgba(19, 47, 89, 0.05);
             padding: 24px 24px;
             text-align: center;
             img{
@@ -660,7 +668,7 @@
                 font-size: 72px;
             }
             h4{
-                color: $secondary-color;
+                color: $secondary-color2;
             }
             .member-active-inner{
                 display: flex;
@@ -676,7 +684,7 @@
                         width: 46px;
                         height: 46px;
                         min-width: 46px;
-                        background: $secondary-color;
+                        background: $secondary-color2;
                         i{
                             font-weight: 600;
                             font-size: 19px;
@@ -695,10 +703,10 @@
                 max-width: 424px;
             }
             .secound-btn{
-                border-color: $secondary-color;
-                color: $secondary-color;
+                border-color: $secondary-color2;
+                color: $secondary-color2;
                 i{
-                    color: $secondary-color;
+                    color: $secondary-color2;
                 }
                 &:hover{
                     border-color: $primary-color;

@@ -2,7 +2,7 @@
 /* ==============
  ========= css documentation =========
 
- * Template Name: FINVIEW 
+ * Template Name: Tradexy 
  * Version: 1.0
  * Author: pixelaxis
  * Author URI: https://themeforest.net/user/pixelaxis
@@ -1596,7 +1596,7 @@ span.material-symbols-outlined {
   justify-content: center;
   padding: 0px;
   border: 1px solid #2660B5;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
 }
 .slider-navigation .pagination-button i {
   color: #2660B5;
@@ -2276,7 +2276,7 @@ label.error {
   --bs-accordion-border-width: 0;
   border-radius: 16px;
   border: 1px solid #DFE0E4;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
 }
 .accordion .accordion-item .accordion-body {
   padding: 0;
@@ -2346,7 +2346,7 @@ label.error {
   --arrow: "";
   font-family: "bootstrap-icons";
   font-weight: normal;
-  background: #FCB650;
+  background: #EB7A23;
 }
 .accordion .accordion-button:focus {
   border-color: transparent;
@@ -3387,6 +3387,8 @@ label.error {
 .hero-version3 .section__content {
   padding-bottom: 85px;
   padding-top: 60px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .hero-version3 .section__content p {
   font-weight: 400;
@@ -3417,6 +3419,12 @@ label.error {
   left: 0;
   transition: all 0.5s;
   opacity: 0;
+}
+.hero-version3 .loan-tabbing-wrap .loan-tab-items .box-inner h4 {
+  color: #FFF;
+}
+.hero-version3 .loan-tabbing-wrap .loan-tab-items .box-inner h4 a {
+  color: #FFF;
 }
 .hero-version3 .loan-tabbing-wrap .loan-tab-items .box-inner .mortgage-icon {
   background: #2660B5;
@@ -3571,7 +3579,7 @@ label.error {
 .hero-version4 .hero4-homeloan-wrap .home-loan-items {
   border-radius: 8px;
   border: 1px solid rgba(7, 76, 62, 0.1);
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
   padding: 24px 24px;
   text-align: center;
 }
@@ -3797,7 +3805,7 @@ label.error {
   font-size: 72px;
 }
 .hero-version5 .hero-version5-items .hero-content5 h4 {
-  color: #FCB650;
+  color: #EB7A23;
 }
 .hero-version5 .hero-version5-items .hero-content5 .member-active-inner {
   display: flex;
@@ -3815,7 +3823,7 @@ label.error {
   width: 46px;
   height: 46px;
   min-width: 46px;
-  background: #FCB650;
+  background: #EB7A23;
 }
 .hero-version5 .hero-version5-items .hero-content5 .member-active-inner .member.plus i {
   font-weight: 600;
@@ -3832,11 +3840,11 @@ label.error {
   max-width: 424px;
 }
 .hero-version5 .hero-version5-items .hero-content5 .secound-btn {
-  border-color: #FCB650;
-  color: #FCB650;
+  border-color: #EB7A23;
+  color: #EB7A23;
 }
 .hero-version5 .hero-version5-items .hero-content5 .secound-btn i {
-  color: #FCB650;
+  color: #EB7A23;
 }
 .hero-version5 .hero-version5-items .hero-content5 .secound-btn:hover {
   border-color: #2660B5;
@@ -4423,7 +4431,9 @@ label.error {
   padding: 60px 60px 32px;
 }
 .footer-wrapper4 .footer-secondary4 {
-  padding-top: 60px;
+  padding-top: 30px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer-wrapper4 .footer-wrapper4-inner {
   display: flex;
@@ -4440,7 +4450,7 @@ label.error {
     padding: 30px 30px 30px;
   }
   .footer-wrapper4 .footer-secondary4 {
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .footer-wrapper4 .footer-wrapper4-inner {
     display: flex;
@@ -4458,7 +4468,7 @@ label.error {
     padding: 30px 30px 30px;
   }
   .footer-wrapper4 .footer-secondary4 {
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .footer-wrapper4 .footer-wrapper4-inner {
     display: flex;
@@ -4477,8 +4487,7 @@ label.error {
     padding: 30px 30px 30px;
   }
   .footer-wrapper4 .footer-secondary4 {
-    padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 24px;
   }
   .footer-wrapper4 .footer-wrapper4-inner {
     display: flex;
@@ -4498,8 +4507,7 @@ label.error {
     padding: 30px 30px 30px;
   }
   .footer-wrapper4 .footer-secondary4 {
-    padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 24px;
   }
   .footer-wrapper4 .footer-wrapper4-inner {
     display: flex;
@@ -4523,6 +4531,12 @@ label.error {
 }
 .footer-section5 .subscribe-wrapper5 h2 {
   max-width: 630px;
+}
+.footer-section5 .subscribe-wrapper5 .footer5-widget ul li:hover {
+  color: #EB7A23 !important;
+}
+.footer-section5 .subscribe-wrapper5 .footer5-widget ul li a:hover {
+  color: #EB7A23 !important;
 }
 .footer-section5 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -4753,7 +4767,7 @@ label.error {
 }
 
 .about-mission-vission .nav {
-  border-bottom: 1px solid #074C3E;
+  border-bottom: 1px solid #2660B5;
   margin-bottom: 40px;
 }
 .about-mission-vission .nav li button {
@@ -4796,7 +4810,7 @@ label.error {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FCB650;
+  background: #EB7A23;
 }
 .about-mission-vission .mission-body .thumb-mission .cmn__video i {
   font-size: 20px;
@@ -6017,8 +6031,8 @@ label.error {
 
 .frequently-asking .accordion-item .accordion-header .accordion-button {
   border-radius: 100px;
-  border: 1px solid rgba(7, 76, 62, 0.2);
-  background: rgba(7, 76, 62, 0.05);
+  border: 1px solid rgba(19, 47, 89, 0.2);
+  background: rgba(19, 47, 89, 0.05);
   padding: 12px 32px;
   font-size: 20px;
   font-weight: 600;
@@ -6150,7 +6164,7 @@ label.error {
   min-width: 48px;
   border-radius: 50%;
   border: 1px solid #DFE0E4;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
 }
 .loan-adjustment-details .loan-increment-wrap .loan-increment-item .cont .amout-titles {
   font-size: 14px;
@@ -6232,7 +6246,7 @@ label.error {
 
 .terms-box {
   border-radius: 8px;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
   padding: 24px 24px;
 }
 .terms-box .title {
@@ -6360,6 +6374,10 @@ label.error {
   width: calc(50% - 17px);
   gap: 24px;
 }
+.download-app .btn_theme {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .download-app .download-app__thumb01 {
   position: relative;
   z-index: 1;
@@ -6463,9 +6481,11 @@ label.error {
 }
 .testimonials.style2 .card:hover {
   background: rgba(19, 47, 89, 0.05);
+  border-color: #2660B5;
 }
 .testimonials.style2 .slick-slide.slick-current.slick-active {
   background: rgba(19, 47, 89, 0.05);
+  border-color: #2660B5;
 }
 .testimonials.style4 {
   position: relative;
@@ -6635,8 +6655,15 @@ label.error {
   top: 30%;
   z-index: 1;
 }
+.about5-thumb-inner .exprience-box .counting-item {
+  font-size: 20px;
+}
+.about5-thumb-inner .exprience-box .counting-item span {
+  font-size: 20px;
+}
 .about5-thumb-inner .exprience-box p {
-  line-height: 20px;
+  line-height: 17px;
+  font-size: 13px;
 }
 .about5-thumb-inner .thumb1 {
   max-width: 410px;
@@ -6691,7 +6718,7 @@ label.error {
 
 .working-process-section {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .working-process-section::after {
   content: "";
@@ -6703,6 +6730,16 @@ label.error {
   background: url(../../assets/images/element/common-bg.png) no-repeat center center;
   background-size: cover;
   z-index: -1;
+}
+.working-process-section .working-process-ele {
+  position: absolute;
+  right: 0;
+  bottom: 35%;
+}
+@media screen and (max-width: 1620px) {
+  .working-process-section .working-process-ele {
+    display: none;
+  }
 }
 .working-process-section .card {
   position: relative;
@@ -6773,6 +6810,12 @@ label.error {
   }
   .choose-thumb1 img {
     max-width: unset;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .choose-thumb-posi {
+    margin-bottom: -120px;
   }
 }
 
@@ -6942,6 +6985,10 @@ label.error {
   border-radius: 12px;
   position: relative;
 }
+.broker-review-wrap .broker-review-inner .btn_theme {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .broker-review-wrap .broker-review-inner .badge {
   padding: 8px 10px;
   border-radius: 4px;
@@ -7103,7 +7150,7 @@ label.error {
   width: 100% !important;
   min-width: 100% !important;
   border-radius: 8px;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
   padding: 24px;
   transition: all 0.5s;
 }
@@ -7122,7 +7169,7 @@ label.error {
   background: #fff;
 }
 .view-content-wrap .vie-wrap .vie-item {
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
   border-radius: 8px;
   padding: 8px 16px;
   display: flex;
@@ -7157,10 +7204,10 @@ label.error {
 }
 
 .video-tutorail-content {
-  border-left: 1px solid rgba(19, 47, 89, 0.05);
+  border-left: 1px solid rgba(19, 47, 89, 0.13);
 }
 .video-tutorail-content .tutorial-count-wrap {
-  border-bottom: 1px solid rgba(19, 47, 89, 0.05);
+  border-bottom: 1px solid rgba(19, 47, 89, 0.13);
   display: flex;
   gap: 30px;
   padding-left: 50px;
@@ -7180,7 +7227,7 @@ label.error {
 .video-tutorail-content .tutorial-count-wrap .line {
   height: 135px;
   width: 1px;
-  background: rgba(19, 47, 89, 0.05);
+  background: rgba(19, 47, 89, 0.13);
 }
 .video-tutorail-content .others-cont {
   padding-left: 50px;
@@ -7217,7 +7264,7 @@ label.error {
 }
 .load-faq-tabs li .nav-link {
   border: 1px solid #EBECEF;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
   border-radius: 32px;
   font-size: 16px;
   font-weight: 500;
@@ -7502,6 +7549,12 @@ label.error {
   z-index: -1;
   width: 120%;
   border-radius: 16px;
+}
+
+@media screen and (min-width: 1199px) {
+  .choose-us__thumb-posi {
+    margin-bottom: -120px;
+  }
 }
 
 .calculator ul.section__content-list {
@@ -8005,7 +8058,7 @@ label.error {
   display: flex;
 }
 .loan-comparison .loan-comparison__table table tr:nth-child(odd) {
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
 }
 .loan-comparison .loan-comparison__table table th, .loan-comparison .loan-comparison__table table td {
   flex: 1;
@@ -8171,7 +8224,7 @@ label.error {
   z-index: 0;
 }
 .sign-up .sign-up__form .form-control {
-  background: rgba(7, 76, 62, 0.03);
+  background: rgba(19, 47, 89, 0.03);
 }
 .sign-up .sign-up__form .forget-pass {
   color: #2660B5;
@@ -8221,7 +8274,7 @@ label.error {
 }
 .contact .more-help .card--small {
   color: #222E48;
-  background: rgba(7, 76, 62, 0.03);
+  background: rgba(19, 47, 89, 0.03);
 }
 .contact .more-help .card--small .card--small-icon {
   width: 84px;
@@ -8346,7 +8399,7 @@ label.error {
 }
 .comments-area .author__content {
   border-radius: 16px;
-  background: rgba(7, 76, 62, 0.05);
+  background: rgba(19, 47, 89, 0.05);
   padding: 24px;
   gap: 24px;
   display: flex;
@@ -8548,7 +8601,7 @@ label.error {
   font-size: 24px;
 }
 .reviews-details .reviews-details__area .reviews-details__part .average-reviews .average-reviews__count span {
-  color: #FCB650;
+  color: #FFF;
 }
 .reviews-details .reviews-details__area .reviews-details__part .average-reviews .star_review {
   padding: 8px 0;
@@ -8574,7 +8627,7 @@ label.error {
 }
 .reviews-details .reviews-details__area .reviews-details__part .average-reviews .progress-area .progress-area__part .prog-percentage {
   height: 12px !important;
-  background: #FCB650;
+  background: #EB7A23;
   animation: none;
   position: relative;
 }
@@ -8652,7 +8705,7 @@ label.error {
 }
 .average-reviews .progress-area .progress-area__part .prog-percentage {
   height: 12px !important;
-  background: #FCB650;
+  background: #EB7A23;
   animation: none;
   position: relative;
 }
@@ -9119,27 +9172,27 @@ label.error {
 .pricing-plan-items .icon-inner span {
   color: #2660B5;
 }
-.pricing-plan-items.active, .pricing-plan-items:hover {
+.pricing-plan-items.active, .pricing-plan-items.active {
   padding: 48px 24px;
   background: #2660B5;
   color: #FFF;
 }
-.pricing-plan-items.active .border-bottom, .pricing-plan-items:hover .border-bottom {
+.pricing-plan-items.active .border-bottom, .pricing-plan-items.active .border-bottom {
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
-.pricing-plan-items.active .icon-inner span, .pricing-plan-items:hover .icon-inner span {
+.pricing-plan-items.active .icon-inner span, .pricing-plan-items.active .icon-inner span {
   color: #FFF;
 }
-.pricing-plan-items.active h2, .pricing-plan-items.active p, .pricing-plan-items.active ul, .pricing-plan-items.active li, .pricing-plan-items:hover h2, .pricing-plan-items:hover p, .pricing-plan-items:hover ul, .pricing-plan-items:hover li {
+.pricing-plan-items.active h2, .pricing-plan-items.active p, .pricing-plan-items.active ul, .pricing-plan-items.active li, .pricing-plan-items.active h2, .pricing-plan-items.active p, .pricing-plan-items.active ul, .pricing-plan-items.active li {
   color: #FFF;
 }
-.pricing-plan-items.active .btn_theme, .pricing-plan-items:hover .btn_theme {
+.pricing-plan-items.active .btn_theme, .pricing-plan-items.active .btn_theme {
   color: #2660B5;
 }
-.pricing-plan-items.active .btn_theme::after, .pricing-plan-items:hover .btn_theme::after {
+.pricing-plan-items.active .btn_theme::after, .pricing-plan-items.active .btn_theme::after {
   background: #FFF;
 }
-.pricing-plan-items.active .branding-icon, .pricing-plan-items:hover .branding-icon {
+.pricing-plan-items.active .branding-icon, .pricing-plan-items.active .branding-icon {
   filter: brightness(0) invert(1);
 }
 
@@ -9183,6 +9236,11 @@ label.error {
     border-radius: 8px;
     border: 1px solid #EBECEF;
   }
+}
+
+.custom-adding-tabs {
+  border: 1px solid #EBECEF;
+  border-radius: 100px;
 }
 
 .graphic-tutorial-leftwrap {
