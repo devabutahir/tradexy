@@ -2903,6 +2903,61 @@ label.error {
     opacity: 0;
     z-index: 9;
   }
+  .nav-item.nav-cus-item {
+    position: initial !important;
+  }
+  .nav-item.nav-cus-item:hover .dropdown-menu {
+    transform: translateY(-20px);
+  }
+  .nav-item .custom-dropdowns {
+    width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+    left: calc(50% - 648px) !important;
+    max-height: initial !important;
+    overflow-y: initial !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    gap: 8px;
+  }
+  .nav-item .custom-dropdowns li {
+    width: 19.4%;
+  }
+  .nav-item .custom-dropdowns li .dropdown-item {
+    padding: 0px 8px;
+    background: #2660B5;
+    border-radius: 10px;
+    padding: 8px;
+  }
+  .nav-item .custom-dropdowns li .dropdown-item img {
+    border-radius: 10px;
+  }
+  .nav-item .custom-dropdowns li .dropdown-item .text-cus {
+    padding: 7px 3px 8px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .nav-item .custom-dropdowns li:hover a {
+    background: #2660B5 !important;
+    transform: translateX(0px) !important;
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nav-item .custom-dropdowns {
+    flex-wrap: nowrap;
+    width: 1000px;
+    left: calc(50% - 500px) !important;
+  }
+  .nav-item .custom-dropdowns li {
+    width: 19.4%;
+  }
+}
+@media (min-width: 1200px) {
   .nav-item .dropdown-menu li {
     margin-left: 0;
     text-align: left;
@@ -2949,7 +3004,7 @@ label.error {
     transition: all 0.35s ease-in-out;
   }
   .offcanvas {
-    background-color: #03211B;
+    background-color: #2660B5;
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
@@ -2991,9 +3046,9 @@ label.error {
   }
   .offcanvas .offcanvas-body .custom-nevbar__left .custom-nevbar__nav li a {
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 24px 0;
+    padding: 16px 0;
     border-bottom: 1px solid rgba(233, 248, 247, 0.1254901961);
     text-transform: capitalize;
     transition: all 0.35s ease-in-out;
@@ -3008,7 +3063,7 @@ label.error {
   }
   .offcanvas .offcanvas-body .custom-nevbar__left .custom-nevbar__nav .dropdown-menu.show {
     position: unset !important;
-    margin-left: 70px !important;
+    margin-left: 20px !important;
     transform: translate(0px) !important;
     border: none !important;
     background: transparent;
