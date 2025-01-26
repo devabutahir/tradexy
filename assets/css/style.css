@@ -2646,6 +2646,17 @@ label.error {
   outline: 0;
   box-shadow: none;
 }
+.header-section .navbar .hline {
+  width: 1px;
+  opacity: 0.5;
+  background: #FFF;
+  height: 52px;
+}
+@media screen and (max-width: 1199px) {
+  .header-section .navbar .hline {
+    display: none;
+  }
+}
 .header-section.header-version5 {
   padding-top: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -2769,9 +2780,15 @@ label.error {
 .nav-right .nav-right__search-inner .search_icon i {
   font-size: 24px;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1599px) {
   .nav-right .nav-right__search {
     gap: 14px;
+  }
+  .nav-right .nav-right__search .btn_theme {
+    padding: 11px 19px 11px;
+  }
+  .nav-right .nav-right__search .header-fiffrent-form {
+    display: none !important;
   }
 }
 

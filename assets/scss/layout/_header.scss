@@ -90,6 +90,17 @@
                 box-shadow: none;
             }
         }
+        .hline{
+            width: 1px;
+            opacity: 0.5;
+            background: #FFF;
+            height: 52px;
+        }
+        @media screen and (max-width: 1199px) {
+            .hline{
+                display: none;
+            }
+        }
     }
     &.header-version5{
         padding-top: 24px;
@@ -229,9 +240,15 @@
             }
         }
     }
-    @media screen and (max-width: 1399px) {
+    @media screen and (max-width: 1599px) {
         .nav-right__search{
             gap: 14px;
+            .btn_theme {
+                padding: 11px 19px 11px;
+            }
+            .header-fiffrent-form{
+                display: none !important;
+            }
         }
     }
 }

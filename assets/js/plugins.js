@@ -395,7 +395,7 @@
             slidesToScroll: 1,
             speed: 1500,
             arrows: true,
-            dots: false,
+            dots: true,
             prevArrow: $(".prev-testimonials"),
             nextArrow: $(".next-testimonials"),
             responsive: [
