@@ -37,7 +37,6 @@
     jQuery(document).ready(function () {
 
         // wow init
-        // new WOW().init();
         new WOW({
             offset: 200
           }).init();

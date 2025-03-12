@@ -8,14 +8,15 @@
  }
  .language-box{
     z-index: 1;
+    background-color: #fff;
+    border-radius: 26px;
+    width: 48px;
+    border: 1px solid #DFE0E4;
+    height: 48px;
     .nice-select{
-        width: 48px;
-        height: 48px;
-        border-radius: 26px;
-        border: 1px solid #DFE0E4;
-        background-color: #fff;
+        background-color: transparent;
         color: #000;
-        z-index: 2;
+        z-index: 3;
         &::after{
             display: none;
         }
@@ -33,10 +34,8 @@
         font-size: 22px;
     }
     &.style2{
-        .nice-select{
-            border: 1px solid rgba(255, 255, 255, 0.20);
-            background: rgba(255, 255, 255, 0.10);
-        }
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        background: rgba(255, 255, 255, 0.10);
     }
 }
 .cmn__search-icon{

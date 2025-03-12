@@ -2560,15 +2560,16 @@ label.error {
 
 .language-box {
   z-index: 1;
+  background-color: #fff;
+  border-radius: 26px;
+  width: 48px;
+  border: 1px solid #DFE0E4;
+  height: 48px;
 }
 .language-box .nice-select {
-  width: 48px;
-  height: 48px;
-  border-radius: 26px;
-  border: 1px solid #DFE0E4;
-  background-color: #fff;
+  background-color: transparent;
   color: #000;
-  z-index: 2;
+  z-index: 3;
 }
 .language-box .nice-select::after {
   display: none;
@@ -2585,7 +2586,7 @@ label.error {
   color: #404A60;
   font-size: 22px;
 }
-.language-box.style2 .nice-select {
+.language-box.style2 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
 }
@@ -8642,7 +8643,7 @@ label.error {
   align-items: center;
   justify-content: center;
   border: 1px solid #2660B5;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   color: #2660B5;
 }

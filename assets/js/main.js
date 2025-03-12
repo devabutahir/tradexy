@@ -79,16 +79,10 @@
         });
 
         // navbar active color
-        $('.navbar-nav .nav-item a').click(function(){
-            $('.nav-item a').removeClass("active");
+        $(document).on("click", ".navbar-nav .nav-item a", function(){
+            $(".nav-item a").removeClass("active");
             $(this).addClass("active");
         });
-
-        // // navbar-collapse for landing page
-        // jQuery("#offcanvasRight .custom-nevbar__nav>li>").click(function(){
-        //     jQuery('#offcanvasRight').offcanvas('hide');
-        // });
-
 
         // magnificPopup
         $('.popup_img').magnificPopup({
@@ -113,25 +107,22 @@
         });
 
         //--View All Content
-        // $(".view-btn").on("click", function () {
-        //     $(this).toggleClass("view-active");
-        //     $(this).parent().next(".view-content-wrap").toggleClass("active");
-        // });
-        // $(".view-btn").on("click", function () {
-        //     $(this).toggleClass("view-active");
-        //     $(this).parents().next(".view-content-wrap").toggleClass("active");
-        // });
         $(".view-btn").on("click", function () {
             $(this).toggleClass("view-active");
             $(this).parents().next(".view-content-wrap").toggleClass("active").slideToggle();
-        });
-        
-        
+        });        
 
         // nav-right__search
-        $(".nav-right__search-icon").on("click", function () {
+        $(".nav-right__search-icon").on("click", function (event) {
+            event.stopPropagation(); 
             $(this).toggleClass("active");
             $(this).parent().next(".nav-right__search-inner").slideToggle();
+        });
+        $(document).on("click", function (event) {
+            if (!$(event.target).closest(".nav-right__search-icon, .nav-right__search-inner").length) {
+                $(".nav-right__search-inner").slideUp();
+                $(".nav-right__search-icon").removeClass("active");
+            }
         });
 
         // sidebar_btn
@@ -147,118 +138,18 @@
 
         // browse-spaces-filter__tab
         $('#browse-spaces-filter__tab li a').on("click", function () {
-            // fetch the class of the clicked item
             var ourClass = $(this).attr('class');
-
-            // reset the active class on all the buttons
             $('#browse-spaces-filter__tab li').removeClass('active');
-            // update the active state on our clicked button
             $(this).parent().addClass('active');
 
             if (ourClass == 'all') {
-                // show all our items
                 $('#browse-spaces-filter__content').children('div.item').show();
             } else {
-                // hide all elements that don't share ourClass
                 $('#browse-spaces-filter__content').children('div:not(.' + ourClass + ')').hide();
-                // show all elements that do share ourClass
                 $('#browse-spaces-filter__content').children('div.' + ourClass).show();
             }
             return false;
         });
-
-
-        // contact form
-        // ajax
-        jQuery('#frmContactus').on('submit', function (e) {
-            jQuery('#msg').html('');
-            jQuery('#submit').html('Please wait....');
-            jQuery('#submit').attr('disabled', true);
-            jQuery.ajax({
-                url: 'mail.php',
-                type: 'POST',
-                data: jQuery('#frmContactus').serialize(),
-                success: function (result) {
-                    jQuery('#msg').html(result);
-                    jQuery('#submit').html('Send Message');
-                    jQuery('#submit').attr('disabled', false);
-                    jQuery('#frmContactus')[0].reset();
-
-                    setTimeout(function () {
-                        $('.alert-dismissible').fadeOut('slow', function () {
-                            $(this).remove();
-                        });
-                    }, 3000);
-                }
-            });
-            e.preventDefault();
-        });
-
-        // Email Subscribe
-        jQuery('#frmSubscribe').on('submit', function (e) {
-            var emailSubscribe = jQuery("input[name='sMail']").val();
-            jQuery('#subscribeMsg').html('');
-            jQuery('#emailSubscribe').html('Please wait....');
-            jQuery('#emailSubscribe').attr('disabled', true);
-            jQuery.ajax({
-                url: 'mail.php',
-                type: 'POST',
-                data: {
-                    'subscribes': '',
-                    'emailSubscribe': emailSubscribe
-                },
-                success: function (result) {
-                    jQuery('#subscribeMsg').html(result);
-                    jQuery('#emailSubscribe').html('Subscribe');
-                    jQuery('#emailSubscribe').attr('disabled', false);
-                    jQuery('#frmSubscribe')[0].reset();
-
-                    setTimeout(function () {
-                        $('.alert-dismissible').fadeOut('slow', function () {
-                            $(this).remove();
-                        });
-                    }, 3000);
-                }
-            });
-            e.preventDefault();
-        });
-
-
-        // dropFiles
-        // $("#dropFiles").on('dragenter', function (ev) {
-        //     // Entering drop area. Highlight area
-        //     $("#dropFiles").addClass("highlightDropArea");
-        // });
-
-        // $("#dropFiles").on('dragleave', function (ev) {
-        //     // Going out of drop area. Remove Highlight
-        //     $("#dropFiles").removeClass("highlightDropArea");
-        // });
-
-        // $("#dropFiles").on('drop', function (ev) {
-        //     // Dropping files
-        //     ev.preventDefault();
-        //     ev.stopPropagation();
-        //     // Clear previous messages
-        //     $("#messages").empty();
-        //     if (ev.originalEvent.dataTransfer) {
-        //         if (ev.originalEvent.dataTransfer.files.length) {
-        //             var droppedFiles = ev.originalEvent.dataTransfer.files;
-        //             for (var i = 0; i < droppedFiles.length; i++) {
-        //                 console.log(droppedFiles[i]);
-        //                 $("#messages").append("<br /> <b>Dropped File </b>" + droppedFiles[i].name);
-        //                 // Upload droppedFiles[i] to server
-        //             }
-        //         }
-        //     }
-
-        //     $("#dropFiles").removeClass("highlightDropArea");
-        //     return false;
-        // });
-
-        // $("#dropFiles").on('dragover', function (ev) {
-        //     ev.preventDefault();
-        // });
 
         // copyright year
         $("#copyYear").text(new Date().getFullYear());
@@ -301,8 +192,8 @@
                     sliderOne.value = parseInt(sliderTwo.value) - minGap;
                 }
                 displayValOne.textContent = sliderOne.value;
-                updateTotal();  // Update the total range after slider change
-                fillColor();  // Update slider track color
+                updateTotal();  
+                fillColor();  
             }
     
             // Update second slider value
@@ -311,8 +202,8 @@
                     sliderTwo.value = parseInt(sliderOne.value) + minGap;
                 }
                 displayValTwo.textContent = sliderTwo.value;
-                updateTotal();  // Update the total range after slider change
-                fillColor();  // Update slider track color
+                updateTotal(); 
+                fillColor();  
             }
     
             // Update the total price range and display it
@@ -326,20 +217,16 @@
                 let percent1 = (sliderOne.value / sliderMaxValue) * 100;
                 let percent2 = (sliderTwo.value / sliderMaxValue) * 100;
                 sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #074C3E ${percent1}% , #074C3E ${percent2}%, #dadae5 ${percent2}%)`;
-            }
-    
-            // Attach event listeners for the sliders
+            }    
             sliderOne.addEventListener('input', slideOne);
             sliderTwo.addEventListener('input', slideTwo);
     
-            // Initialize the slider on load
             slideOne();
             slideTwo();
         }
     
         // Initialize all sliders on the page
         window.addEventListener('DOMContentLoaded', function () {
-            // Initialize sliders only if elements exist
             if (document.getElementById('range-slider-1') && document.getElementById('range-slider-2')) {
                 new RangeSlider('range-slider-1', 'range-slider-2', 'min-value', 'max-value', 'range-output', '.slider-track');
             }
@@ -367,14 +254,11 @@
         if (calculate) {
             calculate.addEventListener('click', function (e) {
                 e.preventDefault();
-                // Loan 1 calculations
                 if (amount && interest && year) {
                     let total = (amount.value / 100 * interest.value) + parseInt(amount.value);
                     total_value.innerHTML = total.toFixed(2);
                     monthly_cost.innerHTML = (total / (year.value * 12)).toFixed(2);
                 }
-    
-                // Loan 2 calculations
                 if (amount2 && interest2 && year2) {
                     let total2 = (amount2.value / 100 * interest2.value) + parseInt(amount2.value);
                     total_value2.innerHTML = total2.toFixed(2);
@@ -387,7 +271,6 @@
         if (calculate2) {
             calculate2.addEventListener('click', function (e) {
                 e.preventDefault();
-                // Loan 2 calculations
                 if (amount2 && interest2 && year2) {
                     let total2 = (amount2.value / 100 * interest2.value) + parseInt(amount2.value);
                     total_value2.innerHTML = total2.toFixed(2);
@@ -397,3 +280,24 @@
         }
     })();
     
+    // Ensure the script runs after DOM is loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        const inputs = document.querySelectorAll('.passwordInput');
+        inputs.forEach(input => {
+            const eye = input.querySelector('.bi-eye'); // Corrected class name
+            const eyeSlash = input.querySelector('.bi-eye-slash'); // Corrected class name
+            const password = input.querySelector('input');
+            if (eye && eyeSlash && password) {
+                eyeSlash.addEventListener('click', () => {
+                    password.type = 'text';
+                    eye.style.display = 'inline-block';
+                    eyeSlash.style.display = 'none';
+                });
+                eye.addEventListener('click', () => {
+                    password.type = 'password';
+                    eye.style.display = 'none';
+                    eyeSlash.style.display = 'inline-block';
+                });
+            }
+        });
+    });
