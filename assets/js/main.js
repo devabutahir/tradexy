@@ -49,128 +49,147 @@
     jQuery(document).ready(function () {
 
         // pre_loader
-        $(".preloader").delay(300).animate({
-            "opacity": "0"
-        }, 800, function () {
-            $(".preloader").css("display", "none");
+        $(function () {
+            $(".preloader").delay(300).fadeOut(800);
         });
 
         // on scroll actions
-        var scroll_offset = 120;
-        $(window).scroll(function () {
-            var $this = $(window);
-            if ($('.header-section').length) {
-                if ($this.scrollTop() > scroll_offset) {
-                    $('.header-section').addClass('header-active');
-                } else {
-                    $('.header-section').removeClass('header-active');
-                }
+        $(function () {
+            var scrollOffset = 120;
+            var $header = $(".header-section");
+        
+            if ($header.length) {
+                $(window).on("scroll", function () {
+                    $header.toggleClass("header-active", $(this).scrollTop() > scrollOffset);
+                });
             }
         });
 
         // scroll top
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 500) {
-                $('.scrollToTop').addClass('topActive');
-            }
-            else {
-                $('.scrollToTop').removeClass('topActive');
-            }
+        $(function () {
+            $(window).on("scroll", function () {
+                $(".scrollToTop").toggleClass("topActive", $(this).scrollTop() > 500);
+            });
         });
 
         // navbar active color
-        $(document).on("click", ".navbar-nav .nav-item a", function(){
-            $(".nav-item a").removeClass("active");
-            $(this).addClass("active");
+        $(function () {
+            $(".navbar-nav").on("click", ".nav-item a", function () {
+                $(".nav-item a").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        //Password Viewer
+        const inputs = document.querySelectorAll('.passwordInput');
+        inputs.forEach(input => {
+            const eye = input.querySelector('.bi-eye'); // Corrected class name
+            const eyeSlash = input.querySelector('.bi-eye-slash'); // Corrected class name
+            const password = input.querySelector('input');
+            if (eye && eyeSlash && password) {
+                eyeSlash.addEventListener('click', () => {
+                    password.type = 'text';
+                    eye.style.display = 'inline-block';
+                    eyeSlash.style.display = 'none';
+                });
+                eye.addEventListener('click', () => {
+                    password.type = 'password';
+                    eye.style.display = 'none';
+                    eyeSlash.style.display = 'inline-block';
+                });
+            }
         });
 
         // magnificPopup
-        $('.popup_img').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
+        $(function () {
+            if ($.fn.magnificPopup) {  // Ensure the plugin is loaded
+                $(".popup_img").magnificPopup({
+                    type: "image",
+                    gallery: {
+                        enabled: true
+                    }
+                });
+            } else {
+                console.error("Magnific Popup plugin not found.");
             }
         });
 
         // data background
-        $("[data-background]").each(function () {
-            $(this).css(
-                "background-image",
-                "url(" + $(this).attr("data-background") + ")"
-            );
+        $(function () {
+            $("[data-background]").each(function () {
+                var bg = $(this).attr("data-background");
+                if (bg) {
+                    $(this).css("background-image", `url(${bg})`);
+                }
+            });
         });
 
-        // reply
-        $(".reply").on("click", function () {
-            $(this).toggleClass("reply-active");
-            $(this).parent().next(".reply__content").slideToggle();
+        // reply/View All Content
+        $(function () {
+            $(".reply").on("click", function () {
+                $(this).toggleClass("reply-active")
+                .parent()
+                .next(".reply__content")
+                .stop(true, true)
+                .slideToggle();
+            });
+            //--View All Content
+            $(".view-btn").on("click", function () {
+                $(this).toggleClass("view-active");
+                $(this).parents().next(".view-content-wrap").toggleClass("active").slideToggle();
+            });        
         });
 
-        //--View All Content
-        $(".view-btn").on("click", function () {
-            $(this).toggleClass("view-active");
-            $(this).parents().next(".view-content-wrap").toggleClass("active").slideToggle();
-        });        
 
         // nav-right__search
-        $(".nav-right__search-icon").on("click", function (event) {
-            event.stopPropagation(); 
-            $(this).toggleClass("active");
-            $(this).parent().next(".nav-right__search-inner").slideToggle();
+        $(function () {
+            $(".nav-right__search-icon").on("click", function (event) {
+                event.stopPropagation(); // Prevents event bubbling
+                $(this).toggleClass("active")
+                       .parent()
+                       .next(".nav-right__search-inner")
+                       .stop(true, true)
+                       .slideToggle();
+            });
+        
+            $(document).on("click", function (event) {
+                if (!$(event.target).closest(".nav-right__search-icon, .nav-right__search-inner").length) {
+                    $(".nav-right__search-inner").stop(true, true).slideUp();
+                    $(".nav-right__search-icon").removeClass("active");
+                }
+            });
         });
-        $(document).on("click", function (event) {
-            if (!$(event.target).closest(".nav-right__search-icon, .nav-right__search-inner").length) {
-                $(".nav-right__search-inner").slideUp();
-                $(".nav-right__search-icon").removeClass("active");
-            }
-        });
-
+        
         // sidebar_btn
-        $(".sidebar_btn").on("click", function () {
-            $('.cus_scrollbar').toggleClass("show");
+        $(function () {
+            $(".sidebar_btn").on("click", function () {
+                $(".cus_scrollbar").toggleClass("show");
+            });
         });
 
         // faq
-        $(".accordion-header").on("click", function () {
-            $('.accordion-item').removeClass("accordion_bg");
-            $(this).parent().closest('.accordion-item').toggleClass("accordion_bg");
-        });
-
-        // browse-spaces-filter__tab
-        $('#browse-spaces-filter__tab li a').on("click", function () {
-            var ourClass = $(this).attr('class');
-            $('#browse-spaces-filter__tab li').removeClass('active');
-            $(this).parent().addClass('active');
-
-            if (ourClass == 'all') {
-                $('#browse-spaces-filter__content').children('div.item').show();
-            } else {
-                $('#browse-spaces-filter__content').children('div:not(.' + ourClass + ')').hide();
-                $('#browse-spaces-filter__content').children('div.' + ourClass).show();
-            }
-            return false;
+        $(function () {
+            $(".accordion-header").on("click", function () {
+                var $accordionItem = $(this).closest('.accordion-item'); // Find the closest accordion item
+                
+                $('.accordion-item').removeClass("accordion_bg"); // Remove class from all items
+                $accordionItem.toggleClass("accordion_bg"); // Toggle the class on the clicked item
+            });
         });
 
         // copyright year
-        $("#copyYear").text(new Date().getFullYear());
+        $(function () {
+            $("#copyYear").text(new Date().getFullYear());
+        });
 
     });
 
     // btn_theme
-    $(function() {  
-        $('.btn_theme')
-          .on('mouseenter', function(e) {
-                  var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-                  $(this).find('span').css({top:relY, left:relX})
-          })
-          .on('mouseout', function(e) {
-                  var parentOffset = $(this).offset(),
-                    relX = e.pageX - parentOffset.left,
-                    relY = e.pageY - parentOffset.top;
-              $(this).find('span').css({top:relY, left:relX})
-          });
+    $(document).on('mouseenter mouseout', '.btn_theme', function (e) {
+        var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+        $(this).find('span').css({ top: relY, left: relX });
     });
    
     (function () {
@@ -217,16 +236,18 @@
                 let percent1 = (sliderOne.value / sliderMaxValue) * 100;
                 let percent2 = (sliderTwo.value / sliderMaxValue) * 100;
                 sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #074C3E ${percent1}% , #074C3E ${percent2}%, #dadae5 ${percent2}%)`;
-            }    
-            sliderOne.addEventListener('input', slideOne);
-            sliderTwo.addEventListener('input', slideTwo);
+            }
+    
+            // Bind events using .on() method
+            $(sliderOne).on('input', slideOne);
+            $(sliderTwo).on('input', slideTwo);
     
             slideOne();
             slideTwo();
         }
     
         // Initialize all sliders on the page
-        window.addEventListener('DOMContentLoaded', function () {
+        $(document).ready(function () {
             if (document.getElementById('range-slider-1') && document.getElementById('range-slider-2')) {
                 new RangeSlider('range-slider-1', 'range-slider-2', 'min-value', 'max-value', 'range-output', '.slider-track');
             }
@@ -236,7 +257,7 @@
             }
         });
     
-        // Calculator logic, checking if elements exist
+        // Calculator logic with event binding via .on()
         const amount = document.getElementById('amount'),
             interest = document.getElementById('interest'),
             year = document.getElementById('year'),
@@ -251,8 +272,9 @@
             calculate2 = document.getElementById('calc_submit2'),
             total_value2 = document.getElementById('total_value2');
     
+        // Using .on() for event binding
         if (calculate) {
-            calculate.addEventListener('click', function (e) {
+            $(calculate).on('click', function (e) {
                 e.preventDefault();
                 if (amount && interest && year) {
                     let total = (amount.value / 100 * interest.value) + parseInt(amount.value);
@@ -269,7 +291,7 @@
     
         // Additional event listener for second calculator (if applicable)
         if (calculate2) {
-            calculate2.addEventListener('click', function (e) {
+            $(calculate2).on('click', function (e) {
                 e.preventDefault();
                 if (amount2 && interest2 && year2) {
                     let total2 = (amount2.value / 100 * interest2.value) + parseInt(amount2.value);
@@ -278,26 +300,5 @@
                 }
             });
         }
-    })();
+    })();    
     
-    // Ensure the script runs after DOM is loaded
-    document.addEventListener("DOMContentLoaded", function () {
-        const inputs = document.querySelectorAll('.passwordInput');
-        inputs.forEach(input => {
-            const eye = input.querySelector('.bi-eye'); // Corrected class name
-            const eyeSlash = input.querySelector('.bi-eye-slash'); // Corrected class name
-            const password = input.querySelector('input');
-            if (eye && eyeSlash && password) {
-                eyeSlash.addEventListener('click', () => {
-                    password.type = 'text';
-                    eye.style.display = 'inline-block';
-                    eyeSlash.style.display = 'none';
-                });
-                eye.addEventListener('click', () => {
-                    password.type = 'password';
-                    eye.style.display = 'none';
-                    eyeSlash.style.display = 'inline-block';
-                });
-            }
-        });
-    });
